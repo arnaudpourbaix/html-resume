@@ -1,2 +1,2 @@
-html-cv
-=======
+html-resume
+===========
