@@ -4,8 +4,7 @@
 	var module = angular.module('htmlResume.main.config', []);
 
 	module.config([	'$urlRouterProvider', '$locationProvider', function MainConfig($urlRouterProvider, $locationProvider) {
-		// $locationProvider.html5Mode(true);
-		$urlRouterProvider.otherwise('/');
+//		$urlRouterProvider.otherwise('/');
 	} ]);
 	
 	module.config([ '$provide',	function($provide) {

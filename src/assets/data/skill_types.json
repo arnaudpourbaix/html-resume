@@ -1,0 +1,18 @@
+[
+  {
+    "id": "language",
+    "label": "Langage"
+  },
+  {
+    "id": "framework",
+    "label": "Framework"
+  },
+  {
+    "id": "library",
+    "label": "Librairie"
+  },
+  {
+    "id": "server",
+    "label": "Serveur d'application"
+  }
+]

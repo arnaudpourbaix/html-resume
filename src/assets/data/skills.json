@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Java",
+    "group": "jee",
+    "type": "",
+    "level": 4
+  },
+  {
+    "label": "Log4j",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "Guava",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "Spring",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+    "label": "Hibernate",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+    "label": "Javascript",
+    "group": "javascript",
+    "type": "language",
+    "level": 4
+  },
+  {
+    "label": "Underscore",
+    "group": "javascript",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "Lodash",
+    "group": "javascript",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "Log4javascript",
+    "group": "javascript",
+    "type": "library",
+    "level": 4
+  },
+  {
+    "label": "Angular JS",
+    "group": "javascript",
+    "type": "framework",
+    "level": 3
+  }
+]

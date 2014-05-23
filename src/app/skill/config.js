@@ -9,6 +9,12 @@
 			controller : 'SkillController',
 			templateUrl : 'skill/skill.tpl.html',
 			resolve : {
+				skills : [ 'SkillService', function(SkillService) {
+					return SkillService.skills();
+				} ],
+				levels : [ 'SkillService', function(SkillService) {
+					return SkillService.levels();
+				} ]
 			},
 			onEnter: function($stateParams) {
 			}

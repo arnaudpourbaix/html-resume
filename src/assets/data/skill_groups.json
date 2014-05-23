@@ -1,0 +1,12 @@
+[
+  {
+    "id": "jee",
+    "label": "Java Enterprise Edition",
+    "keywords": "jee,j2ee,java"
+  },
+  {
+    "id": "javascript",
+    "label": "Javascript",
+    "keywords": "javascript,js"
+  }
+]

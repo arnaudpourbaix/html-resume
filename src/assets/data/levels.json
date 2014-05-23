@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "label": "Notions"
+  },
+  {
+    "id": 2,
+    "label": "Débutant"
+  },
+  {
+    "id": 3,
+    "label": "Avancé"
+  },
+  {
+    "id": 4,
+    "label": "Expert"
+  }
+]
