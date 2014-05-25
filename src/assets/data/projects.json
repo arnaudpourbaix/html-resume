@@ -1,0 +1,154 @@
+[
+  {
+    "start": "2000-01",
+    "end": "2000-08",
+    "client": "mondiale",
+    "compagny": "norsys",
+    "role": "Analyste-programmeur",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Laurent Descamps",
+    	"role": "Chef de projet"
+    ],
+    "goal": "Développement d’une application de gestion des pré-retraites",
+    "functions": [
+    	"Réalisation d’un programme de calcul des rentes",
+    	"Intervention mineure sur la partie web"
+    ],
+    "skills": [ "plsql", "sql", "oracle", "asp" ] 
+  },
+  {
+    "start": "2000-09",
+    "end": "2000-12",
+    "client": "caisseEpargne",
+    "compagny": "norsys",
+    "role": "Analyste-programmeur",
+    "location": "Régie",
+    "contact": [
+    	"name": "Thierry Pavot",
+    	"role": "Responsable client"
+    ]
+    "goal": "Refonte du poste bancaire",
+    "functions": [
+    	"Analyse de l’existant",
+    	"Réalisation des écrans liés au PEL"
+    ],
+    "skills": [ "nsdk", "c" ] 
+  },
+  {
+    "start": "2001-01",
+    "end": "2001-12",
+    "client": "norauto",
+    "compagny": "unis",
+    "role": "Analyste-programmeur",
+    "location": "Régie",
+    "contact": [
+    	"name": "Sébastien Bernard",
+    	"role": "Responsable client"
+    ]
+    "goal": "Migration de la base de donnée vers l'euro",
+    "functions": [
+    	"Réalisation des triggers et des procédures stockées en collaboration avec un DBA",
+    	"Réalisation d’une petite application PL/SQL"
+    ],
+    "skills": [ "plsql", "sql", "oracle" ] 
+  },
+  {
+    "start": "2002-01",
+    "end": "2002-04",
+    "client": "bca",
+    "compagny": "unis",
+    "role": "Analyste-programmeur",
+    "location": "Régie",
+    "contact": [
+    	"name": "Nicolas Beunèche",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Optimisation des performances d’une application: déplacement de tous les traitements liés à la base de données dans des procédures stockées",
+    "functions": [
+    	"Réalisation des procédures stockées et mise à jour de l'application"
+    ],
+    "skills": [ "plsql", "sql", "oracle", "vb" ] 
+  },
+  {
+    "start": "2002-05",
+    "end": "2002-12",
+    "client": null,
+    "compagny": "unis",
+    "profession": "Analyste-programmeur",
+    "location": "Régie",
+    "goal": "Travaux divers pendant un inter-contrat",
+    "functions": [
+    	"Réalisation d’une application de gestion de bibliothèque (VB6)",
+    	"Auto-formation PHP/MySQL et réalisation d’un site web",
+    	"Evolutions sur une application de gestion d’entreprise (NSDK)"
+    ],
+    "skills": [ "nsdk", "vb", "php", "mysql" ] 
+  },
+  {
+    "start": "2003-01",
+    "end": "2006-08",
+    "client": null,
+    "compagny": "aidmicro",
+    "profession": "Co-gérant",
+    "location": null,
+    "goal": "Création et gestion d’une société de dépannage en informatique pour les particuliers et les PME",
+    "functions": [
+    	"Formation à la création d’entreprise",
+    	"Création et gestion de la société (marketing, clients, facturation, comptabilité)",
+    	"Interventions et dépannages sur site"
+    ],
+    "skills": null 
+  },
+  {
+    "start": "2006-09",
+    "end": "2006-09",
+    "client": "3suisses",
+    "compagny": [ "citenum", "elosi" ],
+    "role": "Développeur et intégrateur Web",
+    "location": "Régie",
+    "contact": [
+    	"name": "Jacques",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Montage du site 3 Suisses Belgique",
+    "functions": [
+    	"Réalisation du montage du site en collaboration avec un autre intégrateur"
+    ],
+    "skills": [ "css", ".net", "asp" ] 
+  },
+  {
+    "start": "2006-10",
+    "end": "2006-10",
+    "client": "3si",
+    "compagny": [ "citenum", "elosi" ],
+    "role": "Développeur Web",
+    "location": "Régie",
+    "contact": [
+    	"name": "Jacques",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Evolution sur l'intranet de la société",
+    "functions": [
+    	"Réalisation d'une évolution sur un intranet"
+    ],
+    "skills": [ "asp", "sqlserver", "sql" ] 
+  },
+  {
+    "start": "2006-11",
+    "end": "2006-12",
+    "client": "benalu",
+    "compagny": "elosi",
+    "role": "Développeur Web",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Aurélien Luchart",
+    	"role": "Commercial"
+    ]
+    "goal": "Evolutions sur une application de gestion de devis",
+    "functions": [
+    	"Réalisation de plusieurs évolutions sur une application de gestion de devis"
+    ],
+    "skills": [ "php", "mysql", "sql" ] 
+  }
+]

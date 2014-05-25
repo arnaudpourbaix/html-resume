@@ -93,5 +93,30 @@
   	"id": "bprocess",
     "label": "B-Process",
     "logo": "bprocess.jpg" 
-  }
+  },
+  {
+  	"id": "norsys",
+    "label": "Norsys",
+    "logo": "norsys.jpg" 
+  },
+  {
+  	"id": "unis",
+    "label": "Unis",
+    "logo": "unis.jpg" 
+  },
+  {
+  	"id": "elosi",
+    "label": "Elosi",
+    "logo": "elosi.jpg" 
+  },
+  {
+  	"id": "astek",
+    "label": "Astek",
+    "logo": "astek.jpg" 
+  },
+  {
+  	"id": "proxiad",
+    "label": "Proxiad",
+    "logo": "proxiad.jpg" 
+  }  
 ]
