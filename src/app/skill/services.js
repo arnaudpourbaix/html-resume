@@ -8,7 +8,7 @@
 		var LOGGER_NAME = module.name + '.' + this.constructor.name, log = $logger.logger(LOGGER_NAME);
 		
 		var service = {};
-		var levelsPromise, skillsPromise;
+		var levelsPromise, skillsPromise, groupsPromise, typesPromise;
 
 		function getSkills() {
 			if (skillsPromise) {
@@ -35,21 +35,62 @@
 			});
 			return levelsPromise;
 		}
+
+		function getSkillGroups() {
+			if (groupsPromise) {
+				return groupsPromise;
+			}
+			groupsPromise = $http({
+				method : 'GET',
+				url : 'assets/data/skill_groups.json'
+			}).then(function(response) {
+				return response.data;
+			});
+			return groupsPromise;
+		}
+
+		function getSkillTypes() {
+			if (typesPromise) {
+				return typesPromise;
+			}
+			typesPromise = $http({
+				method : 'GET',
+				url : 'assets/data/skill_types.json'
+			}).then(function(response) {
+				return response.data;
+			});
+			return typesPromise;
+		}
 		
 		service.skills = function() {
-			return $q.all([ getSkills(), getLevels() ]).then(function(result) {
+			if (skillsPromise) {
+				return skillsPromise;
+			}
+			skillsPromise = $q.all([ getSkills(), getLevels(), getSkillGroups(), getSkillTypes() ]).then(function(result) {
 				var skills = result[0];
 				var levels = _.indexBy(result[1], 'id');
+				var groups = _.indexBy(result[2], 'id');
+				var types = _.indexBy(result[3], 'id');
 				angular.forEach(skills, function(skill) {
 					skill.level = levels[skill.level]; 
+					skill.group = groups[skill.group];
+					skill.type = types[skill.type];
 				});
-				log.trace('skills', skills);
 				return skills;
 			});
+			return skillsPromise;
 		};
 		
 		service.levels = function() {
 			return getLevels();
+		};
+
+		service.groups = function() {
+			return getSkillGroups();
+		};
+
+		service.types = function() {
+			return getSkillTypes();
 		};
 		
 		return service;

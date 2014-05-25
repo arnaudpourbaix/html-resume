@@ -2,11 +2,11 @@
   {
     "label": "Java",
     "group": "jee",
-    "type": "",
+    "type": "language",
     "level": 4
   },
   {
-    "label": "Log4j",
+    "label": "SLF4J/Log4j/Logback",
     "group": "jee",
     "type": "library",
     "level": 3
@@ -18,10 +18,34 @@
     "level": 3
   },
   {
+    "label": "Liquibase",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "Maven",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
     "label": "Spring",
     "group": "jee",
     "type": "framework",
     "level": 3
+  },
+  {
+    "label": "Struts",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+    "label": "JSF",
+    "group": "jee",
+    "type": "framework",
+    "level": 1
   },
   {
     "label": "Hibernate",
@@ -36,15 +60,81 @@
     "level": 4
   },
   {
-    "label": "Underscore",
+    "label": "Underscore/Lodash",
     "group": "javascript",
     "type": "library",
     "level": 3
   },
   {
-    "label": "Lodash",
+    "label": "jQuery",
     "group": "javascript",
     "type": "library",
+    "level": 4
+  },
+  {
+    "label": "jQuery-mobile",
+    "group": "javascript",
+    "type": "library",
+    "level": 1
+  },
+  {
+    "label": "Dhtmlx",
+    "group": "javascript",
+    "type": "library",
+    "level": 3
+  },
+  {
+    "label": "jQwidgets",
+    "group": "javascript",
+    "type": "library",
+    "level": 4
+  },
+  {
+    "label": "HTML 5",
+    "group": "html",
+    "type": "language",
+    "level": 3
+  },
+  {
+    "label": "CSS 3",
+    "group": "html",
+    "type": "language",
+    "level": 3
+  },
+  {
+    "label": "LESS",
+    "group": "html",
+    "type": "preprocessor",
+    "level": 3
+  },
+  {
+    "label": "Bootstrap",
+    "group": "html",
+    "type": "framework",
+    "level": 2
+  },
+  {
+    "label": "Require JS",
+    "group": "javascript",
+    "type": "library",
+    "level": 2
+  },
+  {
+    "label": "Grunt JS",
+    "group": "javascript",
+    "type": "tools",
+    "level": 4
+  },
+  {
+    "label": "Bower",
+    "group": "javascript",
+    "type": "tools",
+    "level": 4
+  },
+  {
+    "label": "Node JS",
+    "group": "javascript",
+    "type": "tools",
     "level": 3
   },
   {
@@ -58,5 +148,125 @@
     "group": "javascript",
     "type": "framework",
     "level": 3
-  }
+  },
+  {
+    "label": "C",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+    "label": "C#",
+    "group": ".net",
+    "type": "language",
+    "level": 3
+  },  
+  {
+    "label": ".NET (1.1, 2.0, 3.5)",
+    "group": ".net",
+    "type": "framework",
+    "level": 3
+  },  
+  {
+    "label": "ASP",
+    "group": null,
+    "type": "language",
+    "level": 2
+  },  
+  {
+    "label": "PHP",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+    "label": "Visual Basic (VB6, VBA)",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+    "label": "SQL",
+    "group": "database",
+    "type": "language",
+    "level": 4
+  },  
+  {
+    "label": "PL/SQL",
+    "group": "database",
+    "type": "language",
+    "level": 3
+  },
+  {
+    "label": "Oracle",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+    "label": "PostgreSQL",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+    "label": "SQL Server",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+    "label": "MySQL",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+    "label": "HSQLDB",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+    "label": "Subversion",
+    "group": null,
+    "type": "tools",
+    "level": 4
+  },  
+  {
+    "label": "Git",
+    "group": null,
+    "type": "tools",
+    "level": 3
+  },  
+  {
+    "label": "Tomcat",
+    "group": null,
+    "type": "server",
+    "level": 3
+  },  
+  {
+    "label": "Jboss",
+    "group": null,
+    "type": "server",
+    "level": 2
+  },  
+  {
+    "label": "Websphere",
+    "group": null,
+    "type": "server",
+    "level": 2
+  },  
+  {
+    "label": "Talend",
+    "group": null,
+    "type": "etl",
+    "level": 2
+  },  
+  {
+    "label": "Pentaho",
+    "group": null,
+    "type": "etl",
+    "level": 2
+  }  
 ]

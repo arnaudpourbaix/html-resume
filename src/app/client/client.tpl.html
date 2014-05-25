@@ -1,0 +1,6 @@
+<div class="client">
+	<div data-ng-repeat="client in clients" class="brique">
+		<img data-ng-if="client.logo != null" src="assets/images/{{client.logo}}" title="{{client.label}}" />
+		<span data-ng-if="client.logo == null">{{client.label}}</span>
+	</div>
+</div>

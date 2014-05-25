@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 			livereload : {
 				options : {
 					middleware : function(connect) {
-						return [ proxySnippet, lrSnippet, mountFolder(connect, '../target/build') ];
+						return [ proxySnippet, lrSnippet, mountFolder(connect, 'target/build') ];
 					}
 				}
 			}

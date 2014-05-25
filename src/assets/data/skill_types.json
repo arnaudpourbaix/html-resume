@@ -12,7 +12,23 @@
     "label": "Librairie"
   },
   {
+    "id": "tools",
+    "label": "Outils"
+  },
+  {
+    "id": "preprocessor",
+    "label": "Pré-processeur"
+  },
+  {
+    "id": "database",
+    "label": "Base de données"
+  },
+  {
     "id": "server",
     "label": "Serveur d'application"
+  },
+  {
+    "id": "etl",
+    "label": "ETL"
   }
 ]

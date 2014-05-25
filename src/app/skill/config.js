@@ -12,6 +12,12 @@
 				skills : [ 'SkillService', function(SkillService) {
 					return SkillService.skills();
 				} ],
+				types: [ 'SkillService', function(SkillService) {
+					return SkillService.types();
+				} ],
+				groups : [ 'SkillService', function(SkillService) {
+					return SkillService.groups();
+				} ],
 				levels : [ 'SkillService', function(SkillService) {
 					return SkillService.levels();
 				} ]

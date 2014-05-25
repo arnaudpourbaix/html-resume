@@ -1,0 +1,97 @@
+[
+  {
+  	"id": "caisseEpargne",
+    "label": "Caisse d'Epargne",
+    "logo": "logoCaisseEpargne.png" 
+  },
+  {
+  	"id": "mondiale",
+    "label": "AG2R La Mondiale",
+    "logo": "logo2AG2RLaMondiale.png" 
+  },
+  {
+  	"id": "norauto",
+    "label": "Norauto",
+    "logo": "logo_NORAUTO.png" 
+  },
+  {
+  	"id": "bca",
+    "label": "B.C.A. - Boucq Cheval et Associés",
+    "logo": null 
+  },
+  {
+  	"id": "citenum",
+    "label": "Cité numérique",
+    "logo": "citenum.gif" 
+  },
+  {
+  	"id": "3suisses",
+    "label": "3 Suisses",
+    "logo": "3suisses.jpg" 
+  },
+  {
+  	"id": "3si",
+    "label": "Groupe 3SI",
+    "logo": "3si.gif" 
+  },
+  {
+  	"id": "benalu",
+    "label": "Benalu",
+    "logo": "benalu.png" 
+  },
+  {
+  	"id": "rsi",
+    "label": "Régime Social des Indépendants",
+    "logo": "rsi.jpg" 
+  },
+  {
+  	"id": "bethune",
+    "label": "Mairie de Béthune",
+    "logo": "bethune.jpg" 
+  },
+  {
+  	"id": "planete-oui",
+    "label": "Planète OUI",
+    "logo": "logo-planete-oui.png" 
+  },
+  {
+  	"id": "pndata",
+    "label": "PN data",
+    "logo": "pndata.jpg" 
+  },
+  {
+  	"id": "kiloutou",
+    "label": "Kiloutou",
+    "logo": "kiloutou.jpg" 
+  },
+  {
+  	"id": "auchan",
+    "label": "Auchan",
+    "logo": "auchan.jpg" 
+  },
+  {
+  	"id": "adeo",
+    "label": "Groupe Adeo",
+    "logo": "adeo.jpg" 
+  },
+  {
+  	"id": "phildar",
+    "label": "Phildar",
+    "logo": "phildar.jpg" 
+  },
+  {
+  	"id": "grain-de-malice",
+    "label": "Grain de Malice",
+    "logo": "graindemalice.jpg" 
+  },
+  {
+  	"id": "veronique-delachaux",
+    "label": "Véronique Delachaux",
+    "logo": "logo-vd.gif" 
+  },
+  {
+  	"id": "bprocess",
+    "label": "B-Process",
+    "logo": "bprocess.jpg" 
+  }
+]

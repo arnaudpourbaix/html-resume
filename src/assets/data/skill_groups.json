@@ -8,5 +8,20 @@
     "id": "javascript",
     "label": "Javascript",
     "keywords": "javascript,js"
+  },
+  {
+    "id": ".net",
+    "label": ".NET",
+    "keywords": ".net,c#,aspx"
+  },
+  {
+    "id": "html",
+    "label": "Html",
+    "keywords": "html,css"
+  },
+  {
+    "id": "database",
+    "label": "Base de données",
+    "keywords": "sql,database,oracle"
   }
 ]
