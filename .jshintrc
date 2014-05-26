@@ -16,7 +16,7 @@
 	"devel": true,
 	
 	"globals": {
-    	"jquery": true,
+    	"jQuery": true,
     	"$": true,
     	"angular": true,
     	"_": true
