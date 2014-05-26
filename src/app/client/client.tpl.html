@@ -7,6 +7,6 @@
 	 data-apx-isotope-layout-mode="masonry" data-apx-isotope-layout-gutter="20">
 	<div data-ng-repeat="client in clients" class="isotope-item">
 		<img data-ng-if="client.logo != null" src="assets/images/{{client.logo}}" title="{{client.label}}" alt="{{client.label}}" />
-		<span data-ng-if="client.logo == null">{{client.label}}</span>
+		<div class="thumbnail caption" data-ng-if="client.logo == null">{{client.label}}</div>
 	</div>
 </div>
