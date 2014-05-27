@@ -9,6 +9,9 @@
 			controller : 'ExperienceController',
 			templateUrl : 'experience/experience.tpl.html',
 			resolve : {
+				projects : [ 'ExperienceService', function(ExperienceService) {
+					return ExperienceService.projects();
+				} ]
 			},
 			onEnter: function($stateParams) {
 			}
