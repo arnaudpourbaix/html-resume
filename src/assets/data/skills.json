@@ -238,6 +238,13 @@
     "level": 3
   },
   {
+  	"id": "tsql",
+    "label": "Transact-SQL",
+    "group": "database",
+    "type": "language",
+    "level": 3
+  },
+  {
   	"id": "oracle",
     "label": "Oracle",
     "group": "database",

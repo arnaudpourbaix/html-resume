@@ -108,8 +108,8 @@
     "role": "Intégrateur web",
     "location": "Régie",
     "contact": [
-    	/*"name": "Jacques",
-    	"role": "Chef de projet"*/
+    	"name": "Jacques Terrier",
+    	"role": "Responsable client"
     ]
     "goal": "Montage du site 3 Suisses Belgique",
     "functions": [
@@ -125,8 +125,8 @@
     "role": "Développeur ASP",
     "location": "Régie",
     "contact": [
-    	/*"name": "Jacques",
-    	"role": "Chef de projet"*/
+    	"name": "Jacques Terrier",
+    	"role": "Responsable client"
     ]
     "goal": "Evolution sur l'intranet de la société",
     "functions": [
@@ -172,7 +172,7 @@
   },
   {
     "start": "2007-03",
-    "end": "2008-03",
+    "end": "2008-01",
     "client": "rsi",
     "compagny": "elosi",
     "role": "Gestion de configuration, développeur VBA",
@@ -191,8 +191,8 @@
     "skills": [ "dimensions", "vb", "talend", "access", "excel" ] 
   },
   {
-    "start": "2008-04",
-    "end": "2008-06",
+    "start": "2008-02",
+    "end": "2008-04",
     "client": "planete-oui",
     "compagny": "elosi",
     "role": "Gestion d'une TMA, développeur PHP",
@@ -211,11 +211,11 @@
     "skills": [ "php", "mysql", "sql" ] 
   },
   {
-    "start": "2008-07",
-    "end": "2008-07",
+    "start": "2008-05",
+    "end": "2008-05",
     "client": "norauto",
     "compagny": "elosi",
-    "role": "Développeur VBA",
+    "role": "Développeur ACCESS/VBA",
     "location": "Forfait",
     "contact": [
     	"name": "Nicolas Herbaut",
@@ -229,8 +229,8 @@
     "skills": [ "vb", "access" ] 
   },
   {
-    "start": "2008-08",
-    "end": "2008-09",
+    "start": "2008-06",
+    "end": "2008-07",
     "client": "norauto",
     "compagny": "elosi",
     "role": "Développeur NSDK",
@@ -250,16 +250,17 @@
     "end": "2008-10",
     "client": "norauto",
     "compagny": "elosi",
-    "role": "Développeur JEE",
+    "role": "Lead Developper JEE",
     "location": "Forfait",
     "contact": [
     	"name": "Laurent Blondel",
     	"role": "Chef de projet"
     ]
-    "goal": "Réalisation du projet IntraPEP. Etude de l’existant (.NET), ré-écriture en Java, encadrement technique d’une équipe de 3 personnes",
+    "goal": "Refonte et internationalisation d'une application web",
     "functions": [
+    	"Etude de l'existant (.NET)",
     	"Réalisation des développements",
-    	"Mise en production sur site"
+    	"Encadrement technique de deux développeurs"
     ],
     "skills": [ "jee", "java", "jsf", "tomcat", "hibernate" ] 
   }
@@ -274,10 +275,9 @@
     	"name": "Nicolas Herbaut",
     	"role": "Chef de projet"
     ]
-    "goal": "Réalisation d’un intranet de configuration d’un webservice (.NET, C#)",
+    "goal": "Création d'une application web de paramétrage d'un webservice",
     "functions": [
-    	"Réalisation des développements",
-    	"Mise en production sur site"
+    	"Réalisation des développements"
     ],
     "skills": [ ".net", "c#", "sqlserver" ] 
   }
@@ -292,12 +292,12 @@
     	"name": "Laurent Blondel",
     	"role": "Chef de projet"
     ]
-    "goal": "Evolutions sur  une application de suivi d’entretien annuel d’évaluation",
+    "goal": "Evolutions sur une application de suivi des entretiens annuels d’évaluation",
     "functions": [
-    	"",
-    	""
+    	"Réalisation des développements",
+    	"Mise à jour des flux liés à la base de données"
     ],
-    "skills": [ ".net", "c#", "sqlserver" ] 
+    "skills": [ ".net", "c#", "sqlserver", "tsql" ] 
   },
   {
     "start": "2009-04",
@@ -308,14 +308,18 @@
     "location": "Régie",
     "contact": [
     	"name": "Eric Blondeau",
-    	"role": "Responsable du pôle client"
+    	"role": "Responsable du domaine client"
     ]
-    "goal": "",
+    "goal": "Extension des fonctionnalités liées à la carte fidélité (WINSHOP)",
     "functions": [
-    	"",
-    	""
+    	"Recueil du besoin avec les responsables clients de 3 pays (pratique de l’anglais)",
+    	"Rédaction des spécifications fonctionnelles",
+    	"Réalisation d’un intranet sur la carte fidélité",
+    	"Réalisation d’un outil de reporting",
+    	"Automatisation des envois de report",
+    	"Mise en production"
     ],
-    "skills": [ ".net", "c#", "sqlserver" ] 
+    "skills": [ ".net", "c#", "sqlserver", "tsql" ] 
   },
   {
     "start": "2009-12",
@@ -328,30 +332,71 @@
     	"name": "Denis Lancial",
     	"role": "Chef de projet"
     ]
-    "goal": "",
+    "goal": "Création d’une application web de gestion de don",
     "functions": [
-    	"",
-    	""
+    	"Réalisation des développements",
+    	"Encadrement technique d'une équipe de trois personnes",
+    	"Formation technique de l'équipe en charge de la reprise du projet"
     ],
     "skills": [ "jee", "mysql", "jsf", "jboss", "hibernate", "seam" ] 
   },
   {
     "start": "2010-01",
+    "end": "2010-01",
+    "client": "kiloutou",
+    "compagny": "elosi",
+    "role": "Développeur DELPHI/JAVA",
+    "location": "Régie",
+    "contact": [
+    	"name": "Arnaud Maton",
+    	"role": "Responsable des Etudes Front Office"
+    ]
+    "goal": "Réalisation d’un POC d’intégration d’un webservice dans Kilpro (application de gestion de location)",
+    "functions": [
+    	"Réalisation d'un webservice en java",
+    	"Intégration de webservice dans la DLL de l'application (Delphi)",
+    	"Ajout de la fonctionnalité dans l'application (écran/script)"
+    ],
+    "skills": [ "delphi", "java", "tomcat" ] 
+  },
+  {
+    "start": "2010-02",
+    "end": "2010-05",
+    "client": "kiloutou",
+    "compagny": "elosi",
+    "role": "Développeur DELPHI/PLSQL",
+    "location": "Régie",
+    "contact": [
+    	"name": "Maxence Pontiac",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Centralisation de la facturation par un prestataire",
+    "functions": [
+    	"Réalisation d'une interface de suivi (Ecran/scripts)",
+    	"Création des flux d'entrée/sortie (PL/SQL)",
+    	"Intégration d'un webservice dans la DLL"
+    ],
+    "skills": [ "delphi", "plsql" ] 
+  },
+  {
+    "start": "2010-06",
     "end": "2010-08",
     "client": "kiloutou",
     "compagny": "elosi",
-    "role": "Développeur DELPHI/JAVA/PLSQL",
+    "role": "Développeur DELPHI/PLSQL",
     "location": "Régie",
     "contact": [
-    	"name": "Arnaud MATON",
-    	"role": "Responsable des Etudes Front Office"
+    	"name": "Maxence Pontiac",
+    	"role": "Chef de projet"
     ]
-    "goal": "",
+    "goal": "Intégration d'un système de suivi par GPS des véhicules de livraison",
     "functions": [
-    	"",
-    	""
+    	"Refactoring du code du module logistique",
+    	"Refonte de l'interface pour intégrer le suivi des tournées",
+    	"Intégration d'un webservice dans la DLL",
+    	"Mise à jour des flux liés à la logistique (PL/SQL)"
     ],
-    "skills": [ "delphi", "java", "plsql" ] 
+    "skills": [ "delphi", "plsql" ] 
   }
   
 ]
