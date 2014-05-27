@@ -4,7 +4,7 @@
     "end": "2000-08",
     "client": "mondiale",
     "compagny": "norsys",
-    "role": "Analyste-programmeur",
+    "role": "Développeur PL/SQL",
     "location": "Forfait",
     "contact": [
     	"name": "Laurent Descamps",
@@ -22,7 +22,7 @@
     "end": "2000-12",
     "client": "caisseEpargne",
     "compagny": "norsys",
-    "role": "Analyste-programmeur",
+    "role": "Développeur NSDK",
     "location": "Régie",
     "contact": [
     	"name": "Thierry Pavot",
@@ -40,7 +40,7 @@
     "end": "2001-12",
     "client": "norauto",
     "compagny": "unis",
-    "role": "Analyste-programmeur",
+    "role": "Développeur PL/SQL",
     "location": "Régie",
     "contact": [
     	"name": "Sébastien Bernard",
@@ -58,7 +58,7 @@
     "end": "2002-04",
     "client": "bca",
     "compagny": "unis",
-    "role": "Analyste-programmeur",
+    "role": "Développeur VB6 PL/SQL",
     "location": "Régie",
     "contact": [
     	"name": "Nicolas Beunèche",
@@ -75,8 +75,8 @@
     "end": "2002-12",
     "client": null,
     "compagny": "unis",
-    "profession": "Analyste-programmeur",
-    "location": "Régie",
+    "role": "Analyste-programmeur",
+    "location": "Agence",
     "goal": "Travaux divers pendant un inter-contrat",
     "functions": [
     	"Réalisation d’une application de gestion de bibliothèque (VB6)",
@@ -90,7 +90,7 @@
     "end": "2006-08",
     "client": null,
     "compagny": "aidmicro",
-    "profession": "Co-gérant",
+    "role": "Co-gérant",
     "location": null,
     "goal": "Création et gestion d’une société de dépannage en informatique pour les particuliers et les PME",
     "functions": [
@@ -105,11 +105,11 @@
     "end": "2006-09",
     "client": "3suisses",
     "compagny": [ "citenum", "elosi" ],
-    "role": "Développeur et intégrateur Web",
+    "role": "Intégrateur web",
     "location": "Régie",
     "contact": [
-    	"name": "Jacques",
-    	"role": "Chef de projet"
+    	/*"name": "Jacques",
+    	"role": "Chef de projet"*/
     ]
     "goal": "Montage du site 3 Suisses Belgique",
     "functions": [
@@ -122,11 +122,11 @@
     "end": "2006-10",
     "client": "3si",
     "compagny": [ "citenum", "elosi" ],
-    "role": "Développeur Web",
+    "role": "Développeur ASP",
     "location": "Régie",
     "contact": [
-    	"name": "Jacques",
-    	"role": "Chef de projet"
+    	/*"name": "Jacques",
+    	"role": "Chef de projet"*/
     ]
     "goal": "Evolution sur l'intranet de la société",
     "functions": [
@@ -139,7 +139,7 @@
     "end": "2006-12",
     "client": "benalu",
     "compagny": "elosi",
-    "role": "Développeur Web",
+    "role": "Développeur PHP",
     "location": "Forfait",
     "contact": [
     	"name": "Aurélien Luchart",
@@ -150,5 +150,208 @@
     	"Réalisation de plusieurs évolutions sur une application de gestion de devis"
     ],
     "skills": [ "php", "mysql", "sql" ] 
+  },
+  {
+    "start": "2006-12",
+    "end": "2007-02",
+    "client": "bethune",
+    "compagny": "elosi",
+    "role": "Développeur PHP et coach technique",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Denis Lancial",
+    	"role": "Directeur de projet"
+    ]
+    "goal": "Evolutions sur une application de gestion de devis",
+    "functions": [
+    	"Encadrement technique d'un développeur",
+    	"Réalisation d'un intranet de gestion des congés",
+    	"Recueil du besoin et réalisation d'une évolution pour la gestion du temps de travail"
+    ],
+    "skills": [ "php", "mysql", "sql" ] 
+  },
+  {
+    "start": "2007-03",
+    "end": "2008-03",
+    "client": "rsi",
+    "compagny": "elosi",
+    "role": "Gestion de configuration, développeur VBA",
+    "location": "Régie",
+    "contact": [
+    	"name": "Guillaume Luchart",
+    	"role": "Commercial"
+    ]
+    "goal": "Gestion de configuration et travaux annexes",
+    "functions": [
+    	"Contrôle et intégration des livraisons dans Dimensions",
+    	"Réalisation transverse d'un outil de contrôle et de suivi des livraisons sur Access",
+    	"Réalisation d'un outil de suivi de projet sur Excel",
+    	"Réalisation de flux Talend pour synchroniser 2 bases de données"
+    ],
+    "skills": [ "dimensions", "vb", "talend", "access", "excel" ] 
+  },
+  {
+    "start": "2008-04",
+    "end": "2008-06",
+    "client": "planete-oui",
+    "compagny": "elosi",
+    "role": "Gestion d'une TMA, développeur PHP",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Philippe Couché",
+    	"role": "Associé fondateur"
+    ]
+    "goal": "Gestion d’une TMA sur une application de facturation et ré-écriture complète du module de facturation",
+    "functions": [
+    	"Recueil du besoin auprès du client et rédaction du cahier des charges",
+    	"Réalisation de la majeure partie des développements",
+    	"Encadrement technique et fonctionnel d’un développeur",
+    	"Mise en production"
+    ],
+    "skills": [ "php", "mysql", "sql" ] 
+  },
+  {
+    "start": "2008-07",
+    "end": "2008-07",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur VBA",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Nicolas Herbaut",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Conception d'un moteur de tarification pour les flottes de véhicules",
+    "functions": [
+    	"Réalisation des développements",
+    	"Mise en production sur site"
+    ],
+    "skills": [ "vb", "access" ] 
+  },
+  {
+    "start": "2008-08",
+    "end": "2008-09",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur NSDK",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Laurent Blondel",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Réalisation d'une évolution sur une application de suivi du bon de travail en atelier (Palmtop)",
+    "functions": [
+    	"Réalisation des développements"
+    ],
+    "skills": [ "nsdk", "oracle", "sql" ] 
   }
+  {
+    "start": "2008-08",
+    "end": "2008-10",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur JEE",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Laurent Blondel",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Réalisation du projet IntraPEP. Etude de l’existant (.NET), ré-écriture en Java, encadrement technique d’une équipe de 3 personnes",
+    "functions": [
+    	"Réalisation des développements",
+    	"Mise en production sur site"
+    ],
+    "skills": [ "jee", "java", "jsf", "tomcat", "hibernate" ] 
+  }
+  {
+    "start": "2008-11",
+    "end": "2008-12",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur .NET",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Nicolas Herbaut",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Réalisation d’un intranet de configuration d’un webservice (.NET, C#)",
+    "functions": [
+    	"Réalisation des développements",
+    	"Mise en production sur site"
+    ],
+    "skills": [ ".net", "c#", "sqlserver" ] 
+  }
+  {
+    "start": "2009-01",
+    "end": "2009-03",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur .NET",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Laurent Blondel",
+    	"role": "Chef de projet"
+    ]
+    "goal": "Evolutions sur  une application de suivi d’entretien annuel d’évaluation",
+    "functions": [
+    	"",
+    	""
+    ],
+    "skills": [ ".net", "c#", "sqlserver" ] 
+  },
+  {
+    "start": "2009-04",
+    "end": "2009-09",
+    "client": "norauto",
+    "compagny": "elosi",
+    "role": "Développeur .NET",
+    "location": "Régie",
+    "contact": [
+    	"name": "Eric Blondeau",
+    	"role": "Responsable du pôle client"
+    ]
+    "goal": "",
+    "functions": [
+    	"",
+    	""
+    ],
+    "skills": [ ".net", "c#", "sqlserver" ] 
+  },
+  {
+    "start": "2009-12",
+    "end": "2009-10",
+    "client": "pndata",
+    "compagny": "elosi",
+    "role": "Lead developer JEE",
+    "location": "Forfait",
+    "contact": [
+    	"name": "Denis Lancial",
+    	"role": "Chef de projet"
+    ]
+    "goal": "",
+    "functions": [
+    	"",
+    	""
+    ],
+    "skills": [ "jee", "mysql", "jsf", "jboss", "hibernate", "seam" ] 
+  },
+  {
+    "start": "2010-01",
+    "end": "2010-08",
+    "client": "kiloutou",
+    "compagny": "elosi",
+    "role": "Développeur DELPHI/JAVA/PLSQL",
+    "location": "Régie",
+    "contact": [
+    	"name": "Arnaud MATON",
+    	"role": "Responsable des Etudes Front Office"
+    ]
+    "goal": "",
+    "functions": [
+    	"",
+    	""
+    ],
+    "skills": [ "delphi", "java", "plsql" ] 
+  }
+  
 ]
