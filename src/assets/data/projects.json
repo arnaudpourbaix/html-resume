@@ -627,7 +627,9 @@
     "functions": [
       "Analyse de l'existant",
       "Réalisation des développements",
-      "Réalisation des flux de données"
+      "Réalisation des flux de données avec un ETL",
+      "Echanges avec l’équipe en charge du framework pour remonter les problèmes et améliorer le framework",
+      "Utilisation partielle de la méthodologie Scrum avec les sprints"
     ],
     "skills": [
       "jee",
@@ -635,7 +637,8 @@
       "ibatis",
       "postgre",
       "tomcat",
-      "pentaho"
+      "pentaho",
+      "scrum"
     ]
   },
   {
@@ -646,7 +649,7 @@
       "pictime",
       "astek"
     ],
-    "role": "Développeur JEE",
+    "role": "Lead Développeur JEE",
     "location": "Régie",
     "contact": {
       "name": "Jean-Luc Tronel",
@@ -657,7 +660,8 @@
       "Analyse de l'existant",
       "Réalisation des développements",
       "Réalisation des flux de données avec un ETL",
-      "Echanges avec l’équipe en charge du framework pour remonter les problèmes et améliorer le framework"
+      "Encadrement de deux stagiaires",
+      "Utilisation partielle de la méthodologie Scrum avec les sprints"
     ],
     "skills": [
       "jee",
@@ -665,7 +669,143 @@
       "ibatis",
       "postgre",
       "tomcat",
-      "pentaho"
+      "pentaho",
+      "scrum"
+    ]
+  },
+  {
+    "start": "2012-09",
+    "end": "2012-11",
+    "client": "auchan",
+    "compagny": [
+      "proxiad",
+      "astek"
+    ],
+    "role": "Développeur JEE",
+    "location": "Forfait",
+    "contact": {
+      "name": "Vincent Curti",
+      "role": "Chef de projet"
+    },
+    "goal": "MOSAIC Engagement",
+    "functions": [
+      "Corrections et évolutions de l’application"
+    ],
+    "skills": [
+      "jee",
+      "spring",
+      "struts",
+      "hibernate",
+      "tomcat",
+      "oracle"
+    ]
+  },
+  {
+    "start": "2011-12",
+    "end": "2012-02",
+    "client": "adeo",
+    "compagny": [
+      "proxiad",
+      "astek"
+    ],
+    "role": "Développeur JEE",
+    "location": "Forfait",
+    "contact": {
+      "name": "Adrien Kantorski",
+      "role": "Chef de projet"
+    },
+    "goal": "Création des applications Golden-record et Data-history",
+    "functions": [
+      "Mise en place de la configuration Spring-MVC",
+      "Réalisation complète de la partie front (contrôlleurs et vues)",
+      "Réalisation partielle des webservices"
+    ],
+    "skills": [
+      "jee",
+      "spring",
+      "liquibase",
+      "hibernate",
+      "tomcat",
+      "oracle",
+      "postgre"
+    ]
+  },
+  {
+    "start": "2012-03",
+    "end": "2013-03",
+    "client": "auchan",
+    "compagny": "proxiad",
+    "role": "Lead développeur JEE",
+    "location": "Forfait",
+    "contact": {
+      "name": "Vincent Curti",
+      "role": "Chef de projet"
+    },
+    "goal": "Release bimestriel de forfaits sur MOSAIC Engagement",
+    "functions": [
+      "Amélioration de la qualité de code (Java, Javascript)",
+      "Mise en place de modules autonomes en javascript pour faciliter l’utilisation des modales et la saisie des critères de recherche récurrents",
+      "Extension du framework Auchan pour simplifier l'utilisation du composant dhtmlx et ajouter des fonctionnalités récurrentes dans les contrôleurs",
+      "Réalisation d’une documentation relative à ces améliorations",
+      "Chiffrage et conception technique des évolutions",
+      "Réalisation des évolutions de l’application"
+    ],
+    "skills": [
+      "jee",
+      "spring",
+      "struts",
+      "hibernate",
+      "tomcat",
+      "oracle"
+    ]
+  },
+  {
+    "start": "2012-03",
+    "end": null,
+    "compagny": "proxiad",
+    "role": "Référent technique JEE/Javascript",
+    "location": "Agence",
+    "functions": [
+      "Animation d'ateliers techniques (java, javascript, angular, html 5, css 3)",
+      "Amélioration du provisionneur Auchan"
+    ],
+    "skills": [
+      "jee",
+      "spring",
+      "hibernate",
+      "tomcat",
+      "javascript",
+      "angular",
+      "css",
+      "html"
+    ]
+  },
+  {
+    "start": "2013-04",
+    "end": null,
+    "client": "auchan",
+    "compagny": "proxiad",
+    "role": "Lead développeur JEE",
+    "location": "Régie",
+    "contact": {
+      "name": "Claire Messager",
+      "role": "Chef de projet"
+    },
+    "goal": "Refonte de l'application de visualisation du chiffre d'affaire (Pilotage Auchan France)",
+    "functions": [
+      "Définition de l'architecture front",
+      "Réalisation des développements",
+      "Encadrement technique d'un intégrateur sur Angular"
+    ],
+    "skills": [
+      "jee",
+      "spring",
+      "teradata",
+      "tomcat",
+      "angular",
+      "html",
+      "css",
+      "scrum"
     ]
   }
 ]

@@ -280,6 +280,13 @@
     "level": 3
   },  
   {
+  	"id": "teradata",
+    "label": "Teradata",
+    "group": "database",
+    "type": "database",
+    "level": 1
+  },  
+  {
   	"id": "svn",
     "label": "Subversion",
     "group": null,
@@ -348,5 +355,13 @@
     "group": null,
     "type": "tools",
     "level": 3
-  }  
+  },
+  {
+  	"id": "scrum",
+    "label": "Scrum",
+    "group": "agility",
+    "type": "method",
+    "level": 1
+  }
+ 
 ]

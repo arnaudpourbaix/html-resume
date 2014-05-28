@@ -1,5 +1,9 @@
 <div class="experiences">
-	<div data-ng-repeat="project in projects">
-		{{project.client}} - {{project.goal}}
+	<div data-ng-repeat="project in projects" class="row">
+		<div class="col-md-6">
+			<img data-ng-if="project.client && project.client.logo != null" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
+			<div class="thumbnail caption" data-ng-if="project.client && project.client.logo == null">{{project.client.label}}</div>
+		</div>
+		<div class="col-md-6">{{project.goal}}</div>
 	</div>
 </div>

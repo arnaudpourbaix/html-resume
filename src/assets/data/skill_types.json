@@ -28,6 +28,10 @@
     "label": "Serveur d'application"
   },
   {
+    "id": "method",
+    "label": "Méthode"
+  },
+  {
     "id": "etl",
     "label": "ETL"
   }

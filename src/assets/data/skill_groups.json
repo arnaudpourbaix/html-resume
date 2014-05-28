@@ -23,5 +23,10 @@
     "id": "database",
     "label": "Base de données",
     "keywords": "sql,database,oracle"
+  },
+  {
+    "id": "agility",
+    "label": "Agilité",
+    "keywords": "agilité,scrum,agile"
   }
 ]
