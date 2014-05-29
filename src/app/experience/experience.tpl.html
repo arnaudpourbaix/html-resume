@@ -1,9 +1,11 @@
 <div class="experiences">
 	<div data-ng-repeat="project in projects" class="row">
-		<div class="col-md-6">
-			<img data-ng-if="project.client && project.client.logo != null" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
+			{{project.start}} - {{project.end}}
+			<img class="thumbnail" data-ng-if="project.client && project.client.logo != null" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
 			<div class="thumbnail caption" data-ng-if="project.client && project.client.logo == null">{{project.client.label}}</div>
 		</div>
-		<div class="col-md-6">{{project.goal}}</div>
+		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1"></div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">{{project.goal}}</div>
 	</div>
 </div>

@@ -21,23 +21,22 @@
 		}
 
 		function getProjects() {
-			if (projectsPromise) {
-				return projectsPromise;
-			}
-			projectsPromise = $http({
+			return $http({
 				method : 'GET',
 				url : 'assets/data/projects.json'
 			}).then(function(response) {
-				//return buildProjects(response.data);
 				return response.data;
 			});
-			return projectsPromise;
 		}
 	
 		service.projects = function() {
-			return $q.all([ getProjects(), ClientService.clients() ]).then(function(result) {
+			if (projectsPromise) {
+				return projectsPromise;
+			}
+			projectsPromise = $q.all([ getProjects(), ClientService.clients() ]).then(function(result) {
 				return buildProjects(result[0], result[1]);
 			});
+			return projectsPromise;
 		};
 		
 		return service;
