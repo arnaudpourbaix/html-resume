@@ -1,11 +1,24 @@
 <div class="experiences">
-	<div data-ng-repeat="project in projects" class="row">
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">
-			{{project.start}} - {{project.end}}
-			<img class="thumbnail" data-ng-if="project.client && project.client.logo != null" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
-			<div class="thumbnail caption" data-ng-if="project.client && project.client.logo == null">{{project.client.label}}</div>
+	<div data-ng-repeat="project in projects" class="row table-bordered v-center">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+			<div data-ng-if="project.client">
+				<img data-ng-if="project.client.logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
+				<div data-ng-if="!project.client.logo" class="text-center vertical-center">{{project.client.label}}</div>
+			</div>
+			<div data-ng-if="!project.client">
+				<img data-ng-if="project.company.logo" src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+				<div data-ng-if="!project.company.logo" class="text-center vertical-center">{{project.company.label}}</div>
+			</div>
 		</div>
-		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1"></div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-2">{{project.goal}}</div>
+		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-2">
+			<div class="dates text-center">
+				{{project.start | date : 'MM/yyyy'}}
+				<span data-ng-if="project.end != null && project.start != project.end">au {{project.end | date : 'MM/yyyy'}}</span>
+				<span data-ng-if="project.end == null">à aujourd'hui</span>
+				<div class="">{{project.length}} mois</div>
+			</div>
+		</div>
+		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-2">{{project.role}}</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">{{project.goal}}</div>
 	</div>
 </div>

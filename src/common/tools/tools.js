@@ -1,24 +1,24 @@
 (function(window) {
 	'use strict';
 
-	var module = angular.module('toolbox', [ 'toolbox.directives', 'toolbox.services', 'toolbox.filters' ]);
+	var module = angular.module('apx-tools', [ 'apx-tools.directives', 'apx-tools.services', 'apx-tools.filters' ]);
 
 	/**
 	 * @ngdoc directive
-	 * @name ngScopeElement
-	 * @module toolbox
+	 * @name apxScopeElement
+	 * @module apx-toolbox
 	 * @directive
 	 * 
 	 * @description Assign a DOM element to a scope.
 	 * 
 	 */
-	module.directive("ngScopeElement", function() {
+	module.directive("apxScopeElement", function() {
 		return {
 			restrict : "A",
 			compile : function compile() {
 				return {
 					pre : function preLink(scope, iElement, iAttrs, controller) {
-						scope[iAttrs.ngScopeElement] = iElement;
+						scope[iAttrs.apxScopeElement] = iElement;
 					}
 				};
 			}

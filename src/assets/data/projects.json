@@ -3,7 +3,7 @@
     "start": "2000-01",
     "end": "2000-08",
     "client": "mondiale",
-    "compagny": "norsys",
+    "company": "norsys",
     "role": "Développeur PL/SQL",
     "location": "Forfait",
     "contact": {
@@ -26,7 +26,7 @@
     "start": "2000-09",
     "end": "2000-12",
     "client": "caisseEpargne",
-    "compagny": "norsys",
+    "company": "norsys",
     "role": "Développeur NSDK",
     "location": "Régie",
     "contact": {
@@ -47,7 +47,7 @@
     "start": "2001-01",
     "end": "2001-12",
     "client": "norauto",
-    "compagny": "unis",
+    "company": "unis",
     "role": "Développeur PL/SQL",
     "location": "Régie",
     "contact": {
@@ -69,7 +69,7 @@
     "start": "2002-01",
     "end": "2002-04",
     "client": "bca",
-    "compagny": "unis",
+    "company": "unis",
     "role": "Développeur VB6 PL/SQL",
     "location": "Régie",
     "contact": {
@@ -91,7 +91,7 @@
     "start": "2002-05",
     "end": "2002-12",
     "client": null,
-    "compagny": "unis",
+    "company": "unis",
     "role": "Analyste-programmeur",
     "location": "Agence",
     "goal": "Travaux divers pendant un inter-contrat",
@@ -111,7 +111,7 @@
     "start": "2003-01",
     "end": "2006-08",
     "client": null,
-    "compagny": "aidmicro",
+    "company": "aidmicro",
     "role": "Co-gérant",
     "location": null,
     "goal": "Création et gestion d’une société de dépannage en informatique pour les particuliers et les PME",
@@ -126,7 +126,7 @@
     "start": "2006-09",
     "end": "2006-09",
     "client": "3suisses",
-    "compagny": [
+    "company": [
       "citenum",
       "elosi"
     ],
@@ -150,7 +150,7 @@
     "start": "2006-10",
     "end": "2006-10",
     "client": "3si",
-    "compagny": [
+    "company": [
       "citenum",
       "elosi"
     ],
@@ -174,7 +174,7 @@
     "start": "2006-11",
     "end": "2006-12",
     "client": "benalu",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur PHP",
     "location": "Forfait",
     "contact": {
@@ -195,7 +195,7 @@
     "start": "2006-12",
     "end": "2007-02",
     "client": "bethune",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur PHP et coach technique",
     "location": "Forfait",
     "contact": {
@@ -218,7 +218,7 @@
     "start": "2007-03",
     "end": "2008-01",
     "client": "rsi",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Gestion de configuration, développeur VBA",
     "location": "Régie",
     "contact": {
@@ -244,7 +244,7 @@
     "start": "2008-02",
     "end": "2008-04",
     "client": "planete-oui",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Gestion d'une TMA, développeur PHP",
     "location": "Forfait",
     "contact": {
@@ -268,7 +268,7 @@
     "start": "2008-05",
     "end": "2008-05",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur ACCESS/VBA",
     "location": "Forfait",
     "contact": {
@@ -289,7 +289,7 @@
     "start": "2008-06",
     "end": "2008-07",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur NSDK",
     "location": "Forfait",
     "contact": {
@@ -310,7 +310,7 @@
     "start": "2008-08",
     "end": "2008-10",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Lead développeur JEE",
     "location": "Forfait",
     "contact": {
@@ -335,7 +335,7 @@
     "start": "2008-11",
     "end": "2008-12",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur .NET",
     "location": "Forfait",
     "contact": {
@@ -356,7 +356,7 @@
     "start": "2009-01",
     "end": "2009-03",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur .NET",
     "location": "Forfait",
     "contact": {
@@ -379,7 +379,7 @@
     "start": "2009-04",
     "end": "2009-09",
     "client": "norauto",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur .NET",
     "location": "Régie",
     "contact": {
@@ -403,10 +403,10 @@
     ]
   },
   {
-    "start": "2009-12",
-    "end": "2009-10",
+    "start": "2009-10",
+    "end": "2009-12",
     "client": "pndata",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Lead développeur JEE",
     "location": "Forfait",
     "contact": {
@@ -432,7 +432,7 @@
     "start": "2010-01",
     "end": "2010-01",
     "client": "kiloutou",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur DELPHI/JAVA",
     "location": "Régie",
     "contact": {
@@ -455,7 +455,7 @@
     "start": "2010-02",
     "end": "2010-05",
     "client": "kiloutou",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur DELPHI/PLSQL",
     "location": "Régie",
     "contact": {
@@ -477,7 +477,7 @@
     "start": "2010-06",
     "end": "2010-08",
     "client": "kiloutou",
-    "compagny": "elosi",
+    "company": "elosi",
     "role": "Développeur DELPHI/PLSQL",
     "location": "Régie",
     "contact": {
@@ -500,7 +500,7 @@
     "start": "2010-09",
     "end": "2011-05",
     "client": "auchan",
-    "compagny": [
+    "company": [
       "proxiad",
       "astek"
     ],
@@ -530,7 +530,7 @@
     "start": "2011-06",
     "end": "2011-08",
     "client": "auchan",
-    "compagny": [
+    "company": [
       "proxiad",
       "astek"
     ],
@@ -560,7 +560,7 @@
     "start": "2011-09",
     "end": "2011-10",
     "client": "bprocess",
-    "compagny": [
+    "company": [
       "proxiad",
       "astek"
     ],
@@ -587,7 +587,7 @@
     "start": "2011-11",
     "end": "2012-01",
     "client": "veronique-delachaux",
-    "compagny": [
+    "company": [
       "pictime",
       "astek"
     ],
@@ -613,7 +613,7 @@
     "start": "2012-01",
     "end": "2012-06",
     "client": "phildar",
-    "compagny": [
+    "company": [
       "pictime",
       "astek"
     ],
@@ -645,7 +645,7 @@
     "start": "2012-07",
     "end": "2012-09",
     "client": "grain-de-malice",
-    "compagny": [
+    "company": [
       "pictime",
       "astek"
     ],
@@ -677,7 +677,7 @@
     "start": "2012-09",
     "end": "2012-11",
     "client": "auchan",
-    "compagny": [
+    "company": [
       "proxiad",
       "astek"
     ],
@@ -704,7 +704,7 @@
     "start": "2011-12",
     "end": "2012-02",
     "client": "adeo",
-    "compagny": [
+    "company": [
       "proxiad",
       "astek"
     ],
@@ -734,7 +734,7 @@
     "start": "2012-03",
     "end": "2013-03",
     "client": "auchan",
-    "compagny": "proxiad",
+    "company": "proxiad",
     "role": "Lead développeur JEE",
     "location": "Forfait",
     "contact": {
@@ -760,9 +760,9 @@
     ]
   },
   {
-    "start": "2012-03",
+    "start": "2013-01",
     "end": null,
-    "compagny": "proxiad",
+    "company": "proxiad",
     "role": "Référent technique JEE/Javascript",
     "location": "Agence",
     "functions": [
@@ -784,7 +784,7 @@
     "start": "2013-04",
     "end": null,
     "client": "auchan",
-    "compagny": "proxiad",
+    "company": "proxiad",
     "role": "Lead développeur JEE",
     "location": "Régie",
     "contact": {

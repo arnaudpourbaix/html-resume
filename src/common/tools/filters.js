@@ -1,7 +1,7 @@
 (function(window) {
 	'use strict';
 
-	var module = angular.module('toolbox.filters', []);
+	var module = angular.module('apx-tools.filters', []);
 
 	module.filter('range', function RangeFilter() {
 		return function(input, total) {

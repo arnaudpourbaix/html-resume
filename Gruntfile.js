@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 		connect : {
 			options : {
 				base : 'build',
-				port : 9000,
+				port : 9010,
 				hostname : '0.0.0.0' // Change this to '0.0.0.0' to access the server from outside.
 			},
 			livereload : {
@@ -333,7 +333,7 @@ module.exports = function(grunt) {
 			 * on port 35729, which your browser plugin should auto-detect.
 			 */
 			options : {
-				livereload : true
+				livereload : true,
 			},
 
 			/**
