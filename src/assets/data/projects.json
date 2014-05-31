@@ -701,8 +701,8 @@
     ]
   },
   {
-    "start": "2011-12",
-    "end": "2012-02",
+    "start": "2012-12",
+    "end": "2013-02",
     "client": "adeo",
     "company": [
       "proxiad",
@@ -731,8 +731,8 @@
     ]
   },
   {
-    "start": "2012-03",
-    "end": "2013-03",
+    "start": "2013-03",
+    "end": "2014-03",
     "client": "auchan",
     "company": "proxiad",
     "role": "Lead développeur JEE",
@@ -781,7 +781,7 @@
     ]
   },
   {
-    "start": "2013-04",
+    "start": "2014-04",
     "end": null,
     "client": "auchan",
     "company": "proxiad",

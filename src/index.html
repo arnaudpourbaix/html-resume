@@ -13,14 +13,27 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap-theme.min.css" />
       
-      <!-- compiled CSS -->
-      <% styles.forEach(function(file) { %>
-      <link rel="stylesheet" type="text/css" href="<%= file %>" />
-      <% }); %>
-      <!-- Javascripts -->
-      <% scripts.forEach(function(file) { %>
-      <script type="text/javascript" src="<%= file %>"></script>
-      <% }); %>
+		<!-- compiled CSS -->
+		<% styles.forEach(function(file) { %>
+		<link rel="stylesheet" type="text/css" href="<%= file %>" />
+		<% }); %>
+		<!-- Javascripts -->
+		<% scripts.forEach(function(file) { %>
+		<script type="text/javascript" src="<%= file %>"></script>
+		<% }); %>
+
+
+		<script type="text/javascript">
+		$(document).bind("mobileinit", function(){
+			$.mobile.autoInitializePage = false;
+			$.mobile.ajaxEnabled = false;
+			$.mobile.hashListeningEnabled = false;
+			$.mobile.linkBindingEnabled = false;
+		});	
+		</script>      
+		<script src="assets/jquery.mobile/jquery.mobile.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="assets/jquery.mobile/jquery.mobile.structure.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/jquery.mobile/jquery.mobile.theme.min.css" />
    </head>
    <body>
 		<ng-include src="'main/header.tpl.html'"></ng-include>
