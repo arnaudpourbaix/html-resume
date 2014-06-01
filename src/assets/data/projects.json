@@ -4,8 +4,8 @@
     "end": "2000-08",
     "client": "mondiale",
     "company": "norsys",
-    "role": "Développeur PL/SQL",
-    "location": "Forfait",
+    "role": "Développeur PLSQL",
+    "onsite": false,
     "contact": {
       "name": "Laurent Descamps",
       "role": "Chef de projet"
@@ -28,7 +28,7 @@
     "client": "caisseEpargne",
     "company": "norsys",
     "role": "Développeur NSDK",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Thierry Pavot",
       "role": "Responsable client"
@@ -48,8 +48,8 @@
     "end": "2001-12",
     "client": "norauto",
     "company": "unis",
-    "role": "Développeur PL/SQL",
-    "location": "Régie",
+    "role": "Développeur PLSQL",
+    "onsite": true,
     "contact": {
       "name": "Sébastien Bernard",
       "role": "Responsable client"
@@ -57,7 +57,7 @@
     "goal": "Migration de la base de donnée vers l'euro",
     "functions": [
       "Réalisation des triggers et des procédures stockées en collaboration avec un DBA",
-      "Réalisation d’une petite application PL/SQL"
+      "Réalisation d’une petite application PLSQL"
     ],
     "skills": [
       "plsql",
@@ -70,8 +70,8 @@
     "end": "2002-04",
     "client": "bca",
     "company": "unis",
-    "role": "Développeur VB6 PL/SQL",
-    "location": "Régie",
+    "role": "Développeur VB6 PLSQL",
+    "onsite": true,
     "contact": {
       "name": "Nicolas Beunèche",
       "role": "Chef de projet"
@@ -92,8 +92,8 @@
     "end": "2002-12",
     "client": null,
     "company": "unis",
-    "role": "Analyste-programmeur",
-    "location": "Agence",
+    "role": "Développeur NSDK PHP VB",
+    "onsite": null,
     "goal": "Travaux divers pendant un inter-contrat",
     "functions": [
       "Réalisation d’une application de gestion de bibliothèque (VB6)",
@@ -113,7 +113,7 @@
     "client": null,
     "company": "aidmicro",
     "role": "Co-gérant",
-    "location": null,
+    "onsite": null,
     "goal": "Création et gestion d’une société de dépannage en informatique pour les particuliers et les PME",
     "functions": [
       "Formation à la création d’entreprise",
@@ -131,7 +131,7 @@
       "elosi"
     ],
     "role": "Intégrateur web",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Jacques Terrier",
       "role": "Responsable client"
@@ -155,7 +155,7 @@
       "elosi"
     ],
     "role": "Développeur ASP",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Jacques Terrier",
       "role": "Responsable client"
@@ -176,7 +176,7 @@
     "client": "benalu",
     "company": "elosi",
     "role": "Développeur PHP",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Aurélien Luchart",
       "role": "Commercial"
@@ -196,8 +196,8 @@
     "end": "2007-02",
     "client": "bethune",
     "company": "elosi",
-    "role": "Développeur PHP et coach technique",
-    "location": "Forfait",
+    "role": "Développeur PHP, coach technique",
+    "onsite": false,
     "contact": {
       "name": "Denis Lancial",
       "role": "Directeur de projet"
@@ -220,7 +220,7 @@
     "client": "rsi",
     "company": "elosi",
     "role": "Gestion de configuration, développeur VBA",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Guillaume Luchart",
       "role": "Commercial"
@@ -246,7 +246,7 @@
     "client": "planete-oui",
     "company": "elosi",
     "role": "Gestion d'une TMA, développeur PHP",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Philippe Couché",
       "role": "Associé fondateur"
@@ -269,8 +269,8 @@
     "end": "2008-05",
     "client": "norauto",
     "company": "elosi",
-    "role": "Développeur ACCESS/VBA",
-    "location": "Forfait",
+    "role": "Développeur ACCESS VBA",
+    "onsite": false,
     "contact": {
       "name": "Nicolas Herbaut",
       "role": "Chef de projet"
@@ -291,7 +291,7 @@
     "client": "norauto",
     "company": "elosi",
     "role": "Développeur NSDK",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Laurent Blondel",
       "role": "Chef de projet"
@@ -312,7 +312,7 @@
     "client": "norauto",
     "company": "elosi",
     "role": "Lead développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Laurent Blondel",
       "role": "Chef de projet"
@@ -337,7 +337,7 @@
     "client": "norauto",
     "company": "elosi",
     "role": "Développeur .NET",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Nicolas Herbaut",
       "role": "Chef de projet"
@@ -358,7 +358,7 @@
     "client": "norauto",
     "company": "elosi",
     "role": "Développeur .NET",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Laurent Blondel",
       "role": "Chef de projet"
@@ -381,7 +381,7 @@
     "client": "norauto",
     "company": "elosi",
     "role": "Développeur .NET",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Eric Blondeau",
       "role": "Responsable du domaine client"
@@ -408,7 +408,7 @@
     "client": "pndata",
     "company": "elosi",
     "role": "Lead développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Denis Lancial",
       "role": "Chef de projet"
@@ -433,8 +433,8 @@
     "end": "2010-01",
     "client": "kiloutou",
     "company": "elosi",
-    "role": "Développeur DELPHI/JAVA",
-    "location": "Régie",
+    "role": "Développeur DELPHI JAVA",
+    "onsite": true,
     "contact": {
       "name": "Arnaud Maton",
       "role": "Responsable des Etudes Front Office"
@@ -456,8 +456,8 @@
     "end": "2010-05",
     "client": "kiloutou",
     "company": "elosi",
-    "role": "Développeur DELPHI/PLSQL",
-    "location": "Régie",
+    "role": "Développeur DELPHI PLSQL",
+    "onsite": true,
     "contact": {
       "name": "Maxence Pontiac",
       "role": "Chef de projet"
@@ -465,7 +465,7 @@
     "goal": "Centralisation de la facturation par un prestataire",
     "functions": [
       "Réalisation d'une interface de suivi (Ecran/scripts)",
-      "Création des flux d'entrée/sortie (PL/SQL)",
+      "Création des flux d'entrée/sortie (PLSQL)",
       "Intégration d'un webservice dans la DLL"
     ],
     "skills": [
@@ -478,8 +478,8 @@
     "end": "2010-08",
     "client": "kiloutou",
     "company": "elosi",
-    "role": "Développeur DELPHI/PLSQL",
-    "location": "Régie",
+    "role": "Développeur DELPHI PLSQL",
+    "onsite": true,
     "contact": {
       "name": "Maxence Pontiac",
       "role": "Chef de projet"
@@ -489,7 +489,7 @@
       "Refactoring du code du module logistique",
       "Refonte de l'interface pour intégrer le suivi des tournées",
       "Intégration d'un webservice dans la DLL",
-      "Mise à jour des flux liés à la logistique (PL/SQL)"
+      "Mise à jour des flux liés à la logistique (PLSQL)"
     ],
     "skills": [
       "delphi",
@@ -505,7 +505,7 @@
       "astek"
     ],
     "role": "Lead développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Vincent Curti",
       "role": "Chef de projet"
@@ -535,7 +535,7 @@
       "astek"
     ],
     "role": "Lead développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Idriss Abdou",
       "role": "Chef de projet"
@@ -565,7 +565,7 @@
       "astek"
     ],
     "role": "Développeur JEE",
-    "location": "Régie en centre de service",
+    "onsite": true,
     "contact": {
       "name": "Vincent Curti",
       "role": "Chef de projet"
@@ -592,7 +592,7 @@
       "astek"
     ],
     "role": "Développeur JEE",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Jean-Luc Tronel",
       "role": "Directeur de la production"
@@ -618,7 +618,7 @@
       "astek"
     ],
     "role": "Développeur JEE",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Jean-Luc Tronel",
       "role": "Directeur de la production"
@@ -650,7 +650,7 @@
       "astek"
     ],
     "role": "Lead Développeur JEE",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Jean-Luc Tronel",
       "role": "Directeur de la production"
@@ -682,7 +682,7 @@
       "astek"
     ],
     "role": "Développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Vincent Curti",
       "role": "Chef de projet"
@@ -709,7 +709,7 @@
       "astek"
     ],
     "role": "Développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Adrien Kantorski",
       "role": "Chef de projet"
@@ -736,7 +736,7 @@
     "client": "auchan",
     "company": "proxiad",
     "role": "Lead développeur JEE",
-    "location": "Forfait",
+    "onsite": false,
     "contact": {
       "name": "Vincent Curti",
       "role": "Chef de projet"
@@ -763,8 +763,9 @@
     "start": "2013-01",
     "end": null,
     "company": "proxiad",
-    "role": "Référent technique JEE/Javascript",
-    "location": "Agence",
+    "role": "Référent technique JEE Javascript",
+    "onsite": null,
+    "goal": "Assistance technique pour les développeurs",
     "functions": [
       "Animation d'ateliers techniques (java, javascript, angular, html 5, css 3)",
       "Amélioration du provisionneur Auchan"
@@ -786,7 +787,7 @@
     "client": "auchan",
     "company": "proxiad",
     "role": "Lead développeur JEE",
-    "location": "Régie",
+    "onsite": true,
     "contact": {
       "name": "Claire Messager",
       "role": "Chef de projet"

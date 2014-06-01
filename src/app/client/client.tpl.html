@@ -6,7 +6,7 @@
 	 data-apx-isotope-item-selector=".isotope-item" 
 	 data-apx-isotope-layout-mode="masonry" data-apx-isotope-layout-gutter="20">
 	<div data-ng-repeat="client in clients" class="isotope-item">
-		<img data-ng-if="client.logo != null" src="assets/images/{{client.logo}}" title="{{client.label}}" alt="{{client.label}}" />
-		<div class="thumbnail caption" data-ng-if="client.logo == null">{{client.label}}</div>
+		<img data-ng-if="client.logo != null" src="assets/images/{{client.logo}}" title="{{client.label}}" alt="{{client.label}}" class="company-logo" />
+		<span class="company-label ui-btn ui-corner-all" data-ng-if="client.logo == null">{{client.label}}</span>
 	</div>
 </div>

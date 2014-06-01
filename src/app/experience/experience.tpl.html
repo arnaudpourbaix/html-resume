@@ -1,24 +1,47 @@
 <div class="experiences">
-	<div data-ng-repeat="project in projects" class="row table-bordered v-center">
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
-			<div data-ng-if="project.client">
-				<img data-ng-if="project.client.logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
-				<div data-ng-if="!project.client.logo" class="text-center vertical-center">{{project.client.label}}</div>
-			</div>
-			<div data-ng-if="!project.client">
-				<img data-ng-if="project.company.logo" src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
-				<div data-ng-if="!project.company.logo" class="text-center vertical-center">{{project.company.label}}</div>
-			</div>
-		</div>
-		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-2">
-			<div class="dates text-center">
-				{{project.start | date : 'MMMM yyyy'}}
-				<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MMMM yyyy'}}</span>
-				<span data-ng-if="project.end == null">à aujourd'hui</span>
-				<div class="">{{project.length}} mois</div>
-			</div>
-		</div>
-		<div class="col-xs-2 col-sm-1 col-md-1 col-lg-2">{{project.role}}</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">{{project.goal}}</div>
-	</div>
+ 	<table data-role="table" data-mode="columntoggle" class="ui-responsive table-stroke" id="experience-table" data-column-btn-text="Colonnes" data-column-btn-theme="a">
+	<thead>
+		<tr>
+			<th>Entreprise</th>
+			<th>Rôle</th>
+			<th>Dates</th>
+			<th data-priority="1">Contexte</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-ng-repeat="project in projects">
+			<td class="company-column">
+				<span data-ng-if="project.client && project.client.logo">
+					<img class="company-logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
+				</span>
+				<span data-ng-if="project.client && !project.client.logo" class="company-label">
+					{{project.client.label}}
+				</span>
+				<span data-ng-if="!project.client && project.company.logo">
+					<img class="company-logo" src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+				</span>
+				<span data-ng-if="!project.client && !project.company.logo" class="company-label">
+					{{project.company.label}}
+				</span>
+			</td>
+			<td class="role-column">
+				<span data-ng-if="project.onsite === true" class="onsite fa fa-users" title="Régie"></span>
+				<span data-ng-if="project.onsite !== true" class="onsite fa fa-home" title="Forfait"></span>
+				{{project.role}}
+			</td>
+			<td class="date-column">
+				<div class="dates">
+					<span data-ng-if="project.end == null">Depuis </span>
+					{{project.start | date : 'MM/yy'}}
+					<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yy'}}</span>
+				</div>
+				<div class="length">{{project.length}} mois</div>
+			</td>
+			<td class="goal-column">{{project.goal}}</td>
+		</tr>
+	</tbody>
+	</table>
 </div>
+<script type="text/javascript">
+	$("#experience-table").table({ defaults: true });
+</script>

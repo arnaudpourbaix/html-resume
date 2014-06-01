@@ -2,27 +2,27 @@
   {
   	"id": "caisseEpargne",
     "label": "Caisse d'Epargne",
-    "logo": "logoCaisseEpargne.png" 
+    "logo": "caisseEpargne.jpg" 
   },
   {
   	"id": "mondiale",
     "label": "AG2R La Mondiale",
-    "logo": "logo2AG2RLaMondiale.png" 
+    "logo": "AG2RLaMondiale.jpg" 
   },
   {
   	"id": "norauto",
     "label": "Norauto",
-    "logo": "logo_NORAUTO.png" 
+    "logo": "norauto.jpg" 
   },
   {
   	"id": "bca",
-    "label": "B.C.A. - Boucq Cheval et Associés",
+    "label": "Boucq Cheval et Associés",
     "logo": null 
   },
   {
   	"id": "citenum",
     "label": "Cité numérique",
-    "logo": "citenum.gif" 
+    "logo": "citenum.jpg" 
   },
   {
   	"id": "3suisses",
@@ -32,12 +32,12 @@
   {
   	"id": "3si",
     "label": "Groupe 3SI",
-    "logo": "3si.gif" 
+    "logo": "3si.JPG" 
   },
   {
   	"id": "benalu",
     "label": "Benalu",
-    "logo": "benalu.png" 
+    "logo": "benalu.JPG" 
   },
   {
   	"id": "rsi",
@@ -87,7 +87,7 @@
   {
   	"id": "veronique-delachaux",
     "label": "Véronique Delachaux",
-    "logo": "logo-vd.gif" 
+    "logo": "venorique-delachaux.JPG" 
   },
   {
   	"id": "bprocess",

@@ -1,18 +1,46 @@
 .experiences {
 	
-	@media screen and (max-width:640px) { img { max-width: 75px; } }
-		
-	@media screen and (min-width:641px) { img { max-width: 125px; } }
+	thead { display: none; }
 	
-	.v-center {
-		display: table !important; 
-		height: 125px;
+	.company-column {
+		text-align: center;
+		vertical-align: middle; 
+	}
+	
+	td[class*="-column"] { vertical-align: middle; }
+	
+	.date-column { white-space: nowrap; }
+	
+	.onsite { font-size: 150%; margin-right: 5px; }
+	.onsite.fa-home { color: #3B0B17; }
+	.onsite.fa-users { color: #08088A; }
+	.role-column { text-transform: uppercase }
+
+	@media screen and (max-width:640px) { 
+		.company-logo {	max-width: 75px; }
+		td[class*="-column"] { font-size: xx-small; }
+		.date-column .length { display: none; }
+	}
+		
+	@media screen and (min-width:641px) { 
+		.company-logo { max-width: 125px; }
+		td[class*="-column"] { font-size: small; }
+		.date-column .length { display: none; }
+	}
+	
+	/* Show priority 1 */
+	@media screen and (min-width: 641px) {
+		th.ui-table-priority-1, td.ui-table-priority-1 { display: table-cell; }
 	}
 
-	.v-center div[class*='col-'] {
-		display: table-cell !important;
-		vertical-align: middle;
-		float: none;
-	}	
+	/* Manually hidden */
+	th.ui-table-cell-hidden, td.ui-table-cell-hidden {
+		display: none;
+	}
+	
+	/* Manually shown */
+	th.ui-table-cell-visible, td.ui-table-cell-visible {
+		display: table-cell;
+	}		
 	
 }
