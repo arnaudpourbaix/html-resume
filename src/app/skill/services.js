@@ -9,7 +9,17 @@
 		
 		var service = {};
 		var levelsPromise, skillsPromise, groupsPromise, typesPromise;
+		var levels, skills, groups, types;
 
+		function buildSkills(data) {
+			angular.forEach(data, function(skill) {
+				skill.level = levels[skill.level]; 
+				skill.group = groups[skill.group];
+				skill.type = types[skill.type];
+			});
+			skills = _.chain(data).sortBy('group').indexBy('id').value();
+		}
+		
 		function getSkills() {
 			if (skillsPromise) {
 				return skillsPromise;
@@ -31,7 +41,8 @@
 				method : 'GET',
 				url : 'assets/data/levels.json'
 			}).then(function(response) {
-				return response.data;
+				levels = _.indexBy(response.data, 'id');
+				return levels;
 			});
 			return levelsPromise;
 		}
@@ -44,7 +55,8 @@
 				method : 'GET',
 				url : 'assets/data/skill_groups.json'
 			}).then(function(response) {
-				return response.data;
+				groups = _.indexBy(response.data, 'id');
+				return groups;
 			});
 			return groupsPromise;
 		}
@@ -57,7 +69,8 @@
 				method : 'GET',
 				url : 'assets/data/skill_types.json'
 			}).then(function(response) {
-				return response.data;
+				types = _.indexBy(response.data, 'id');
+				return types;
 			});
 			return typesPromise;
 		}
@@ -67,15 +80,7 @@
 				return skillsPromise;
 			}
 			skillsPromise = $q.all([ getSkills(), getLevels(), getSkillGroups(), getSkillTypes() ]).then(function(result) {
-				var skills = result[0];
-				var levels = _.indexBy(result[1], 'id');
-				var groups = _.indexBy(result[2], 'id');
-				var types = _.indexBy(result[3], 'id');
-				angular.forEach(skills, function(skill) {
-					skill.level = levels[skill.level]; 
-					skill.group = groups[skill.group];
-					skill.type = types[skill.type];
-				});
+				buildSkills(result[0]);
 				return skills;
 			});
 			return skillsPromise;
@@ -91,6 +96,21 @@
 
 		service.types = function() {
 			return getSkillTypes();
+		};
+		
+		service.projectSkills = function(ids) {
+			if (!skills) {
+				throw new CustomError(LOGGER_NAME, 'skills are not initialized');
+			}
+			var result = [];
+			angular.forEach(ids, function(id) {
+				var item = skills[id] || groups[id];
+				if (!item) {
+					throw new CustomError(LOGGER_NAME, 'unknown skill or group: ' + id);
+				}
+				result.push(item);
+			});
+			return result;
 		};
 		
 		return service;

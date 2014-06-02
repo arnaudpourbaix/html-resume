@@ -49,6 +49,6 @@ module.exports = {
 				'src/assets/angular-locale_fr-fr.js'
 		],
 		css : [ 'vendor/jquery-mobile/jquery.mobile.custom.structure.min.css', 'vendor/font-awesome/css/font-awesome.min.css', 'vendor/animate.css/animate.min.css' ],
-		assets : [ 'font-awesome/css/*', 'font-awesome/fonts/*' ]
+		assets : [ 'font-awesome/css/*', 'font-awesome/fonts/*', 'roboto-fontface/roboto-fontface.css', 'roboto-fontface/fonts/*' ]
 	}
 };

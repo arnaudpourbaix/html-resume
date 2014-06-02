@@ -76,9 +76,10 @@
       "name": "Nicolas Beunèche",
       "role": "Chef de projet"
     },
-    "goal": "Optimisation des performances d’une application: déplacement de tous les traitements liés à la base de données dans des procédures stockées",
+    "goal": "Optimisation des performances d’une application",
     "functions": [
-      "Réalisation des procédures stockées et mise à jour de l'application"
+    	"Déplacement de tous les traitements liés à la base de données dans des procédures stockées",
+      	"Réalisation des procédures stockées et mise à jour de l'application"
     ],
     "skills": [
       "plsql",
@@ -302,8 +303,7 @@
     ],
     "skills": [
       "nsdk",
-      "oracle",
-      "sql"
+      "oracle"
     ]
   },
   {
@@ -372,6 +372,7 @@
       ".net",
       "c#",
       "sqlserver",
+      "sql",
       "tsql"
     ]
   },
@@ -399,6 +400,7 @@
       ".net",
       "c#",
       "sqlserver",
+      "sql",
       "tsql"
     ]
   },
@@ -470,7 +472,9 @@
     ],
     "skills": [
       "delphi",
-      "plsql"
+      "oracle",
+      "plsql",
+      "sql"
     ]
   },
   {
@@ -493,7 +497,9 @@
     ],
     "skills": [
       "delphi",
-      "plsql"
+      "oracle",
+      "plsql",
+      "sql"
     ]
   },
   {
@@ -553,7 +559,8 @@
       "struts",
       "hibernate",
       "websphere",
-      "oracle"
+      "oracle",
+      "sql"
     ]
   },
   {
@@ -638,6 +645,7 @@
       "postgre",
       "tomcat",
       "pentaho",
+      "sql",
       "scrum"
     ]
   },
@@ -670,6 +678,7 @@
       "postgre",
       "tomcat",
       "pentaho",
+      "sql",
       "scrum"
     ]
   },
@@ -697,7 +706,8 @@
       "struts",
       "hibernate",
       "tomcat",
-      "oracle"
+      "oracle",
+      "sql"
     ]
   },
   {
@@ -748,6 +758,7 @@
       "Extension du framework Auchan pour simplifier l'utilisation du composant dhtmlx et ajouter des fonctionnalités récurrentes dans les contrôleurs",
       "Réalisation d’une documentation relative à ces améliorations",
       "Chiffrage et conception technique des évolutions",
+      "Migrations multi-browsers, java 7, et tomcat 7",
       "Réalisation des évolutions de l’application"
     ],
     "skills": [
@@ -756,7 +767,8 @@
       "struts",
       "hibernate",
       "tomcat",
-      "oracle"
+      "oracle",
+      "sql"
     ]
   },
   {

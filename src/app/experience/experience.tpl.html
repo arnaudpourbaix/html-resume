@@ -6,6 +6,7 @@
 			<th>Rôle</th>
 			<th>Dates</th>
 			<th data-priority="1">Contexte</th>
+			<th data-priority="2">Compétences</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -26,7 +27,7 @@
 			</td>
 			<td class="role-column">
 				<span data-ng-if="project.onsite === true" class="onsite fa fa-users" title="Régie"></span>
-				<span data-ng-if="project.onsite !== true" class="onsite fa fa-home" title="Forfait"></span>
+				<span data-ng-if="project.onsite === false" class="onsite fa fa-home" title="Forfait"></span>
 				{{project.role}}
 			</td>
 			<td class="date-column">
@@ -38,6 +39,7 @@
 				<div class="length">{{project.length}} mois</div>
 			</td>
 			<td class="goal-column">{{project.goal}}</td>
+			<td class="skill-column"><span data-ng-repeat="skill in project.skills">{{skill.label}} </span></td>
 		</tr>
 	</tbody>
 	</table>
