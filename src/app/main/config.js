@@ -4,7 +4,7 @@
 	var module = angular.module('htmlResume.main.config', []);
 
 	module.config([	'$urlRouterProvider', '$locationProvider', function MainConfig($urlRouterProvider, $locationProvider) {
-		$urlRouterProvider.otherwise('/experiences');
+		$urlRouterProvider.otherwise('/projects');
 	} ]);
 	
 	module.config([ '$provide',	function($provide) {

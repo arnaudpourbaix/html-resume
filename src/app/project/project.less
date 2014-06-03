@@ -1,13 +1,12 @@
-.experiences {
+.projects {
 	
 	thead { display: none; }
-	
-	.company-column {
-		text-align: center;
-		vertical-align: middle; 
-	}
-	
+
+	tr { cursor: pointer; }
+
 	td[class*="-column"] { vertical-align: middle; }
+	
+	.company-column { text-align: center; }
 	
 	.date-column { white-space: nowrap; }
 	
@@ -20,27 +19,14 @@
 		.company-logo {	max-width: 75px; }
 		td[class*="-column"] { font-size: xx-small; }
 		.date-column .length { display: none; }
+		.skill-column { display: none; }
 	}
 		
 	@media screen and (min-width:641px) { 
 		.company-logo { max-width: 125px; }
 		td[class*="-column"] { font-size: small; }
 		.date-column .length { display: none; }
+		.skill-column { display: table-cell; }
 	}
-	
-	/* Show priority 1 */
-	@media screen and (min-width: 641px) {
-		th.ui-table-priority-1, td.ui-table-priority-1 { display: table-cell; }
-	}
-
-	/* Manually hidden */
-	th.ui-table-cell-hidden, td.ui-table-cell-hidden {
-		display: none;
-	}
-	
-	/* Manually shown */
-	th.ui-table-cell-visible, td.ui-table-cell-visible {
-		display: table-cell;
-	}		
 	
 }

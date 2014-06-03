@@ -1,16 +1,17 @@
-<div class="experiences">
- 	<table data-role="table" data-mode="columntoggle" class="ui-responsive table-stroke" id="experience-table" data-column-btn-text="Colonnes" data-column-btn-theme="a">
+<div class="projects">
+	<div data-ui-view></div>
+ 	<table data-role="table" class="ui-responsive table-stroke" id="experience-table" data-column-btn-text="Colonnes" data-column-btn-theme="a">
 	<thead>
 		<tr>
-			<th>Entreprise</th>
-			<th>Rôle</th>
-			<th>Dates</th>
-			<th data-priority="1">Contexte</th>
-			<th data-priority="2">Compétences</th>
+			<th class="company-column">Entreprise</th>
+			<th class="role-column">Rôle</th>
+			<th class="date-column">Dates</th>
+			<th class="goal-column">Contexte</th>
+			<th class="skill-column">Compétences</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr data-ng-repeat="project in projects">
+		<tr data-ng-repeat="project in projects" data-ui-sref="project.detail({ id: project.id })">
 			<td class="company-column">
 				<span data-ng-if="project.client && project.client.logo">
 					<img class="company-logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />

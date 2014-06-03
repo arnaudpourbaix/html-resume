@@ -2,10 +2,10 @@
 (function(_) {
 	'use strict';
 
-	var module = angular.module('htmlResume.experience.services', []);
+	var module = angular.module('htmlResume.project.services', []);
 	
-	module.service('ExperienceService', [ '$http', '$q', '$logger', '$apxTools', 'SkillService', 'ClientService', 'CompanyService',
-	                                      function ExperienceService($http, $q, $logger, $apxTools, SkillService, ClientService, CompanyService) {
+	module.service('ProjectService', [ '$http', '$q', '$logger', '$apxTools', 'SkillService', 'ClientService', 'CompanyService',
+	                                      function ProjectService($http, $q, $logger, $apxTools, SkillService, ClientService, CompanyService) {
 		var LOGGER_NAME = module.name + '.' + this.constructor.name, log = $logger.logger(LOGGER_NAME);
 		
 		var service = {};
@@ -26,7 +26,7 @@
 				project.length = endDate.getMonth() - project.start.getMonth() + 1 + (12 * (endDate.getFullYear() - project.start.getFullYear()));
 				project.skills = SkillService.projectSkills(project.skills);
 			});
-			projects = _.chain(data).sortBy('start').reverse().value();
+			projects = _.chain(data).sortBy('start').reverse().indexBy('id').value(); //FIXME remove indexBy and use find because sorting changes index
 		}
 
 		function getProjects() {
@@ -47,6 +47,12 @@
 				return projects;
 			});
 			return projectsPromise;
+		};
+
+		service.project = function(id) {
+			return projectsPromise.then(function() {
+				return projects[id];
+			});
 		};
 		
 		return service;
