@@ -8,19 +8,18 @@
 	} ]);
 
 	module.run([ '$logger', 'appSettings', function($logger, appSettings) {
-		$logger.addAppender('BrowserConsoleAppender', 'ALL');
+		//$logger.addAppender('BrowserConsoleAppender', 'ALL');
 	} ]);
 
 	module.config([ '$provide', function($provide) {
-		$provide.decorator("$exceptionHandler", function($delegate, $injector) {
-			return function(exception, cause){
-				var $rootScope = $injector.get("$rootScope");
-				var $logger = $injector.get("$logger");
-				var logger = exception.name ? $logger.logger(exception.name) : $logger.rootLogger();
-				logger.fatal(exception.message);
-//				$delegate(exception, cause);
-			};
-		});
+//		$provide.decorator("$exceptionHandler", function($delegate, $injector) {
+//			return function(exception, cause){
+//				var $rootScope = $injector.get("$rootScope");
+//				var $logger = $injector.get("$logger");
+//				var logger = exception.name ? $logger.logger(exception.name) : $logger.rootLogger();
+//				logger.fatal(exception.message);
+//			};
+//		});
 	}]);
 
 	function CustomError(location, message) {
