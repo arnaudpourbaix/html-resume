@@ -49,7 +49,9 @@
 		<link rel="stylesheet" type="text/css" href="assets/jquery.mobile/jquery.mobile.min.css" />
    </head>
    <body>
-		<ng-include src="'main/header.tpl.html'"></ng-include>
-		<div data-role="content" class="container" data-ui-view data-autoscroll="false"></div>
+   		<div data-role="page">
+			<ng-include src="'main/header.tpl.html'"></ng-include>
+			<div data-role="content" class="container" data-ui-view data-autoscroll="false"></div>
+   		</div>
    </body>
 </html>
