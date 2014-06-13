@@ -3,7 +3,7 @@
 	'use strict';
 
 	var module = angular.module('jquery-mobile.common', []);
-
+	
 	module.provider('$jqmCommon', function JqmCommonProvider() {
 		var options = {
 			theme : 'classic'
@@ -237,5 +237,12 @@
 					return service;
 				} ];
 	});
-
+	
+	module.config([ '$jqmCommonProvider', function($jqmCommonProvider) {
+		$.mobile.autoInitializePage = true;
+		$.mobile.ajaxEnabled = false;
+		$.mobile.hashListeningEnabled = false;
+		$.mobile.linkBindingEnabled = false;
+	} ]);
+	
 }(window, _));

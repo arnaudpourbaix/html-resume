@@ -400,6 +400,14 @@ module.exports = function(grunt) {
 			less : {
 				files : [ 'src/**/*.less' ],
 				tasks : [ 'recess:build', 'concat:compileCss' ]
+			},
+			
+			/**
+			 * When the CSS files change, we need to copy them.
+			 */
+			css : {
+				files : [ 'webapp/**/*.css', '!webapp/assets/**/*.css' ],
+				tasks : [ 'copy:buildAppCss' ]
 			}
 
 		}

@@ -44,11 +44,11 @@ module.exports = {
 	vendor_files : {
 		js : [  'vendor/modernizr/modernizr.js', 'vendor/html5shiv/dist/html5shiv.js', 'vendor/html5shiv/dist/html5shiv-printshiv.js', 'vendor/jquery/dist/jquery.min.js',
 				'vendor/angular/angular.js', 'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js', 'vendor/angular-animate/angular-animate.min.js', 
-				'vendor/angular-ui-router/release/angular-ui-router.min.js', 'vendor/lodash/dist/lodash.min.js', 'vendor/jquery-mobile/jquery.mobile.custom.js',
+				'vendor/angular-ui-router/release/angular-ui-router.min.js', 'vendor/lodash/dist/lodash.min.js', /*'vendor/jquery-mobile/jquery.mobile.custom.js',*/
 				'vendor/log4javascript/log4javascript.js', 'vendor/isotope/dist/isotope.pkgd.min.js', 'vendor/packery/js/packery.pkgd.min.js', 
 				'src/assets/angular-locale_fr-fr.js', 'src/assets/jqwidgets/jqx-all.js'
 		],
-		css : [ 'vendor/jquery-mobile/jquery.mobile.custom.structure.min.css', 'vendor/animate.css/animate.min.css' ],
+		css : [ /*'vendor/jquery-mobile/jquery.mobile.custom.structure.min.css',*/ 'vendor/animate.css/animate.min.css' ],
 		assets : [ 'font-awesome/css/*', 'font-awesome/fonts/*', 'roboto-fontface/roboto-fontface.css', 'roboto-fontface/fonts/*' ]
 	}
 };

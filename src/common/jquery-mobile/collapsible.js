@@ -19,13 +19,15 @@
 		} ];
 	});
 
-	module.directive('jqmCollapsible', [ '$compile', '$parse', '$jqmCommon', '$jqmCollapsible', function JqmCollapsibleDirective($compile, $parse, $jqmCommon, $jqmCollapsible) {
+	module.directive('jqmCollapsible', [ '$compile', '$parse', '$jqmCommon', '$jqmCollapsible', '$timeout', function JqmCollapsibleDirective($compile, $parse, $jqmCommon, $jqmCollapsible, $timeout) {
 		return {
 			restrict : 'AE',
 			link : function(scope, element, attributes) {
 				var params = $jqmCommon.getParams(scope.$eval(attributes.jqmCollapsible), [], []);
 				//element.panel(options);
-				element.appendTo(".ui-page").trigger("create");
+				$timeout(function() {
+					element.appendTo(".ui-page").trigger("create");
+				});
 			}
 		};
 	} ]);
