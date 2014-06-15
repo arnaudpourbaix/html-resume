@@ -26,7 +26,7 @@
 				project.length = endDate.getMonth() - project.start.getMonth() + 1 + (12 * (endDate.getFullYear() - project.start.getFullYear()));
 				project.skills = SkillService.projectSkills(project.skills);
 			});
-			projects = _.chain(data).sortBy('start').reverse().indexBy('id').value(); //FIXME remove indexBy and use find because sorting changes index
+			projects = _.chain(data).sortBy('start').reverse().value();
 		}
 
 		function getProjects() {

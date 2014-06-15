@@ -1,12 +1,12 @@
 .projects {
 	
-	thead { display: none; }
-
-	tr { cursor: pointer; }
-
-	td[class*="-column"] { vertical-align: middle; }
+	div[class^="ui-grid-"] {  }
 	
-	.company-column { text-align: center; }
+	div[class^="ui-block-"] { 
+		display: table;
+	}
+	
+	.cell-grid { display: table-cell; vertical-align: middle; }
 	
 	.date-column { white-space: nowrap; }
 	
@@ -15,18 +15,22 @@
 	.onsite.fa-users { color: #08088A; }
 	.role-column { text-transform: uppercase }
 
-	@media screen and (max-width:640px) { 
-		.company-logo {	max-width: 75px; }
-		td[class*="-column"] { font-size: xx-small; }
-		.date-column .length { display: none; }
-		.skill-column { display: none; }
-	}
-		
 	@media screen and (min-width:641px) { 
-		.company-logo { max-width: 125px; }
-		td[class*="-column"] { font-size: small; }
-		.date-column .length { display: none; }
+		div[class^="ui-block-"] { height: 50px; }
+		
+		.ui-block-a, .ui-block-b { width: 25% !important; }
+		.ui-block-c { width: 50% !important; }
+		
+		.company-logo { max-width: 125px; max-height: 50px; }
+		.cell-grid { font-size: small; }
 		.skill-column { display: table-cell; }
+	}
+
+	@media screen and (max-width:640px) { 
+		div[class^="ui-block-"] { height: 50px; }
+		.company-logo {	max-width: 75px; /*max-height: 25px;*/ }
+		.cell-grid { font-size: xx-small; }
+		.skill-column { display: none; }
 	}
 	
 }

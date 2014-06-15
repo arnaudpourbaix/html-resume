@@ -26,7 +26,7 @@
 				var params = $jqmCommon.getParams(scope.$eval(attributes.jqmCollapsible), [], []);
 				//element.panel(options);
 				$timeout(function() {
-					element.appendTo(".ui-page").trigger("create");
+					//element.appendTo(".ui-page").trigger("create");
 				});
 			}
 		};

@@ -1,79 +1,50 @@
-<div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-mini="true" data-jqm-collapsible class="projects">
-	<div data-ng-repeat="project in projects" data-role="collapsible" data-inset="false" data-content-theme="false">
-		<h3>
-			<span data-ng-if="project.client && project.client.logo">
-				<img class="company-logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
-			</span>
-			<span data-ng-if="project.client && !project.client.logo" class="company-label">
-				{{project.client.label}}
-			</span>
-			<span data-ng-if="!project.client && project.company.logo">
-				<img class="company-logo" src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
-			</span>
-			<span data-ng-if="!project.client && !project.company.logo" class="company-label">
-				{{project.company.label}}
-			</span>
-			{{ project.goal }}
-		</h3>
-		<div>
-			<span data-ng-if="project.onsite === true" class="onsite fa fa-users" title="Régie"></span>
-			<span data-ng-if="project.onsite === false" class="onsite fa fa-home" title="Forfait"></span>
-			{{project.role}}
-			<div class="dates">
-				<span data-ng-if="project.end == null">Depuis </span>
-				{{project.start | date : 'MM/yy'}}
-				<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yy'}}</span>
-			</div>
-			<div class="length">{{project.length}} mois</div>
-			{{project.goal}}
-			<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
-		</div>
-       </div>
-</div>
-	
-	<!--  
- 	<table style="display:none" data-role="table" class="ui-responsive table-stroke" id="experience-table" data-column-btn-text="Colonnes" data-column-btn-theme="a">
-	<thead>
-		<tr>
-			<th class="company-column">Entreprise</th>
-			<th class="role-column">Rôle</th>
-			<th class="date-column">Dates</th>
-			<th class="goal-column">Contexte</th>
-			<th class="skill-column">Compétences</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr data-ng-repeat="project in projects" data-ui-sref="project.detail({ id: project.id })">
-			<td class="company-column">
-				<span data-ng-if="project.client && project.client.logo">
-					<img class="company-logo" src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
-				</span>
-				<span data-ng-if="project.client && !project.client.logo" class="company-label">
-					{{project.client.label}}
-				</span>
-				<span data-ng-if="!project.client && project.company.logo">
-					<img class="company-logo" src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
-				</span>
-				<span data-ng-if="!project.client && !project.company.logo" class="company-label">
-					{{project.company.label}}
-				</span>
-			</td>
-			<td class="role-column">
+<div class="projects">
+	<div class="ui-collapsible-set ui-group-theme-a ui-corner-all">
+		<div data-ng-repeat="project in projects" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed" 
+		data-ng-click="project.expand = !project.expand">
+			<h3 class="ui-collapsible-heading" data-ng-class="{ 'ui-collapsible-heading-collapsed' : !project.expand }">
+				<div class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-a ui-mini" data-ng-class="project.expand ? 'ui-icon-minus': 'ui-icon-plus'">
+					<div class="ui-grid-c ui-responsive">
+					    <div class="ui-block-a">
+					    	<div class="cell-grid">
+								<span data-ng-if="project.client && project.client.logo">
+									<img class="company-logo" data-ng-src="assets/images/{{project.client.logo}}" title="{{project.client.label}}" alt="{{project.client.label}}" />
+								</span>
+								<span data-ng-if="project.client && !project.client.logo" class="company-label">
+									{{project.client.label}}
+								</span>
+								<span data-ng-if="!project.client && project.company.logo">
+									<img class="company-logo" data-ng-src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+								</span>
+								<span data-ng-if="!project.client && !project.company.logo" class="company-label">
+									{{project.company.label}}
+								</span>
+							</div>
+					    </div>
+					    <div class="ui-block-b">
+					    	<div class="cell-grid">
+								<span data-ng-if="project.end == null">Depuis </span>
+								{{project.start | date : 'MM/yyyy'}}
+								<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yyyy'}}</span>
+					    	</div>
+					    </div>
+					    <div class="ui-block-c"><div class="cell-grid">{{project.role}}</div></div>
+					</div>		
+				</div>		
+			</h3>
+			<div class="ui-collapsible-content ui-body-a" data-ng-class="{ 'ui-collapsible-content-collapsed' : !project.expand }">
 				<span data-ng-if="project.onsite === true" class="onsite fa fa-users" title="Régie"></span>
 				<span data-ng-if="project.onsite === false" class="onsite fa fa-home" title="Forfait"></span>
 				{{project.role}}
-			</td>
-			<td class="date-column">
 				<div class="dates">
 					<span data-ng-if="project.end == null">Depuis </span>
 					{{project.start | date : 'MM/yy'}}
 					<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yy'}}</span>
 				</div>
 				<div class="length">{{project.length}} mois</div>
-			</td>
-			<td class="goal-column">{{project.goal}}</td>
-			<td class="skill-column"><span data-ng-repeat="skill in project.skills">{{skill.label}} </span></td>
-		</tr>
-	</tbody>
-	</table>
-	 -->
+				{{project.goal}}
+				<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
+			</div>
+		</div>
+	</div>
+</div>
