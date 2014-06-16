@@ -44,6 +44,14 @@
 				<div class="length">{{project.length}} mois</div>
 				{{project.goal}}
 				<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
+				<div data-ng-repeat="company in project.company">
+					<span data-ng-if="!project.client && project.company.logo">
+						<img class="company-logo" data-ng-src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+					</span>
+					<span data-ng-if="!project.client && !project.company.logo" class="company-label">
+						{{project.company.label}}
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -28,5 +28,15 @@
   	"id": "proxiad",
     "label": "Proxiad",
     "logo": "proxiad.jpg" 
+  },
+  {
+  	"id": "citenum",
+    "label": "Cité numérique",
+    "logo": "citenum.jpg" 
+  },
+  {
+  	"id": "pictime",
+    "label": "Pictime",
+    "logo": "pictime.jpg" 
   }
 ]

@@ -17,7 +17,13 @@
 				if (project.client) {
 					project.client = ClientService.client(project.client);
 				}
-				if (project.company) {
+				if (angular.isArray(project.company)) {
+					var companies = project.company; 
+					project.company = [];
+					angular.forEach(companies, function(company) {
+						project.company.push(CompanyService.company(company));
+					});
+				} else if (project.company) {
 					project.company = CompanyService.company(project.company);
 				}
 				project.start = $apxTools.parseDate(project.start);  
