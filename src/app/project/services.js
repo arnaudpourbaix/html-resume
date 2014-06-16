@@ -24,7 +24,7 @@
 						project.company.push(CompanyService.company(company));
 					});
 				} else if (project.company) {
-					project.company = CompanyService.company(project.company);
+					project.company = [ CompanyService.company(project.company) ];
 				}
 				project.start = $apxTools.parseDate(project.start);  
 				project.end = $apxTools.parseDate(project.end);

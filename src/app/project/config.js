@@ -17,19 +17,6 @@
 			}
 		});
 		
-		$stateProvider.state('project.detail', {
-			url : '/projects/:id',
-			controller : 'ProjectDetailController',
-			templateUrl : 'project/project-details.tpl.html',
-			resolve : {
-				project : function(ProjectService, $stateParams) {
-					return ProjectService.project($stateParams.id);
-				}
-			},
-			onEnter: function($stateParams) {
-			}
-		});
-		
 	} ]);
 	
 })();

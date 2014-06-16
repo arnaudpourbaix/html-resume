@@ -13,11 +13,11 @@
 								<span data-ng-if="project.client && !project.client.logo" class="company-label">
 									{{project.client.label}}
 								</span>
-								<span data-ng-if="!project.client && project.company.logo">
-									<img class="company-logo" data-ng-src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+								<span data-ng-if="!project.client && project.company[0] && project.company[0].logo">
+									<img class="company-logo" data-ng-src="assets/images/{{project.company[0].logo}}" title="{{project.company[0].label}}" alt="{{project.company[0].label}}" />
 								</span>
-								<span data-ng-if="!project.client && !project.company.logo" class="company-label">
-									{{project.company.label}}
+								<span data-ng-if="!project.client && project.company[0] && !project.company[0].logo" class="company-label">
+									{{project.company[0].label}}
 								</span>
 							</div>
 					    </div>
@@ -45,11 +45,11 @@
 				{{project.goal}}
 				<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
 				<div data-ng-repeat="company in project.company">
-					<span data-ng-if="!project.client && project.company.logo">
-						<img class="company-logo" data-ng-src="assets/images/{{project.company.logo}}" title="{{project.company.label}}" alt="{{project.company.label}}" />
+					<span data-ng-if="company.logo">
+						<img class="company-logo" data-ng-src="assets/images/{{company.logo}}" title="{{company.label}}" alt="{{company.label}}" />
 					</span>
-					<span data-ng-if="!project.client && !project.company.logo" class="company-label">
-						{{project.company.label}}
+					<span data-ng-if="!company.logo" class="company-label">
+						{{company.label}}
 					</span>
 				</div>
 			</div>
