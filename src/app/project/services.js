@@ -4,8 +4,8 @@
 
 	var module = angular.module('htmlResume.project.services', []);
 	
-	module.service('ProjectService', [ '$http', '$q', '$logger', '$apxTools', 'SkillService', 'ClientService', 'CompanyService',
-	                                      function ProjectService($http, $q, $logger, $apxTools, SkillService, ClientService, CompanyService) {
+	module.service('ProjectService', [ '$http', '$q', '$logger', '$apxTools', 'SkillService', 'CompanyService',
+	                                      function ProjectService($http, $q, $logger, $apxTools, SkillService, CompanyService) {
 		var LOGGER_NAME = module.name + '.' + this.constructor.name, log = $logger.logger(LOGGER_NAME);
 		
 		var service = {};
@@ -15,7 +15,7 @@
 			var now = new Date();
 			angular.forEach(data, function(project) {
 				if (project.client) {
-					project.client = ClientService.client(project.client);
+					project.client = CompanyService.company(project.client);
 				}
 				if (angular.isArray(project.company)) {
 					var companies = project.company; 
@@ -48,7 +48,7 @@
 			if (projectsPromise) {
 				return projectsPromise;
 			}
-			projectsPromise = $q.all([ getProjects(), ClientService.clients(), CompanyService.companies(), SkillService.skills() ]).then(function(result) {
+			projectsPromise = $q.all([ getProjects(), CompanyService.companies(), SkillService.skills() ]).then(function(result) {
 				buildProjects(result[0]);
 				return projects;
 			});

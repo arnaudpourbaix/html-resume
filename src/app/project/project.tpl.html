@@ -35,22 +35,29 @@
 			<div class="ui-collapsible-content ui-body-a" data-ng-class="{ 'ui-collapsible-content-collapsed' : !project.expand }">
 				<span data-ng-if="project.onsite === true" class="onsite fa fa-users" title="Régie"></span>
 				<span data-ng-if="project.onsite === false" class="onsite fa fa-home" title="Forfait"></span>
-				{{project.role}}
-				<div class="dates">
-					<span data-ng-if="project.end == null">Depuis </span>
-					{{project.start | date : 'MM/yy'}}
-					<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yy'}}</span>
+				<ul class="ui-listview">
+					<li class="ui-li-divider ui-bar-a ui-first-child">Contexte</li>
+					<li class="ui-li-static ui-body-inherit ">{{project.goal}}</li>
+					<li class="ui-li-divider ui-bar-a">Tâches</li>
+					<li class="ui-li-static ui-body-inherit" data-ng-repeat="task in project.tasks">{{task}}</li>
+					<li class="ui-li-divider ui-bar-a">Compétences</li>
+					<li class="ui-li-static ui-body-inherit ui-last-child">
+						<span data-ng-class="{ 'red' : $odd }" data-ng-repeat="skill in project.skills">{{skill.label}} </span>
+					</li>
+				</ul>
+				<div>
+					Employeur(s):
+					<span data-ng-repeat="company in project.company">
+						<span data-ng-if="company.logo">
+							<img class="company-logo" data-ng-src="assets/images/{{company.logo}}" title="{{company.label}}" alt="{{company.label}}" />
+						</span>
+						<span data-ng-if="!company.logo" class="company-label">
+							{{company.label}}
+						</span>
+					</span>
 				</div>
-				<div class="length">{{project.length}} mois</div>
-				{{project.goal}}
-				<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
-				<div data-ng-repeat="company in project.company">
-					<span data-ng-if="company.logo">
-						<img class="company-logo" data-ng-src="assets/images/{{company.logo}}" title="{{company.label}}" alt="{{company.label}}" />
-					</span>
-					<span data-ng-if="!company.logo" class="company-label">
-						{{company.label}}
-					</span>
+				<div data-ng-if="project.contact" class="contact">
+					Contact: {{project.contact.name}} - {{project.contact.role}} - {{project.contact.company}}
 				</div>
 			</div>
 		</div>
