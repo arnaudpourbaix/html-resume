@@ -26,8 +26,18 @@
    </head>
    <body>
    		<div data-role="page">
-			<ng-include src="'main/header.tpl.html'"></ng-include>
-			<div data-role="content" class="container" data-ui-view data-autoscroll="false"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+				<div data-role="navbar" data-grid="d">
+					<ul>
+						<li><a data-ng-class="{'ui-btn-active':$state.includes('about')}" data-ui-sref="about" data-icon="user" class="ui-alt-icon">Présentation</a></li>
+						<li><a data-ng-class="{'ui-btn-active':$state.includes('project')}" data-ui-sref="project" data-icon="bullets" class="ui-alt-icon">Expériences</a></li>
+						<li><a data-ng-class="{'ui-btn-active':$state.includes('client')}" data-ui-sref="client" data-icon="star" class="ui-alt-icon">Clients</a></li>
+						<li><a data-ng-class="{'ui-btn-active':$state.includes('skill')}" data-ui-sref="skill" data-icon="tag" class="ui-alt-icon">Compétences</a></li>
+						<li><a data-ng-class="{'ui-btn-active':$state.includes('formation')}" data-ui-sref="formation" data-icon="shop" class="ui-alt-icon">Formations</a></li>
+					</ul>
+				 </div>
+			</div>
+			<div data-role="main" class="ui-content" data-ui-view></div>
    		</div>
    </body>
 </html>

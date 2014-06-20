@@ -4,7 +4,7 @@
 		data-ng-click="project.expand = !project.expand">
 			<h3 class="ui-collapsible-heading" data-ng-class="{ 'ui-collapsible-heading-collapsed' : !project.expand }">
 				<div class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-a ui-mini" data-ng-class="project.expand ? 'ui-icon-minus': 'ui-icon-plus'">
-					<div class="ui-grid-c ui-responsive">
+					<div class="ui-grid-d ui-responsive">
 					    <div class="ui-block-a">
 					    	<div class="cell-grid">
 								<span data-ng-if="project.client && project.client.logo">
@@ -29,12 +29,14 @@
 					    	</div>
 					    </div>
 					    <div class="ui-block-c"><div class="cell-grid">{{project.role}}</div></div>
+					    <div class="ui-block-d"><div class="cell-grid">{{project.goal}}</div></div>
+					    <div class="ui-block-e"><span data-ng-repeat="skill in project.skills">{{skill.label}} </span></div>
 					</div>		
 				</div>		
 			</h3>
-			<div class="ui-collapsible-content ui-body-a" data-ng-class="{ 'ui-collapsible-content-collapsed' : !project.expand }">
+			<div class="ui-collapsible-content ui-body-b" data-ng-class="{ 'ui-collapsible-content-collapsed' : !project.expand }">
 				<ul class="ui-listview ui-mini">
-					<li class="ui-li-divider ui-bar-a ui-first-child">Contexte</li>
+					<li class="ui-li-divider ui-bar-b ui-first-child">Contexte</li>
 					<li class="ui-li-static ui-body-inherit ">{{project.goal}}</li>
 					<li class="ui-li-divider ui-bar-a">
 						Localisation

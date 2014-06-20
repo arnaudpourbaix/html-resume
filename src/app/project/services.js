@@ -14,6 +14,7 @@
 		function buildProjects(data) {
 			var now = new Date();
 			angular.forEach(data, function(project) {
+				//project.expand = true;
 				if (project.client) {
 					project.client = CompanyService.company(project.client);
 				}
