@@ -1,3 +1,0 @@
-[submodule "src/common/angular-jqwidgets"]
-	path = src/common/angular-jqwidgets
-	url = https://github.com/arnaudpourbaix/angular-jqwidgets.git
