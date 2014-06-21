@@ -267,7 +267,7 @@
     "end": "2008-04",
     "client": "planete-oui",
     "company": "elosi",
-    "role": "Gestion d'une TMA, développeur PHP",
+    "role": "Gestion d'une TMA, dév. PHP",
     "onsite": false,
     "contact": {
       "name": "Philippe Couché",
@@ -867,7 +867,7 @@
       "role": "Chef de projet",
       "company": "auchan"
     },
-    "goal": "Refonte de l'application de visualisation du chiffre d'affaire (Pilotage Auchan France)",
+    "goal": "Refonte de l'application de visualisation du chiffre d'affaire",
     "tasks": [
       "Définition de l'architecture front",
       "Rédaction d'une documentation technique sur l'installation et l'utilisation de l'environnement",

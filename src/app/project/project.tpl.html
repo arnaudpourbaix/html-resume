@@ -4,7 +4,7 @@
 		data-ng-click="project.expand = !project.expand">
 			<h3 class="ui-collapsible-heading" data-ng-class="{ 'ui-collapsible-heading-collapsed' : !project.expand }">
 				<div class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-a ui-mini" data-ng-class="project.expand ? 'ui-icon-minus': 'ui-icon-plus'">
-					<div class="ui-grid-d ui-responsive">
+					<div class="ui-grid-d">
 					    <div class="ui-block-a">
 					    	<div class="cell-grid">
 								<span data-ng-if="project.client && project.client.logo">
@@ -22,15 +22,17 @@
 							</div>
 					    </div>
 					    <div class="ui-block-b">
-					    	<div class="cell-grid">
+					    	<div class="cell-grid"><div class="no-wrap-cell">
 								<span data-ng-if="project.end == null">Depuis </span>
 								{{project.start | date : 'MM/yyyy'}}
 								<span data-ng-if="project.end != null && project.start != project.end">à {{project.end | date : 'MM/yyyy'}}</span>
-					    	</div>
+					    	</div></div>
 					    </div>
-					    <div class="ui-block-c"><div class="cell-grid">{{project.role}}</div></div>
-					    <div class="ui-block-d"><div class="cell-grid">{{project.goal}}</div></div>
-					    <div class="ui-block-e"><span data-ng-repeat="skill in project.skills">{{skill.label}} </span></div>
+					    <div class="ui-block-c"><div class="cell-grid"><div class="no-wrap-cell">{{project.role}}</div></div></div>
+					    <div class="ui-block-d"><div class="cell-grid"><div class="no-wrap-cell">{{project.goal}}</div></div></div>
+					    <div class="ui-block-e"><div class="cell-grid"><div class="no-wrap-cell">
+					    	<span data-ng-repeat="skill in project.skills">{{skill.label}} </span>
+					    </div></div></div>
 					</div>		
 				</div>		
 			</h3>
