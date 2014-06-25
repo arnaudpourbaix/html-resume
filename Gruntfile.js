@@ -1,7 +1,5 @@
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 
-var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
-
 var mountFolder = function(connect, dir) {
 	return connect.static(require('path').resolve(dir));
 };
@@ -19,8 +17,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-conventional-changelog');
 	grunt.loadNpmTasks('grunt-bump');
 	grunt.loadNpmTasks('grunt-recess');
-	grunt.loadNpmTasks('grunt-ngmin');
-	grunt.loadNpmTasks('grunt-html2js');
 
 	/**
 	 * utility function to get all app JavaScript sources.
@@ -54,7 +50,7 @@ module.exports = function(grunt) {
 			livereload : {
 				options : {
 					middleware : function(connect) {
-						return [ proxySnippet, lrSnippet, mountFolder(connect, 'target/build') ];
+						return [ lrSnippet, mountFolder(connect, 'target/build') ];
 					}
 				}
 			}
@@ -108,14 +104,6 @@ module.exports = function(grunt) {
 					expand : true
 				} ]
 			},
-			buildAppJson : {
-				files : [ {
-					src : [ '<%= app_files.json %>' ],
-					dest : '<%= build_dir %>/',
-					cwd : '.',
-					expand : true
-				} ]
-			},
 			buildVendorJs : {
 				files : [ {
 					src : [ '<%= vendor_files.js %>' ],
@@ -157,14 +145,6 @@ module.exports = function(grunt) {
 				// , flatten : true
 				} ]
 			},
-			compileAppJson : {
-				files : [ {
-					src : [ '**/*.json' ],
-					dest : '<%= compile_dir %>',
-					cwd : '<%= build_dir %>',
-					expand : true
-				} ]
-			},
 			compileAssets : {
 				files : [ {
 					src : [ '**' ],
@@ -180,7 +160,7 @@ module.exports = function(grunt) {
 			 * The `compile_css` target concatenates compiled CSS and vendor CSS together.
 			 */
 			compileCss : {
-				src : [ '<%= vendor_files.css %>', '<%= recess.build.dest %>' ],
+				src : [ '<%= vendor_files.css %>', '<%= app_files.css %>', '<%= recess.build.dest %>' ],
 				dest : '<%= recess.build.dest %>'
 			},
 			/**
@@ -190,7 +170,7 @@ module.exports = function(grunt) {
 				options : {
 					banner : '<%= meta.banner %>'
 				},
-				src : [ 'module.prefix', '<%= build_dir %>/src/**/*.js', '<%= html2js.app.dest %>', '<%= html2js.common.dest %>', 'module.suffix' ],
+				src : [ 'module.prefix', '<%= build_dir %>/webapp/**/*.js', '<%= html2js.app.dest %>', '<%= html2js.common.dest %>', 'module.suffix' ],
 				dest : '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js'
 			},
 			/**
@@ -201,36 +181,7 @@ module.exports = function(grunt) {
 				dest : '<%= compile_dir %>/assets/<%= pkg.name %>-vendors-<%= pkg.version %>.js'
 			}
 		},
-
-		/**
-		 * `ng-min` annotates the sources before minifying. That is, it allows us to code without the array syntax.
-		 */
-		ngmin : {
-			compile : {
-				files : [ {
-					src : [ '<%= app_files.js %>' ],
-					cwd : '<%= build_dir %>',
-					dest : '<%= build_dir %>',
-					expand : true
-				} ]
-			}
-		},
-
-		/**
-		 * Minify the sources.
-		 */
-		uglify : {
-			compile : {
-				options : {
-					banner : '<%= meta.banner %>',
-					mangle: false
-				},
-				files : {
-					'<%= concat.compileJs.dest %>' : '<%= concat.compileJs.dest %>'
-				}
-			}
-		},
-
+		
 		/**
 		 * `recess` handles our LESS compilation and uglification automatically. Only our `app.less` file is included in compilation; all other files must be imported from this file.
 		 */
@@ -260,46 +211,6 @@ module.exports = function(grunt) {
 		},
 
 		/**
-		 * `jshint` defines the rules of our linter as well as which files we should check. All javascript sources, and all our unit tests are linted based on the policies listed in
-		 * `options`. But we can also specify exclusionary patterns by prefixing them with an exclamation point (!); this is useful when code comes from a third party but is
-		 * nonetheless inside `src/`.
-		 */
-		jshint : {
-			src : [ '<%= app_files.js %>' ],
-			options : {
-				jshintrc : '.jshintrc'
-			}
-		},
-
-		/**
-		 * HTML2JS is a Grunt plugin that takes all of your template files and places them into JavaScript files as strings that are added to AngularJS's template cache. This means
-		 * that the templates too become part of the initial payload as one JavaScript file.
-		 */
-		html2js : {
-			/**
-			 * These are the templates from `src/app`.
-			 */
-			app : {
-				options : {
-					base : 'src/app'
-				},
-				src : [ '<%= app_files.atpl %>' ],
-				dest : '<%= build_dir %>/templates-app.js'
-			},
-
-			/**
-			 * These are the templates from `src/common`.
-			 */
-			common : {
-				options : {
-					base : 'src/common'
-				},
-				src : [ '<%= app_files.ctpl %>' ],
-				dest : '<%= build_dir %>/templates-common.js'
-			}
-		},
-
-		/**
 		 * The `index` task compiles the `index.html` file as a Grunt template. CSS and JS files co-exist here but they get split apart later.
 		 */
 		index : {
@@ -309,8 +220,7 @@ module.exports = function(grunt) {
 			 */
 			build : {
 				dir : '<%= build_dir %>',
-				src : [ '<%= vendor_files.js %>', '<%= build_dir %>/src/**/*.js', '<%= html2js.common.dest %>', '<%= html2js.app.dest %>', '<%= app_files.css %>',
-						'<%= vendor_files.css %>', '<%= recess.build.dest %>' ]
+				src : [ '<%= vendor_files.js %>', '<%= build_dir %>/src/**/*.js', '<%= app_files.css %>', '<%= vendor_files.css %>', '<%= recess.build.dest %>' ]
 			},
 
 			/**
@@ -318,10 +228,10 @@ module.exports = function(grunt) {
 			 */
 			compile : {
 				dir : '<%= compile_dir %>',
-				src : [ '<%= concat.compileVendorJs.dest %>', '<%= concat.compileJs.dest %>', '<%= recess.compile.dest %>' ]
+				src : [ '<%= concat.compileVendorJs.dest %>', '<%= concat.compileJs.dest %>', '<%= recess.build.dest %>' ]
 			}
 		},
-
+		
 		/**
 		 * And for rapid development, we have a watch set up that checks to see if any of the files listed below change, and then to execute the listed tasks when they do. This just
 		 * saves us from having to type "grunt" into the command-line every time we want to see what we're working on; we can instead just leave "grunt watch" running in a background
@@ -365,11 +275,6 @@ module.exports = function(grunt) {
 				tasks : [ 'copy:buildVendorJs' ]
 			},
 			
-			jsonsrc : {
-				files : [ '<%= app_files.json %>' ],
-				tasks : [ 'copy:buildAppJson' ]
-			},
-
 			/**
 			 * When assets are changed, copy them. Note that this will *not* copy new files, so this is probably not very useful.
 			 */
@@ -385,15 +290,7 @@ module.exports = function(grunt) {
 				files : [ '<%= app_files.html %>' ],
 				tasks : [ 'index:build' ]
 			},
-
-			/**
-			 * When our templates change, we only rewrite the template cache.
-			 */
-			tpls : {
-				files : [ '<%= app_files.atpl %>', '<%= app_files.ctpl %>' ],
-				tasks : [ 'html2js' ]
-			},
-
+			
 			/**
 			 * When the CSS files change, we need to compile and minify them.
 			 */
@@ -430,8 +327,11 @@ module.exports = function(grunt) {
 	/**
 	 * The `build` task gets your app ready to run for development and testing.
 	 */
-	grunt.registerTask('build', [ 'clean', 'html2js', 'jshint', 'recess:build', 'copy:buildAppAssets', 'copy:buildVendorAssets', 'copy:buildAppJs', 'copy:buildAppJson',
-			'copy:buildVendorJs', 'copy:buildAppCss', 'copy:buildVendorCss', 'index:build' ]);
+	grunt.registerTask('build', [ 'clean', 'recess:build', 'copy:buildAppJs', 'copy:buildAppAssets', 'index:build' ]);
+	
+	grunt.registerTask('build', [ 'clean', 'recess:build', 'copy:buildAppAssets', 'copy:buildVendorAssets', 'copy:buildAppJs', 
+	                  			'copy:buildVendorJs', 'copy:buildAppCss', 'copy:buildVendorCss', 'index:build' ]);
+	
 
 	/**
 	 * The `compile` task gets your app ready for deployment by concatenating and minifying your code.
@@ -440,7 +340,6 @@ module.exports = function(grunt) {
 			'uglify', 'index:compile' ]);
 
 	grunt.registerTask('server', [ 'connect:livereload', 'open', 'watch' ]);
-	grunt.registerTask('production', [ 'connect:livereload', 'open', 'build', 'compile', 'delta' ]);
 
 	/**
 	 * The index.html template includes the stylesheet and javascript sources based on dynamic names calculated in this Gruntfile. This task assembles the list into variables for
@@ -466,5 +365,5 @@ module.exports = function(grunt) {
 			}
 		});
 	});
-
+	
 };
