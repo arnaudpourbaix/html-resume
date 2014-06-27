@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr" data-ng-app="onlineResume" data-ng-controller="MainController">
 <head>
-  <title>IMX One Page Parallax Template</title>
+	<title>IMX One Page Parallax Template</title>
   
-  <meta charset="utf-8">
-  <meta name="description" content="IMX is a HTML5 and CSS3 template which is a responsive app landing page template and built with most popular Twitter Bootstrap 3.0 framework">
-  <meta name="keywords" content="app Showcase, Bootstrap 3, android, animation, app, css3, html5, ios">
+	<meta charset="utf-8">
+	<meta name="description" content="IMX is a HTML5 and CSS3 template which is a responsive app landing page template and built with most popular Twitter Bootstrap 3.0 framework">
+	<meta name="keywords" content="arnaud pourbaix, cv, curriculum vitae, resume">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- BOOTSTRAP -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/preloader.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/magnific-effect.css" rel="stylesheet">
+	<link href="assets/css/uikit.css" rel="stylesheet">
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	<link href="assets/css/owl.theme.css" rel="stylesheet">
+	<link href="assets/css/owl.transitions.css" rel="stylesheet">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
 
-  <!-- BOOTSTRAP -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/preloader.css" rel="stylesheet">
-  <link href="assets/css/animate.css" rel="stylesheet">
-  <link href="assets/css/magnific-effect.css" rel="stylesheet">
-  <link class="uikit" href="assets/css/uikit.css" rel="stylesheet">
-  <link href="assets/css/owl.carousel.css" rel="stylesheet">
-  <link href="assets/css/owl.theme.css" rel="stylesheet">
-  <link href="assets/css/owl.transitions.css" rel="stylesheet">
-  <link href="assets/css/magnific-popup.css" rel="stylesheet">
-  <link href="style-emerald.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:900,700,400,300%7COpen+Sans:400,700,800%7CLato:400,700' rel='stylesheet' type='text/css'>
 
-  <link href='http://fonts.googleapis.com/css?family=Raleway:900,700,400,300%7COpen+Sans:400,700,800%7CLato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-  <link rel="icon"
-  type="image/png"
-  href="assets/img/favicon.png">
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-      <![endif]-->
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="assets/js/excanvas.js"></script>
+	<![endif]-->
 
-    <!--[if lte IE 8]>
-      <script type="text/javascript" src="assets/js/excanvas.js"></script>
-      <![endif]-->
-
-    <!-- compiled CSS -->
-    <% styles.forEach(function(file) { %>
-    <link rel="stylesheet" type="text/css" href="<%= file %>" />
-    <% }); %>
-    <!-- Javascripts -->
-    <% scripts.forEach(function(file) { %>
-    <script type="text/javascript" src="<%= file %>"></script>
-    <% }); %>
-
+	<!-- compiled CSS -->
+	<% styles.forEach(function(file) { %>
+	<link rel="stylesheet" type="text/css" href="<%= file %>" />
+	<% }); %>
+	<!-- Javascripts -->
+	<% scripts.forEach(function(file) { %>
+	<script type="text/javascript" src="<%= file %>"></script>
+	<% }); %>
 </head>
 
-    <body data-spy="scroll" data-offset="70" data-target=".fixed-nav">
-      
+<body data-spy="scroll" data-offset="70" data-target=".fixed-nav">
       <div id="loader">
         <div class="spinner-wrapper">
           <span class="spinner"></span>
@@ -980,166 +975,153 @@
       </div>
     </section> <!-- TESTIMONIAL END -->
 
-    <section id="blog" class="home-part">
-      <div class="container">
-        <div class="section-heading-wrapper"><h3>Blog</h3></div>
-        <div class="clearfix"></div>
-        <div class="row">
 
-          <div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
-            <div class="blog-item-inner">
+	<!-- BLOG START -->
+	<section id="blog" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>Blog</h3></div>
+			<div class="clearfix"></div>
+			<div class="row">
 
-              <a href="single.html">
-                <div class="thumb">
-                  <img src="assets/img/blog/01.png" alt="">
-                  <div class="hover"></div>
-                </div> <!-- THUMB END -->
-              </a>
-
-              <h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
-              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-
-              <div class="tag">
-                <a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
-              </div> <!-- TAG END -->
-            </div> <!-- BLOG-ITEM INNER END -->
-          </div> <!-- BLOG-ITEM END -->
-
-          <div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1000, repeat: true}">
-            <div class="blog-item-inner">
-
-              <a href="single.html">
-                <div class="thumb">
-                  <img src="assets/img/blog/02.png" alt="">
-                  <div class="hover"></div>
-                </div> <!-- THUMB END -->
-              </a>
-
-              <h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
-              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-
-              <div class="tag">
-                <a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
-              </div> <!-- TAG END -->
-            </div> <!-- BLOG-ITEM INNER END -->
-          </div> <!-- BLOG-ITEM END -->
-
-          <div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1500, repeat: true}">
-            <div class="blog-item-inner">
-
-              <a href="single.html">
-                <div class="thumb">
-                  <img src="assets/img/blog/03.png" alt="">
-                  <div class="hover"></div>
-                </div> <!-- THUMB END -->
-              </a>
-
-              <h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
-              <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-
-              <div class="tag">
-                <a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
-              </div> <!-- TAG END -->
-            </div> <!-- BLOG-ITEM INNER END -->
-          </div> <!-- BLOG-ITEM END -->
-        </div> <!-- row end -->
-      </div> <!-- container end -->
-      <br><br>
-      
-      <div data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
-        <a href="blog.html" class="button-transparent"> View All Posts </a>
-      </div>
-    </section> <!-- BLOG END -->
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/01.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+	
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1000, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/02.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+	
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1500, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/03.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+				
+			</div> <!-- row end -->
+		</div> <!-- container end -->
+		
+		<br><br>
+		
+		<div data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
+			<a href="blog.html" class="button-transparent"> View All Posts </a>
+		</div>
+	</section>
+	<!-- BLOG END -->
 
 
-    <section id="subscribe">
-      <div class="container animation-wrapper">
-
-        <h3 data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 500, repeat: true}">Stay Updated</h3>
-
-        <form action="http://evenfly.us8.list-manage.com/subscribe/post?u=62bca83399cf0083546588b62&amp;id=f85a072005" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          
-          <div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1000, repeat: true}">
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="FIRST NAME" required>
-          </div>
-          
-          <div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1500, repeat: true}">
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
-          </div>
-          
-          <div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 2000, repeat: true}">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-        </form>
-
-      </div> <!-- CONTAINER END -->
-    </section> <!-- SUBSCRIBE END -->
+	<!-- SUBSCRIBE START -->
+	<section id="subscribe">
+		<div class="container animation-wrapper">
+			<h3 data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 500, repeat: true}">Stay Updated</h3>
+			<form action="http://evenfly.us8.list-manage.com/subscribe/post?u=62bca83399cf0083546588b62&amp;id=f85a072005" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1000, repeat: true}">
+					<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="FIRST NAME" required>
+				</div>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1500, repeat: true}">
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
+				</div>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 2000, repeat: true}">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- SUBSCRIBE END -->
 
 
-    <section id="question">
-      <div class="questionOverlay">
-        <div class="question-inner-wrapper">
-          <div class="home-part">
-            <h2>Or Have a question?</h2>
-            <h3>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum <br> __________</h3>
-
-            <div class="contact-form-wrapper" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
-              <form id="contact">
-                  <input name="name" type="text" placeholder="YOUR NAME" required>
-                
-                  <input name="email" type="email" placeholder="EMAIL ADDRESS" required>
-                
-                  <input name="subject" class="message" type="text" placeholder="SUBJECT OF THIS MESSAGE" required>
-                
-                  <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
-
-                  <input type="submit" value="SUBMIT">
-              </form>
-            </div>
-          </div>        
-        </div>
-      </div>
-    </section> <!-- QUESTIONS END -->
+	<!-- QUESTIONS START -->
+	<section id="question">
+		<div class="questionOverlay">
+			<div class="question-inner-wrapper">
+				<div class="home-part">
+					<h2>Or Have a question?</h2>
+					<h3>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum <br> __________</h3>
+					<div class="contact-form-wrapper" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+						<form id="contact">
+							<input name="name" type="text" placeholder="YOUR NAME" required>
+							<input name="email" type="email" placeholder="EMAIL ADDRESS" required>
+							<input name="subject" class="message" type="text" placeholder="SUBJECT OF THIS MESSAGE" required>
+							<textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
+							<input type="submit" value="SUBMIT">
+						</form>
+					</div>
+				</div>        
+			</div>
+		</div>
+	</section> 
+	<!-- QUESTIONS END -->
 
 
-    <footer id="footer">
-      <div class="container">
-        <ul id="footer-nav" class="pull-left">
-          <li>All works <span>&copy; Janifer Smith</span> 2014. All rights Reserved</li>
-          <li> <a class="hl" href="#">Terms of Use </a></li>
-          <li> <a class="hl" href="#">Privacy Policy </a></li>
-        </ul>
+	<!-- FOOTER START -->
+	<footer id="footer">
+		<div class="container">
+			<ul id="footer-nav" class="pull-left">
+				<li>All works <span>&copy; Janifer Smith</span> 2014. All rights Reserved</li>
+				<li> <a class="hl" href="#">Terms of Use </a></li>
+				<li> <a class="hl" href="#">Privacy Policy </a></li>
+			</ul>
+			<ul class="socialbtn pull-right">
+				<li><a class="icon-facebook" href="#"></a></li>
+				<li><a class="icon-twitter" href="#"></a></li>
+				<li><a class="icon-googleplus" href="#"></a></li>
+				<li><a class="icon-pinterest" href="#"></a></li>
+				<li><a class="icon-linkedin" href="#"></a></li>
+				<li><a class="icon-github" href="#"></a></li>
+				<li><a class="icon-dribbble" href="#"></a></li>
+				<li><a class="icon-instagram" href="#"></a></li>
+				<li><a class="icon-flickr" href="#"></a></li>
+				<li><a class="icon-uniE600" href="#"></a></li>
+			</ul>
+		</div>
+    </footer>
+	<!-- FOOTER END -->
 
-        <ul class="socialbtn pull-right">
-          <li><a class="icon-facebook" href="#"></a></li>
-          <li><a class="icon-twitter" href="#"></a></li>
-          <li><a class="icon-googleplus" href="#"></a></li>
-          <li><a class="icon-pinterest" href="#"></a></li>
-          <li><a class="icon-linkedin" href="#"></a></li>
-          <li><a class="icon-github" href="#"></a></li>
-          <li><a class="icon-dribbble" href="#"></a></li>
-          <li><a class="icon-instagram" href="#"></a></li>
-          <li><a class="icon-flickr" href="#"></a></li>
-          <li><a class="icon-uniE600" href="#"></a></li>
-        </ul>
-      </div>
-    </footer> <!-- FOOTER END -->
 
-    <!-- JQUERY/JAVASCRIPT PLUGINS START -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/chart.min.js"></script>
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-    <script src="assets/js/jquery.lazyload.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script class="uikit" src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/init.js"></script>
-    <script src="assets/js/preloader.js"></script>
-    <!-- JQUERY/JAVASCRIPT PLUGINS END -->
-
-  </body>
-  </html>
+	<!-- JQUERY/JAVASCRIPT PLUGINS START -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/chart.min.js"></script>
+	<script src="assets/js/jquery.mixitup.min.js"></script>
+	<script src="assets/js/jquery.lazyload.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/uikit.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/preloader.js"></script>
+	<!-- JQUERY/JAVASCRIPT PLUGINS END -->
+</body>
+</html>

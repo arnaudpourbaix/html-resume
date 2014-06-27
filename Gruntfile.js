@@ -1,7 +1,5 @@
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 
-var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
-
 var mountFolder = function(connect, dir) {
 	return connect.static(require('path').resolve(dir));
 };
@@ -55,7 +53,7 @@ module.exports = function(grunt) {
 			livereload : {
 				options : {
 					middleware : function(connect) {
-						return [ proxySnippet, lrSnippet, mountFolder(connect, 'build') ];
+						return [ lrSnippet, mountFolder(connect, 'build') ];
 					}
 				}
 			}		
