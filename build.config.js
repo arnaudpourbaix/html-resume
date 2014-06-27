@@ -7,8 +7,8 @@ module.exports = {
 	 * development and the `compile_dir` folder is where our app resides once
 	 * it's completely built.
 	 */
-	build_dir : 'target/build',
-	compile_dir : 'target/bin',
+	build_dir : 'build',
+	compile_dir : 'bin',
 
 	/**
 	 * This is a collection of file patterns that refer to our app code (the
@@ -19,10 +19,15 @@ module.exports = {
 	 * is our main stylesheet `unit` contains our app's unit tests.
 	 */
 	app_files : {
-		js : [ 'src/js/*.js' ],
-		html : [ 'src/index.html' ],
-		css : [ 'src/css/*.css' ],
-		less : 'src/style.less'
+		js : [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
+		json : [ 'src/**/*.json', '!src/assets/**/*.json' ],
+
+		atpl : [ 'src/app/**/*.tpl.html' ],
+		ctpl : [ 'src/common/**/*.tpl.html' ],
+
+		html : [ 'src/*.html' ],
+		css : [ 'src/**/*.css', '!src/assets/**/*.css' ],
+		less : 'src/app/app.less'
 	},
 
 	/**
@@ -37,7 +42,7 @@ module.exports = {
 	 * automatically included in our app.
 	 */
 	vendor_files : {
-		js : [],
+		js : [ 'vendor/angular/angular.js', 'vendor/lodash/dist/lodash.min.js' ],
 		css : [],
 		assets : []
 	}

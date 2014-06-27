@@ -1,0 +1,388 @@
+[
+  {
+  	"id": "java",
+    "label": "Java",
+    "group": "jee",
+    "type": "language",
+    "level": 4
+  },
+  {
+  	"id": "nsdk",
+    "label": "NSDK",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },
+  {
+  	"id": "slf4j",
+    "label": "SLF4J/Log4j/Logback",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "guava",
+    "label": "Guava",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "liquibase",
+    "label": "Liquibase",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "maven",
+    "label": "Maven",
+    "group": "jee",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "spring",
+    "label": "Spring",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+  	"id": "struts",
+    "label": "Struts",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+  	"id": "jsf",
+    "label": "JSF",
+    "group": "jee",
+    "type": "framework",
+    "level": 1
+  },
+  {
+  	"id": "hibernate",
+    "label": "Hibernate",
+    "group": "jee",
+    "type": "framework",
+    "level": 3
+  },
+  {
+  	"id": "ibatis",
+    "label": "Ibatis",
+    "group": "jee",
+    "type": "framework",
+    "level": 2
+  },
+  {
+  	"id": "seam",
+    "label": "Seam",
+    "group": "jee",
+    "type": "framework",
+    "level": 1
+  },
+  {
+  	"id": "javascript",
+    "label": "Javascript",
+    "group": "javascript",
+    "type": "language",
+    "level": 4
+  },
+  {
+  	"id": "underscore",
+    "label": "Underscore/Lodash",
+    "group": "javascript",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "jquery",
+    "label": "jQuery",
+    "group": "javascript",
+    "type": "library",
+    "level": 4
+  },
+  {
+  	"id": "jquery-mobile",
+    "label": "jQuery-mobile",
+    "group": "javascript",
+    "type": "library",
+    "level": 1
+  },
+  {
+  	"id": "dhtmlx",
+    "label": "Dhtmlx",
+    "group": "javascript",
+    "type": "library",
+    "level": 3
+  },
+  {
+  	"id": "jqwidgets",
+    "label": "jQwidgets",
+    "group": "javascript",
+    "type": "library",
+    "level": 4
+  },
+  {
+  	"id": "html5",
+    "label": "HTML 5",
+    "group": "html",
+    "type": "language",
+    "level": 3
+  },
+  {
+  	"id": "css",
+    "label": "CSS",
+    "group": "html",
+    "type": "language",
+    "level": 3
+  },
+  {
+  	"id": "less",
+    "label": "LESS",
+    "group": "html",
+    "type": "preprocessor",
+    "level": 3
+  },
+  {
+  	"id": "bootstrap",
+    "label": "Bootstrap",
+    "group": "html",
+    "type": "framework",
+    "level": 2
+  },
+  {
+  	"id": "requirejs",
+    "label": "Require JS",
+    "group": "javascript",
+    "type": "library",
+    "level": 2
+  },
+  {
+  	"id": "grunt",
+    "label": "Grunt JS",
+    "group": "javascript",
+    "type": "tools",
+    "level": 4
+  },
+  {
+  	"id": "bower",
+    "label": "Bower",
+    "group": "javascript",
+    "type": "tools",
+    "level": 4
+  },
+  {
+  	"id": "nodejs",
+    "label": "Node JS",
+    "group": "javascript",
+    "type": "tools",
+    "level": 3
+  },
+  {
+  	"id": "log4javascript",
+    "label": "Log4javascript",
+    "group": "javascript",
+    "type": "library",
+    "level": 4
+  },
+  {
+  	"id": "angular",
+    "label": "Angular JS",
+    "group": "javascript",
+    "type": "framework",
+    "level": 3
+  },
+  {
+  	"id": "c",
+    "label": "C",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+  	"id": "c#",
+    "label": "C#",
+    "group": ".net",
+    "type": "language",
+    "level": 3
+  },  
+  {
+  	"id": ".net",
+    "label": ".NET (1.1, 2.0, 3.5)",
+    "group": ".net",
+    "type": "framework",
+    "level": 3
+  },  
+  {
+  	"id": "asp",
+    "label": "ASP",
+    "group": null,
+    "type": "language",
+    "level": 2
+  },  
+  {
+  	"id": "php",
+    "label": "PHP",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+  	"id": "vb",
+    "label": "Visual Basic (VB6, VBA)",
+    "group": null,
+    "type": "language",
+    "level": 3
+  },  
+  {
+  	"id": "sql",
+    "label": "SQL",
+    "group": "database",
+    "type": "language",
+    "level": 4
+  },  
+  {
+  	"id": "plsql",
+    "label": "PL/SQL",
+    "group": "database",
+    "type": "language",
+    "level": 3
+  },
+  {
+  	"id": "tsql",
+    "label": "Transact-SQL",
+    "group": "database",
+    "type": "language",
+    "level": 3
+  },
+  {
+  	"id": "oracle",
+    "label": "Oracle",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+  	"id": "postgre",
+    "label": "PostgreSQL",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+  	"id": "sqlserver",
+    "label": "SQL Server",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+  	"id": "mysql",
+    "label": "MySQL",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+  	"id": "hsqldb",
+    "label": "HSQLDB",
+    "group": "database",
+    "type": "database",
+    "level": 3
+  },  
+  {
+  	"id": "teradata",
+    "label": "Teradata",
+    "group": "database",
+    "type": "database",
+    "level": 1
+  },  
+  {
+  	"id": "svn",
+    "label": "Subversion",
+    "group": null,
+    "type": "tools",
+    "level": 4
+  },  
+  {
+  	"id": "git",
+    "label": "Git",
+    "group": null,
+    "type": "tools",
+    "level": 3
+  },  
+  {
+  	"id": "tomcat",
+    "label": "Tomcat",
+    "group": null,
+    "type": "server",
+    "level": 3
+  },  
+  {
+  	"id": "jboss",
+    "label": "Jboss",
+    "group": null,
+    "type": "server",
+    "level": 2
+  },  
+  {
+  	"id": "websphere",
+    "label": "Websphere",
+    "group": null,
+    "type": "server",
+    "level": 2
+  },  
+  {
+  	"id": "talend",
+    "label": "Talend",
+    "group": null,
+    "type": "etl",
+    "level": 2
+  },  
+  {
+  	"id": "pentaho",
+    "label": "Pentaho",
+    "group": null,
+    "type": "etl",
+    "level": 2
+  },
+  {
+  	"id": "dimensions",
+    "label": "Dimensions",
+    "group": null,
+    "type": "tools",
+    "level": 2
+  },
+  {
+  	"id": "delphi",
+    "label": "Delphi",
+    "group": null,
+    "type": "language",
+    "level": 2
+  },
+  {
+  	"id": "excel",
+    "label": "Excel",
+    "group": null,
+    "type": "tools",
+    "level": 3
+  },
+  {
+  	"id": "access",
+    "label": "Access",
+    "group": null,
+    "type": "tools",
+    "level": 3
+  },
+  {
+  	"id": "scrum",
+    "label": "Scrum",
+    "group": "agility",
+    "type": "method",
+    "level": 1
+  }
+ 
+]
