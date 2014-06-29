@@ -44,416 +44,309 @@
 </head>
 
 <body data-spy="scroll" data-offset="70" data-target=".fixed-nav">
-      <div id="loader">
-        <div class="spinner-wrapper">
+	<div id="loader">
+		<div class="spinner-wrapper">
           <span class="spinner"></span>
         </div>
-      </div>
+	</div>
 
-      <!-- MENU FOR MOBILE AND SMALL DEVICES START -->
+	<!-- MENU FOR MOBILE AND SMALL DEVICES START -->
+	<div id="mobile-nav-trigger">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 
-          <div id="mobile-nav-trigger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-
-          <div id="mobilenav" class="mobilenav">
-            <div class="fixed-nav">
-               <div class="nav-container">
-                <nav class="navbar navbar-default navbar-static" role="navigation">
-                  <div class="navbar-header">
+	<div id="mobilenav" class="mobilenav">
+		<div class="fixed-nav">
+			<div class="nav-container">
+				<nav class="navbar navbar-default navbar-static" role="navigation">
+					<div class="navbar-header">
                     
-                    <div class="logo">
-                      <a class="scroll" href="#home">
-                        <div>I'm
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          Janifer
-                          <span>Smith</span>
-                        </div>
+						<div class="logo">
+							<a class="scroll" href="#home">
+								<div>I'm
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Janifer
+									<span>Smith</span>
+								</div>
+								<img src="assets/img/logo-f.png" alt="">
+							</a>
+						</div> <!-- logo end -->
+					</div>
+					<div class="bs-js-navbar-scrollspy pull-right">
+						<ul class="nav navbar-nav nav-effect">
+							<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+							<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+							<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
+							<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
+							<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+							<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div> <!-- FIXED NAV END-->
+	</div> <!-- MOBILENAV END -->
 
-                        <img src="assets/img/logo-f.png" alt="">
-                      </a>
-                    </div> <!-- col-md-6 end -->
-                  </div>
-
-                  <div class="bs-js-navbar-scrollspy pull-right">
-                    <ul class="nav navbar-nav nav-effect">
-                      <li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
-                      <li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
-                      <li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
-                      <li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
-                      <li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
-                      <li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-          </div> <!-- FIXED NAV END-->
-        </div> <!-- MOBILENAV END -->
-
-        <div id="body-wrapper"></div>
-
-      <!-- MENU FOR MOBILE AND SMALL DEVICES END -->
-
-      <section id="home">
-        <div class="homeoverlay">
-          <div class="home-part">
-            <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#home-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#home-slider" data-slide-to="1"></li>
-                <li data-target="#home-slider" data-slide-to="2"></li>
-                <li data-target="#home-slider" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="carousel-caption">
-                      <div class="slider-part slider-part-half">
-                        <h3 class="animated slideInLeftTrigger slideInLeft delay200">Janifer</h3>
-                        <h4 class="animated slideInLeftTrigger slideInLeft delay200"><span>is my nick name</span></h4>
-                        <p class="animated slideInLeftTrigger slideInLeft delay500">ANd I am a self-certified Pro  <b>designer</b>, <b>coder</b> as well as a passionate <b>photographer</b>. <br> <br>
-                          I believe I have enough reason to claim all...</p>
-                      </div> <!-- slider-part-half end -->
-
-                      <div class="slider-part-half">
-                        <img src="assets/img/slider/content-f-1.png" class="animated fadeInRightBigTrigger fadeInRightBig delay1000" alt="">
-                      </div> <!-- slider-part-half end -->
-                  </div>
-                </div> <!-- item end -->
-
-                <div class="item">
-                  <div class="carousel-caption">
-                      <div class="slider-part slider-part-half slider-part-full">
-                        <h3 class="animated slideInLeftTrigger delay200">designs</h3>
-                        <h4 class="animated slideInLeftTrigger delay200"><span>BORN IN SOUL</span></h4>
-                        <p class="animated slideInLeftTrigger delay500">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...</p>
-                      </div> <!-- slider-part-half end -->
-                  </div>
-                </div> <!-- item end -->
-
-                <div class="item">
-                  <div class="carousel-caption">
-
-                      <div class="slider-part slider-part-full">
-                        <h3 class="animated slideInLeftTrigger delay200">codes</h3>
-                        <h4 class="animated slideInLeftTrigger delay200"><span>come from brain</span></h4>
-                        <p class="animated slideInLeftTrigger delay500">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed...</p>
-                      </div> <!-- slider-part-full end -->
-                  </div>
-                </div> <!-- item end -->
-
-                <div class="item">
-                  <div class="carousel-caption">
-                      <div class="slider-part slider-part-full">
-                        <h3 class="animated slideInLeftTrigger delay200">camera</h3>
-                        <h4 class="animated slideInLeftTrigger delay200"><span>requires a third eye</span></h4>
-                        <p class="animated slideInLeftTrigger delay500">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...</p>
-                      </div> <!-- slider-part-full end -->
-                  </div>
-                </div> <!-- item end -->
-              </div>
-            </div>
-          </div> <!-- HOME-PART END -->
-        </div> <!-- HOMEOVERLAY END -->
-      </section> <!-- HOME END -->
-
-      <section id="navigation">
-        <div class="fixed-nav">
-          <div class="container">
-           <div class="nav-container">
-            <nav class="navbar navbar-default navbar-static" role="navigation">
-              <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <div class="logo">
-                  <a class="scroll" href="#home">
-                    <div>I'm
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      Janifer
-                      <span>Smith</span>
-                    </div>
-
-                    <img src="assets/img/logo-f.png" alt="">
-                  </a>
-                </div> <!-- col-md-6 end -->
-              </div>
-
-              <div class="collapse navbar-collapse bs-js-navbar-scrollspy pull-right">
-                <ul class="nav navbar-nav nav-effect">
-                  <li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
-                  <li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
-                  <li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
-                  <li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
-                  <li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
-                  <li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
-                  <li class="getitbtn"><a class="scroll" href="#at-the-end">GET IT NOW</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div> <!-- CONTAINER END -->
-      </div> <!-- FIXED NAV END-->
-    </section> <!-- NAVIGATION END -->
+	<div id="body-wrapper"></div>
+	<!-- MENU FOR MOBILE AND SMALL DEVICES END -->
 
 
-    <section id="about" class="home-part home-part two-part-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 promo" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
-            <a class="popup-vimeo" href="http://www.youtube.com/watch?v=QNUSIOMb6vI" data-effect="mfp-3d-unfold">
-              <div class="promobox">
-                <img class="img-responsive" src="assets/img/promo.png" alt="">
-                <div class="promooverlay"></div><!-- PROMOOVERLAY END -->
-              </div> <!-- PROMOBOX END -->
-            </a>
-          </div> <!-- col-md-6 end -->
+	<!-- HOME START -->
+	<section id="home">
+		<div class="homeoverlay">
+			<div class="home-part">
+				<div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#home-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#home-slider" data-slide-to="1"></li>
+						<li data-target="#home-slider" data-slide-to="2"></li>
+						<li data-target="#home-slider" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-half">
+									<h3 class="animated slideInLeftTrigger slideInLeft delay200">Janifer</h3>
+									<h4 class="animated slideInLeftTrigger slideInLeft delay200"><span>is my nick name</span></h4>
+									<p class="animated slideInLeftTrigger slideInLeft delay500">
+										ANd I am a self-certified Pro  <b>designer</b>, <b>coder</b> as well as a passionate <b>photographer</b>. <br> <br>
+	                          			I believe I have enough reason to claim all...
+	                          		</p>
+								</div> <!-- slider-part-half end -->
+								<div class="slider-part-half">
+									<img src="assets/img/slider/content-f-1.png" class="animated fadeInRightBigTrigger fadeInRightBig delay1000" alt="">
+								</div> <!-- slider-part-half end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-half slider-part-full">
+									<h3 class="animated slideInLeftTrigger delay200">designs</h3>
+									<h4 class="animated slideInLeftTrigger delay200"><span>BORN IN SOUL</span></h4>
+									<p class="animated slideInLeftTrigger delay500">
+										Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...
+									</p>
+								</div> <!-- slider-part-half end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-full">
+								<h3 class="animated slideInLeftTrigger delay200">codes</h3>
+								<h4 class="animated slideInLeftTrigger delay200"><span>come from brain</span></h4>
+								<p class="animated slideInLeftTrigger delay500">
+									Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed...
+								</p>
+							</div> <!-- slider-part-full end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-full">
+									<h3 class="animated slideInLeftTrigger delay200">camera</h3>
+									<h4 class="animated slideInLeftTrigger delay200"><span>requires a third eye</span></h4>
+									<p class="animated slideInLeftTrigger delay500">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...</p>
+								</div> <!-- slider-part-full end -->
+							</div>
+						</div> <!-- item end -->
+					</div>
+				</div>
+			</div> <!-- HOME-PART END -->
+		</div> <!-- HOMEOVERLAY END -->
+	</section> 
+	<!-- HOME END -->
 
-          <div class="col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1300, repeat: true}">
-            <h3>Janifer Smith</h3>
-            <h4>Enterprenure, Web Designer, UI/UX Expert.</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor. </p>
-            
-            <h5><span>As seen on</span></h5>
-            <img class="gray-hover as-seen" src="assets/img/about/logo-1.png" alt="">
-            <img class="gray-hover as-seen" src="assets/img/about/logo-2.png" alt="">
-            <img class="gray-hover as-seen" src="assets/img/about/logo-3.png" alt="">
-            <img class="gray-hover as-seen" src="assets/img/about/logo-4.png" alt="">
-          </div> <!-- col-md-6 end -->
-        </div> <!-- ROW END -->
-      </div> <!-- CONTAINER END -->
-    </section> <!-- ABOUT END -->
 
-    <section id="skills" class="home-part">  
-      <div class="container">
-        <div class="section-heading-wrapper"><h3>My Skills</h3></div>
-        <div class="clearfix"></div>
-        <div class="skill">
-          <div class="chart">
-            <canvas id="photoshop" height="55" width="55"></canvas>
-          </div> <!-- CHART END -->
+	<!-- NAVIGATION START -->
+	<section id="navigation">
+		<div class="fixed-nav">
+			<div class="container">
+				<div class="nav-container">
+					<nav class="navbar navbar-default navbar-static" role="navigation">
+						<div class="navbar-header">
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo">
+								<a class="scroll" href="#home">
+									<div>I'm
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Janifer
+										<span>Smith</span>
+									</div>
+									<img src="assets/img/logo-f.png" alt="">
+								</a>
+							</div> <!-- logo end -->
+						</div>
+						<div class="collapse navbar-collapse bs-js-navbar-scrollspy pull-right">
+							<ul class="nav navbar-nav nav-effect">
+								<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+								<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+								<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
+								<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
+								<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+								<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
+								<li class="getitbtn"><a class="scroll" href="#at-the-end">GET IT NOW</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div> <!-- CONTAINER END -->
+		</div> <!-- FIXED NAV END-->
+	</section> 
+	<!-- NAVIGATION END -->
 
-          <div class="details">
-            <p>Photoshop</p>
-            <p>2001-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
 
-        <div class="skill">
-          <div class="chart">
-            <canvas id="html" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
+	<!-- ABOUT START -->
+	<section id="about" class="home-part home-part two-part-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 promo" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
+					<a class="popup-vimeo" href="http://www.youtube.com/watch?v=QNUSIOMb6vI" data-effect="mfp-3d-unfold">
+						<div class="promobox">
+							<img class="img-responsive" src="assets/img/promo.png" alt="">
+							<div class="promooverlay"></div><!-- PROMOOVERLAY END -->
+						</div> <!-- PROMOBOX END -->
+					</a>
+				</div> <!-- col-md-6 end -->
 
-          <div class="details">
-            <p>HTML</p>
-            <p>2007-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
+				<div class="col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1300, repeat: true}">
+					<h3>Janifer Smith</h3>
+					<h4>Enterprenure, Web Designer, UI/UX Expert.</h4>
+					<p>
+						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit 
+						amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor. 
+					</p>
+					<h5><span>As seen on</span></h5>
+					<img class="gray-hover as-seen" src="assets/img/about/logo-1.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-2.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-3.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-4.png" alt="">
+				</div> <!-- col-md-6 end -->
+				
+			</div> <!-- ROW END -->
+		</div> <!-- CONTAINER END -->
+	</section> 
+	<!-- ABOUT END -->
 
-        <div class="skill">
-          <div class="chart">
-            <canvas id="php" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
 
-          <div class="details">
-            <p>PHP</p>
-            <p>2011-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
+	<!-- SKILLS START -->
+	<section id="skills" class="home-part">  
+		<div class="container">
+		
+			<div class="section-heading-wrapper">
+				<h3>My Skills</h3>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div class="skill">
+				<div class="chart">
+					<canvas id="photoshop" height="55" width="55"></canvas>
+				</div> <!-- CHART END -->
+          		<div class="details">
+            		<p>Photoshop</p>
+            		<p>2001-Present</p>            
+          		</div> <!-- DETAILS END -->
+        	</div> <!-- skill end -->
 
-        <div class="skill">
-          <div class="chart">
-            <canvas id="wordpress" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
+			<div class="skill">
+				<div class="chart">
+					<canvas id="html" height="55" width="55"></canvas>
+				</div> <!-- chart end -->
+				<div class="details">
+					<p>HTML</p>
+					<p>2007-Present</p>            
+				</div> <!-- DETAILS END -->
+			</div> <!-- skill end -->
 
-          <div class="details">
-            <p>WordPress</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="illustrator" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Illustrator</p>
-            <p>2001-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="css" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>CSS</p>
-            <p>2007-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="python" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Python</p>
-            <p>2012-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="joomla" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Joomla</p>
-            <p>2009-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="indesign" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Indesign</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
+			<div class="skill">
+				<div class="chart">
+					<canvas id="php" height="55" width="55"></canvas>
+				</div> <!-- chart end -->
+				<div class="details">
+					<p>PHP</p>
+					<p>2011-Present</p>            
+				</div> <!-- DETAILS END -->
+			</div> <!-- skill end -->
         
-        <div class="skill">
-          <div class="chart">
-            <canvas id="js" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>JavaScript</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-        
-        <div class="skill">
-          <div class="chart">
-            <canvas id="ruby" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Ruby</p>
-            <p>2013-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-        
-        <div class="skill">
-          <div class="chart">
-            <canvas id="magento" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Magento</p>
-            <p>2013-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-        
-        <div class="skill">
-          <div class="chart">
-            <canvas id="image_ready" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Imageready</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-        
-        <div class="skill">
-          <div class="chart">
-            <canvas id="jquery" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>jQuery</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="java_skill" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Java</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-
-        <div class="skill">
-          <div class="chart">
-            <canvas id="bigcommerce" height="55" width="55"></canvas>
-          </div> <!-- chart end -->
-
-          <div class="details">
-            <p>Bigcommerce</p>
-            <p>2008-Present</p>            
-          </div> <!-- DETAILS END -->
-        </div> <!-- col-md-3 end -->
-      </div>
-    </section> <!-- SKILLS END -->
+		</div><!-- container END -->
+	</section> 
+	<!-- SKILLS END -->
     
-    <section id="education" class="home-part">
-      <div class="container">
-        <div class="col-md-8" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
-          <h3>Education and Certification</h3>
-          <div class="item">
-            <h4>Masters of Science in Media, Arts and Sciences</h4>
-            <h4><span>University of Lorem</span></h4>
-            <p>Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.</p>
-            <h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
-          </div> <!-- ITEM END -->
+    
+    <!-- EDUCATION START -->
+	<section id="education" class="home-part">
+		<div class="container">
+			<div class="col-md-8" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+				<h3>Education and Certification</h3>
+				
+				<div class="item">
+					<h4>Masters of Science in Media, Arts and Sciences</h4>
+					<h4><span>University of Lorem</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
 
-          <div class="item">
-            <h4>Masters of Science in Media, Arts and Sciences</h4>
-            <h4><span>Ipsum University</span></h4>
-            <p>Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.</p>
-            <h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
-          </div> <!-- ITEM END -->
+				<div class="item">
+					<h4>Masters of Science in Media, Arts and Sciences</h4>
+					<h4><span>Ipsum University</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
 
-          <div class="item">
-            <h4>Bachelor of Fine Arts</h4>
-            <h4><span>Dolor Sit Instutute of Technology</span></h4>
-            <p>Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.</p>
-            <h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
-          </div> <!-- ITEM END -->
-        </div> <!-- col-md-8 end -->
+				<div class="item">
+					<h4>Bachelor of Fine Arts</h4>
+					<h4><span>Dolor Sit Instutute of Technology</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
+				
+			</div> <!-- col-md-8 end -->
 
-        <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
-          <div class="item">
-            <h3>Awards</h3>
-            <h4>Tikka Ali</h4>
-            <p>Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.</p>
-            <h5>08 June 2014</h5>
-          </div><!-- ITEM END -->
+			<div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+				<div class="item">
+					<h3>Awards</h3>
+					<h4>Tikka Ali</h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.
+					</p>
+					<h5>08 June 2014</h5>
+				</div><!-- ITEM END -->
 
-          <div class="item">
-            <h4>Sobir Munsi</h4>
-            <p>Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.</p>
-            <h5>08 June 2014</h5>
-          </div> <!-- ITEM END -->
-        </div> <!-- col-md-4 end -->
-      </div> <!-- container end -->
-    </section> <!-- EDUCATION END -->
+				<div class="item">
+					<h4>Sobir Munsi</h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.
+					</p>
+					<h5>08 June 2014</h5>
+				</div> <!-- ITEM END -->
+			</div> <!-- col-md-4 end -->
+		</div> <!-- container end -->
+	</section> 
+	<!-- EDUCATION END -->
 
-    <section id="experience" class="home-part">
+
+	<!-- EXPERIENCE START -->
+	<section id="experience" class="home-part">
       <div class="container">
         <div class="section-heading-wrapper"><h3 id="experience-position">Experience</h3></div>
         <div class="clearfix"></div>
@@ -560,7 +453,8 @@
 
         </div> <!-- ROW END -->
       </div> <!-- CONTAINER END -->
-    </section> <!-- EXPERIENCE END -->
+	</section> 
+	<!-- EXPERIENCE END -->
 
 
     <section id="service" class="home-part">
@@ -935,45 +829,39 @@
 
 
 
-    <section id="testimonial" class="home-part">
-      <div class="container">
-        <div class="section-heading-wrapper"><h3>Testimonial</h3></div>
+	<!-- TESTIMONIAL START -->
+	<section id="testimonial" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>Testimonial</h3></div>
+			<div class="clearfix"></div>
+			<img src="assets/img/testimonial/testimonial.png" alt="">
 
-        <div class="clearfix"></div>
+			<h3>some fun facts and my Hapiness <br> __________</h3>
 
-        <img src="assets/img/testimonial/testimonial.png" alt="">
+			<div id="testimonial-carosel" class="owl-carousel">
+				<div> <!-- ITEM START -->
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit..</p>
+					<h5><span>Subrota Biswas,</span> CEO, Bugdoom Instititute</h5>
+				</div> <!-- ITEM END -->
 
-        <h3>some fun facts and my Hapiness <br> __________</h3>
+				<div> <!-- ITEM START -->
+					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+					<h5><span>Jomir Ali Talukdar,</span> Koshai, Own Shop</h5>
+				</div> <!-- ITEM END -->
 
-        <div id="testimonial-carosel" class="owl-carousel">
-          <div> <!-- ITEM START -->
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit..</p>
+				<div> <!-- ITEM START -->
+					<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+					<h5><span>Ganze Ali,</span> Singer, Love Fist</h5>
+				</div> <!-- ITEM END -->
 
-            <h5><span>Subrota Biswas,</span> CEO, Bugdoom Instititute</h5>
-          </div> <!-- ITEM END -->
-
-          <div> <!-- ITEM START -->
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-
-            <h5><span>Jomir Ali Talukdar,</span> Koshai, Own Shop</h5>
-          </div> <!-- ITEM END -->
-
-          <div> <!-- ITEM START -->
-            <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
-
-            <h5><span>Ganze Ali,</span> Singer, Love Fist</h5>
-          </div> <!-- ITEM END -->
-
-          <div> <!-- ITEM START -->
-            <p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-
-            <h5><span>Kalu Matobbar,</span> PRESIDENT, Village</h5>
-          </div> <!-- ITEM END -->
-
-        </div>
-
-      </div>
-    </section> <!-- TESTIMONIAL END -->
+				<div> <!-- ITEM START -->
+					<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+					<h5><span>Kalu Matobbar,</span> PRESIDENT, Village</h5>
+				</div> <!-- ITEM END -->
+			</div>
+		</div>
+	</section> 
+	<!-- TESTIMONIAL END -->
 
 
 	<!-- BLOG START -->
