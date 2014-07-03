@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" data-ng-app="onlineResume" data-ng-controller="MainController">
+<head>
+	<title>IMX One Page Parallax Template</title>
+  
+	<meta charset="utf-8">
+	<meta name="description" content="IMX is a HTML5 and CSS3 template which is a responsive app landing page template and built with most popular Twitter Bootstrap 3.0 framework">
+	<meta name="keywords" content="arnaud pourbaix, cv, curriculum vitae, resume">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- BOOTSTRAP -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/preloader.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/magnific-effect.css" rel="stylesheet">
+	<link href="assets/css/uikit.css" rel="stylesheet" class="uikit">
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+	<link href="assets/css/owl.theme.css" rel="stylesheet">
+	<link href="assets/css/owl.transitions.css" rel="stylesheet">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:900,700,400,300%7COpen+Sans:400,700,800%7CLato:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="assets/js/excanvas.js"></script>
+	<![endif]-->
+
+	<!-- compiled CSS -->
+	<% styles.forEach(function(file) { %>
+	<link rel="stylesheet" type="text/css" href="<%= file %>" />
+	<% }); %>
+	<!-- Javascripts -->
+	<% scripts.forEach(function(file) { %>
+	<script type="text/javascript" src="<%= file %>"></script>
+	<% }); %>
+</head>
+
+<body data-spy="scroll" data-offset="70" data-target=".fixed-nav">
+	<div id="loader">
+		<div class="spinner-wrapper">
+          <span class="spinner"></span>
+        </div>
+	</div>
+
+	<ng-include src="'main/mobile-nav.tpl.html'"></ng-include>
+	<ng-include src="'main/home.tpl.html'"></ng-include>
+	<ng-include src="'main/navigation.tpl.html'"></ng-include>
+	<ng-include src="'main/about.tpl.html'"></ng-include>
+	<ng-include src="'main/skills.tpl.html'"></ng-include>
+	<ng-include src="'main/education.tpl.html'"></ng-include>
+	<ng-include src="'main/experiences.tpl.html'"></ng-include>
+	<ng-include src="'main/services.tpl.html'"></ng-include>
+	<ng-include src="'main/portfolio.tpl.html'"></ng-include>
+	<ng-include src="'main/quote.tpl.html'"></ng-include>
+	<ng-include src="'main/numbers.tpl.html'"></ng-include>
+	<ng-include src="'main/clients.tpl.html'"></ng-include>
+	<ng-include src="'main/testimonials.tpl.html'"></ng-include>
+	<ng-include src="'main/blog.tpl.html'"></ng-include>
+	<ng-include src="'main/subscribe.tpl.html'"></ng-include>
+	<ng-include src="'main/question.tpl.html'"></ng-include>
+	<ng-include src="'main/footer.tpl.html'"></ng-include>
+
+	<!-- JQUERY/JAVASCRIPT PLUGINS START -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/chart.min.js"></script>
+	<script src="assets/js/jquery.mixitup.min.js"></script>
+	<script src="assets/js/jquery.lazyload.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/uikit.min.js" class="uikit"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/init.js"></script>
+	<!-- JQUERY/JAVASCRIPT PLUGINS END -->
+</body>
+</html>

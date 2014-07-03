@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" data-ng-app="onlineResume" data-ng-controller="MainController">
 <head>
-	<title>IMX One Page Parallax Template</title>
+	<title>CV - Arnaud Pourbaix</title>
   
 	<meta charset="utf-8">
 	<meta name="description" content="IMX is a HTML5 and CSS3 template which is a responsive app landing page template and built with most popular Twitter Bootstrap 3.0 framework">
@@ -14,7 +14,7 @@
 	<link href="assets/css/preloader.css" rel="stylesheet">
 	<link href="assets/css/animate.css" rel="stylesheet">
 	<link href="assets/css/magnific-effect.css" rel="stylesheet">
-	<link href="assets/css/uikit.css" rel="stylesheet">
+	<link href="assets/css/uikit.css" rel="stylesheet" class="uikit">
 	<link href="assets/css/owl.carousel.css" rel="stylesheet">
 	<link href="assets/css/owl.theme.css" rel="stylesheet">
 	<link href="assets/css/owl.transitions.css" rel="stylesheet">
@@ -50,23 +50,917 @@
         </div>
 	</div>
 
-	<ng-include src="'main/mobile-nav.tpl.html'"></ng-include>
-	<ng-include src="'main/home.tpl.html'"></ng-include>
-	<ng-include src="'main/navigation.tpl.html'"></ng-include>
-	<ng-include src="'main/about.tpl.html'"></ng-include>
-	<ng-include src="'main/skills.tpl.html'"></ng-include>
-	<ng-include src="'main/education.tpl.html'"></ng-include>
-	<ng-include src="'main/experiences.tpl.html'"></ng-include>
-	<ng-include src="'main/services.tpl.html'"></ng-include>
-	<ng-include src="'main/portfolio.tpl.html'"></ng-include>
-	<ng-include src="'main/quote.tpl.html'"></ng-include>
-	<ng-include src="'main/numbers.tpl.html'"></ng-include>
-	<ng-include src="'main/clients.tpl.html'"></ng-include>
-	<ng-include src="'main/testimonials.tpl.html'"></ng-include>
-	<ng-include src="'main/blog.tpl.html'"></ng-include>
-	<ng-include src="'main/subscribe.tpl.html'"></ng-include>
-	<ng-include src="'main/question.tpl.html'"></ng-include>
-	<ng-include src="'main/footer.tpl.html'"></ng-include>
+	<!-- MENU FOR MOBILE AND SMALL DEVICES START -->
+	<div id="mobile-nav-trigger">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<div id="mobilenav" class="mobilenav">
+		<div class="fixed-nav">
+			<div class="nav-container">
+				<nav class="navbar navbar-default navbar-static" role="navigation">
+					<div class="navbar-header">
+                    
+						<div class="logo">
+							<a class="scroll" href="#home">
+								<div>I'm
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Janifer
+									<span>Smith</span>
+								</div>
+								<img src="assets/img/logo-f.png" alt="">
+							</a>
+						</div> <!-- logo end -->
+					</div>
+					<div class="bs-js-navbar-scrollspy pull-right">
+						<ul class="nav navbar-nav nav-effect">
+							<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+							<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+							<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
+							<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
+							<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+							<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div> <!-- FIXED NAV END-->
+	</div> <!-- MOBILENAV END -->
+
+	<div id="body-wrapper"></div>
+	<!-- MENU FOR MOBILE AND SMALL DEVICES END -->
+
+
+	<!-- HOME START -->
+	<section id="home">
+		<div class="homeoverlay">
+			<div class="home-part">
+				<div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#home-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#home-slider" data-slide-to="1"></li>
+						<li data-target="#home-slider" data-slide-to="2"></li>
+						<li data-target="#home-slider" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-half">
+									<h3 class="animated slideInLeftTrigger slideInLeft delay200">Arnaud Pourbaix</h3>
+									<h4 class="animated slideInLeftTrigger slideInLeft delay200"><span>Expert technique</span></h4>
+									<p class="animated slideInLeftTrigger slideInLeft delay500">
+										Passionné par la programmation <br>
+	                          			que je pratique depuis plus de 25 ans
+	                          		</p>
+								</div> <!-- slider-part-half end -->
+								<div class="slider-part-half">
+									<img src="assets/img/slider/content-f-1.png" class="animated fadeInRightBigTrigger fadeInRightBig delay1000" alt="">
+								</div> <!-- slider-part-half end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-half slider-part-full">
+									<h3 class="animated slideInLeftTrigger delay200">JEE</h3>
+									<h4 class="animated slideInLeftTrigger delay200"><span>Java Entreprise Edition</span></h4>
+									<p class="animated slideInLeftTrigger delay500">
+										et Javascript sont ma spécialité
+									</p>
+								</div> <!-- slider-part-half end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-full">
+									<h3 class="animated slideInLeftTrigger delay200">Qualité</h3>
+									<h4 class="animated slideInLeftTrigger delay200"><span>et bonnes pratiques</span></h4>
+									<p class="animated slideInLeftTrigger delay500">
+										sont des valeurs
+									</p>
+								</div> <!-- slider-part-full end -->
+							</div>
+						</div> <!-- item end -->
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="slider-part slider-part-full">
+									<h3 class="animated slideInLeftTrigger delay200">Veille</h3>
+									<h4 class="animated slideInLeftTrigger delay200"><span>technologique</span></h4>
+									<p class="animated slideInLeftTrigger delay500">et auto-formation sur les technologies en vogue</p>
+								</div> <!-- slider-part-full end -->
+							</div>
+						</div> <!-- item end -->
+					</div>
+				</div>
+			</div> <!-- HOME-PART END -->
+		</div> <!-- HOMEOVERLAY END -->
+	</section> 
+	<!-- HOME END -->
+
+
+	<!-- NAVIGATION START -->
+	<section id="navigation">
+		<div class="fixed-nav">
+			<div class="container">
+				<div class="nav-container">
+					<nav class="navbar navbar-default navbar-static" role="navigation">
+						<div class="navbar-header">
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo">
+								<a class="scroll" href="#home">
+									<div>I'm
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										Janifer
+										<span>Smith</span>
+									</div>
+									<img src="assets/img/logo-f.png" alt="">
+								</a>
+							</div> <!-- logo end -->
+						</div>
+						<div class="collapse navbar-collapse bs-js-navbar-scrollspy pull-right">
+							<ul class="nav navbar-nav nav-effect">
+								<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+								<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+								<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
+								<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
+								<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+								<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div> <!-- CONTAINER END -->
+		</div> <!-- FIXED NAV END-->
+	</section> 
+	<!-- NAVIGATION END -->
+
+
+	<!-- ABOUT START -->
+	<section id="about" class="home-part home-part two-part-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 promo" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
+					<a class="popup-vimeo" href="http://www.youtube.com/watch?v=QNUSIOMb6vI" data-effect="mfp-3d-unfold">
+						<div class="promobox">
+							<img class="img-responsive" src="assets/img/promo.png" alt="">
+							<div class="promooverlay"></div><!-- PROMOOVERLAY END -->
+						</div> <!-- PROMOBOX END -->
+					</a>
+				</div> <!-- col-md-6 end -->
+
+				<div class="col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1300, repeat: true}">
+					<h3>Janifer Smith</h3>
+					<h4>Enterprenure, Web Designer, UI/UX Expert.</h4>
+					<p>
+						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit 
+						amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor. 
+					</p>
+					<h5><span>As seen on</span></h5>
+					<img class="gray-hover as-seen" src="assets/img/about/logo-1.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-2.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-3.png" alt="">
+					<img class="gray-hover as-seen" src="assets/img/about/logo-4.png" alt="">
+				</div> <!-- col-md-6 end -->
+				
+			</div> <!-- ROW END -->
+		</div> <!-- CONTAINER END -->
+	</section> 
+	<!-- ABOUT END -->
+
+
+	<!-- SKILLS START -->
+	<section id="skills" class="home-part" data-ng-controller="SkillController">  
+		<div class="container">
+		
+			<div class="section-heading-wrapper">
+				<h3>My Skills</h3>
+			</div>
+			<div class="clearfix"></div>
+			
+			<div data-ng-repeat="skill in skills" class="skill">
+				<div class="chart">
+					<canvas data-skill="skill" height="55" width="55"></canvas>
+				</div> <!-- CHART END -->
+          		<div class="details">
+            		<p>{{skill.label}}</p>
+            		<p>{{skill.start}}-{{skill.end || "Aujourd'hui" }}</p>            
+          		</div> <!-- DETAILS END -->
+        	</div> <!-- skill end -->
+        
+		</div><!-- container END -->
+	</section> 
+	<!-- SKILLS END -->
+    
+    
+    <!-- EDUCATION START -->
+	<section id="education" class="home-part">
+		<div class="container">
+			<div class="col-md-8" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+				<h3>Education and Certification</h3>
+				
+				<div class="item">
+					<h4>Masters of Science in Media, Arts and Sciences</h4>
+					<h4><span>University of Lorem</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
+
+				<div class="item">
+					<h4>Masters of Science in Media, Arts and Sciences</h4>
+					<h4><span>Ipsum University</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
+
+				<div class="item">
+					<h4>Bachelor of Fine Arts</h4>
+					<h4><span>Dolor Sit Instutute of Technology</span></h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods, 
+						Indian texts contend golden disk Indian texts UFO flying vessels. Otherworldly visitors aircraft kachina doll contend alien.
+					</p>
+					<h5>January 2009 - Aprill 2014 (Expected) | GPA: 4.5 out of 5</h5>
+				</div> <!-- ITEM END -->
+				
+			</div> <!-- col-md-8 end -->
+
+			<div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+				<div class="item">
+					<h3>Awards</h3>
+					<h4>Tikka Ali</h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.
+					</p>
+					<h5>08 June 2014</h5>
+				</div><!-- ITEM END -->
+
+				<div class="item">
+					<h4>Sobir Munsi</h4>
+					<p>
+						Ancient alien contend astronaut magnetic current, ancient civilization von Daniken von Daniken Ezekiel, cover up sightings contend UFO. 
+						Foo fighter pyramids Nazca lines sightings technology ancient god mystery space brothers, star gates crystal skull stonehenge evidence Chariot of the Gods.
+					</p>
+					<h5>08 June 2014</h5>
+				</div> <!-- ITEM END -->
+			</div> <!-- col-md-4 end -->
+		</div> <!-- container end -->
+	</section> 
+	<!-- EDUCATION END -->
+
+
+	<!-- EXPERIENCE START -->
+	<section id="experience" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3 id="experience-position">Experience</h3></div>
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
+					<div class="col-md-4">
+						<div class="company">
+							<img src="assets/img/experience/placeholder.png" alt="">
+						</div> <!-- COMPANY END -->
+						<div class="recruit">
+							<h4>Freelance</h4>
+							<h5>Remote</h5>
+						</div><!-- RECRUIT END -->
+					</div> <!-- col-md-4 end -->
+					<div class="col-md-8">
+						<h4>Web & Mobile UI/UX Designer - <span>February 2011 – Present (5 Years 2 months)</span></h4>
+						<p>
+							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+							Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+						</p>
+						<div class="x-skills">
+							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
+						</div> <!-- X-SKILLS END -->
+					</div> <!-- col-md-8 end -->
+					<div class="x-devider"></div> <!-- experience item deivder -->
+				</div> <!-- ANIMATION WRAPPER END-->
+          
+				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 800, repeat: true}">
+					<div class="col-md-4">
+						<div class="company">
+							<img src="assets/img/experience/placeholder.png" alt="">
+						</div> <!-- company end -->
+						<div class="recruit">
+							<h4>Alur Dokan</h4>
+							<h5>Melbourne, Australia</h5>
+						</div><!-- RECRUIT END -->
+					</div> <!-- col-md-4 end -->
+					<div class="col-md-8">
+						<h4>UX Designer - <span>October 2013 – Present (5 months) </span></h4>
+						<p>
+							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 
+							sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+						</p>
+						<div class="x-skills">
+							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
+						</div> <!-- X-SKILLS END -->
+					</div> <!-- col-md-8 end -->
+					<div class="x-devider"></div> <!-- experience item deivder -->
+				</div> <!-- ANIMATION WRAPPER END-->
+          
+				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1100, repeat: true}">
+					<div class="col-md-4">
+						<div class="company">
+							<img src="assets/img/experience/placeholder.png" alt="">
+						</div> <!-- company end -->
+						<div class="recruit">
+							<h4>Muri Factory</h4>
+							<h5>Los Angeles. USA</h5>
+						</div><!-- RECRUIT END -->
+					</div> <!-- col-md-4 end -->
+					<div class="col-md-8">
+						<h4>Head of Ideas - <span>June 2009 – September 2013 (4 years 3 months)</span></h4>
+						<p>
+							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 
+							sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+						</p>
+						<div class="x-skills">
+							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
+						</div> <!-- X-SKILLS END -->
+					</div> <!-- col-md-8 end -->
+					<div class="x-devider"></div> <!-- experience item deivder -->
+				</div> <!-- ANIMATION WRAPPER END-->
+          
+				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1400, repeat: true}">
+					<div class="col-md-4">
+						<div class="company">
+							<img src="assets/img/experience/placeholder.png" alt="">
+						</div> <!-- company end -->
+						<div class="recruit">
+							<h4>Chinir Gudam</h4>
+							<h5>Remote - Jhenidah, BD</h5>
+						</div><!-- RECRUIT END -->
+					</div> <!-- col-md-4 end -->
+					<div class="col-md-8">
+						<h4>Freelance Web Designer - <span>January 2009 – May 2003 (4 months)</span></h4>
+						<p>
+							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
+							consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+						</p>
+						<div class="x-skills">
+							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
+						</div> <!-- X-SKILLS END -->
+					</div> <!-- col-md-8 end -->
+				</div> <!-- ANIMATION WRAPPER END-->
+			</div> <!-- ROW END -->
+		</div> <!-- CONTAINER END -->
+	</section> 
+	<!-- EXPERIENCE END -->
+
+
+	<!-- SERVICES START -->
+	<section id="service" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>Available For</h3></div>
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/brand-design.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>Brand Identity Design</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- service details end -->
+				</div> <!-- col-md-3 end -->
+				
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 800, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/website-design.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>Website Design</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- service details end -->
+				</div> <!-- col-md-3 end -->
+				
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1100, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/app-design.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>Mobile App Design</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- service details end -->
+				</div> <!-- col-md-3 end -->
+
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1400, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/psd-html.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>PSD to HTML</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- service details end -->
+				</div> <!-- col-md-3 end -->
+
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1700, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/html-wp.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>HTML to WordPress</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- SERVICE DETAILS END -->
+				</div> <!-- col-md-3 end -->
+
+				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 2000, repeat: true}">
+					<div class="service-logo">
+						<img src="assets/img/service/ecommerce.png" alt="">
+					</div> <!-- SERVICE LOGO END -->
+					<div class="service-details">
+						<h4>E-Commerce Web Design</h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+					</div> <!-- service details end -->
+				</div> <!-- col-md-3 end -->
+			</div> <!-- row end -->
+		</div> <!-- CONTAINER END -->
+	</section> 
+	<!-- SERVICES END -->
+
+
+	<!-- PORTFOLIO START -->
+	<section id="portfolio" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>My Portfolio</h3></div>
+			<div class="clearfix"></div>
+			<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+				<div class="mix-nav">
+					<!-- FILTER CONTROLS START-->  
+					<div class="controls">
+						<ul class="mixitup_nav">
+							<li class="filter active" data-filter="all">Show All</li>
+							<li class="filter" data-filter="brand_design" data-store="brand_design">brand identity</li>
+							<li class="filter" data-filter="illustration" data-store="illustration">illustration</li>
+							<li class="filter" data-filter="mobile_apps" data-store="mobile_apps">mobile app design</li>
+							<li class="filter" data-filter="print_design" data-store="print_design">print design</li>
+							<li class="filter" data-filter="web_design" data-store="web_design">web design</li>
+						</ul>
+					</div>
+					<!-- FILTER CONTROLS END--> 
+				</div>
+
+				<div class="mix-gallery">
+					<ul id="Grid" class="magnifico-gallery">
+						<li class="mix brand_design print_design"><!-- ITEM START -->
+							<a href="assets/img/portfolio/01.jpg" data-source="assets/img/portfolio/01.jpg">
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/01.jpg" alt="Lake">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix web_design illustration"><!-- ITEM START -->
+							<a href="assets/img/portfolio/02.jpg" data-source="assets/img/portfolio/02.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/02.jpg" alt="Hatirzil">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix brand_design illustration"><!-- ITEM START -->
+							<a href="assets/img/portfolio/03.jpg" data-source="assets/img/portfolio/03.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/03.jpg" alt="Water Drop">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix illustration"><!-- ITEM START -->
+							<a href="assets/img/portfolio/04.jpg" data-source="assets/img/portfolio/04.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/04.jpg" alt="Shooting">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix mobile_apps brand_design"><!-- ITEM START -->
+							<a href="assets/img/portfolio/05.jpg" data-source="assets/img/portfolio/05.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/05.jpg" alt="Mirpur DOHS">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix print_design"><!-- ITEM START -->
+							<a href="assets/img/portfolio/06.jpg" data-source="assets/img/portfolio/06.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/06.jpg" alt="Coxbazzar Beach">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix mobile_apps brand_design"><!-- ITEM START -->
+							<a href="assets/img/portfolio/07.jpg" data-source="assets/img/portfolio/07.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/07.jpg" alt="Horrible">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix print_design illustration"><!-- ITEM START -->
+							<a href="assets/img/portfolio/08.jpg" data-source="assets/img/portfolio/08.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/08.jpg" alt="Insects">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+
+						<li class="mix illustration web_design"><!-- ITEM START -->
+							<a href="assets/img/portfolio/09.jpg" data-source="assets/img/portfolio/09.jpg" >
+								<img src="assets/img/portfolio/placeholder.gif" class="lazy" data-original="assets/img/portfolio/09.jpg" alt="Shooting">
+								<div class="overlay"></div>
+							</a>
+						</li> <!-- ITEM END -->
+					</ul> <!-- GRID END -->
+					<p>
+						Proin gravida nibh vel velit auctor aliquet. 
+						Aenean sollicitudin, lorem <a class="hl" href="#">quis bibendum</a> auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+						Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+					</p>
+				</div> <!-- mix-gallery end -->          
+			</div> <!-- ANIMATION-WRAPPER END -->
+		</div> <!-- container end -->
+	</section> 
+	<!-- PORTFOLIO END -->
+	
+
+	<!-- QUOTE START -->
+	<section id="quote">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 500, repeat: true}">
+					<h3>Heared enough about me? Proin gravida nibh vel velit auctor aliquet.</h3>
+				</div> <!-- col-md-9 end -->
+				<div class="col-md-3" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay: 1000, repeat: true}">
+					<a href="#" class="button">GET A FREE QUOTE</a>
+				</div> <!-- col-md-2 end -->
+			</div> <!-- row end -->
+		</div> <!-- container end -->
+	</section> 
+	<!-- QUOTE END -->
+	
+	
+	<!-- NUMBERS START -->
+	<section id="happyness">
+		<div class="home-part-overlay">
+			<div class="container">
+				<h3>some fun facts and my Hapiness <br> __________</h3>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="icon">
+							<img src="assets/img/calender.png" alt="">
+						</div> <!-- icon end -->
+						<div class="number">
+							<div><span id="online" data-target="2486">500</span></div>
+							<span>Days online</span>
+						</div> <!-- number end -->
+					</div> <!-- col-md-3 end -->
+					
+            		<div class="col-md-3">
+						<div class="icon">
+							<img src="assets/img/client.png" alt="">
+						</div> <!-- icon end -->
+						<div class="number">
+							<div><span id="clients-no" data-target="448">10</span></div>
+							<span>Clients</span>
+						</div> <!-- number end -->
+					</div> <!-- col-md-3 end -->
+					
+					<div class="col-md-3">
+						<div class="icon">
+							<img src="assets/img/project.png" alt="">
+						</div> <!-- icon end -->
+						<div class="number">
+							<div><span id="projects-no" data-target="1200">200</span>+</div>
+							<span>Projects</span>
+						</div> <!-- number end -->
+					</div> <!-- col-md-3 end -->
+
+					<div class="col-md-3">
+						<div class="icon">
+							<img src="assets/img/travel.png" alt="">
+						</div> <!-- icon end -->
+						<div class="number">
+							<div><span id="traveled" data-target="30">0</span>k+</div>
+							<span>Miles traveled</span>
+						</div> <!-- number end -->
+					</div> <!-- col-md-3 end -->
+				</div> <!-- row end -->
+			</div> <!-- CONTAINER END -->
+		</div> <!-- OVERLAY END -->
+	</section>
+	<!-- NUMBERS END -->
+
+
+	<!-- CLIENTS START -->
+	<section id="clients" class="home-part two-part-section">
+		<div class="container">
+			<h3 class="show-hide">
+				<img class="section-logo" src="assets/img/featured-clients.png" alt="">
+				Featured Clients
+			</h3>
+			<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+			<div class="slide-front">
+				<div class="row">
+					<div class="col-md-6 left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
+						<h3 class="show-hide">
+							<img class="section-logo" src="assets/img/featured-clients.png" alt="">
+							Featured Clients
+             			</h3>
+						<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+						<p>
+							This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
+							lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+							Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+						</p>
+						<button class="more first button-transparent">Show All</button>
+					</div> <!-- col-md-6 end -->
+
+					<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
+						<button id="less"></button>
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div id="short" class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+						
+						<div class="c-logo">
+							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						</div> <!-- c-logo end -->
+              
+						<div class="clearfix"></div>
+						<button class="more second button-transparent">Show All</button>
+					</div> <!-- col-md-6 end -->
+				</div> <!-- row end -->
+			</div> <!-- SLIDE-FRONT END -->
+		</div> <!-- CONTAINER END -->
+	</section> 
+	<!-- CLIENTS END -->
+
+
+	<!-- TESTIMONIAL START -->
+	<section id="testimonial" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>Testimonial</h3></div>
+			<div class="clearfix"></div>
+			<img src="assets/img/testimonial/testimonial.png" alt="">
+
+			<h3>some fun facts and my Hapiness <br> __________</h3>
+
+			<div id="testimonial-carosel" class="owl-carousel">
+				<div> <!-- ITEM START -->
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit..</p>
+					<h5><span>Subrota Biswas,</span> CEO, Bugdoom Instititute</h5>
+				</div> <!-- ITEM END -->
+
+				<div> <!-- ITEM START -->
+					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+					<h5><span>Jomir Ali Talukdar,</span> Koshai, Own Shop</h5>
+				</div> <!-- ITEM END -->
+
+				<div> <!-- ITEM START -->
+					<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+					<h5><span>Ganze Ali,</span> Singer, Love Fist</h5>
+				</div> <!-- ITEM END -->
+
+				<div> <!-- ITEM START -->
+					<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+					<h5><span>Kalu Matobbar,</span> PRESIDENT, Village</h5>
+				</div> <!-- ITEM END -->
+			</div>
+		</div>
+	</section> 
+	<!-- TESTIMONIAL END -->
+
+
+	<!-- BLOG START -->
+	<section id="blog" class="home-part">
+		<div class="container">
+			<div class="section-heading-wrapper"><h3>Blog</h3></div>
+			<div class="clearfix"></div>
+			<div class="row">
+
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/01.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+	
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1000, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/02.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+	
+				<div class="col-md-4 blog-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1500, repeat: true}">
+					<div class="blog-item-inner">
+						<a href="single.html">
+							<div class="thumb"><img src="assets/img/blog/03.png" alt=""><div class="hover"></div></div>
+						</a>
+	
+						<h4> <a href="single.html"> Hattimatim Tim Tara </a> </h4>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+	
+						<div class="tag">
+							<a class="hl" href="#">Web Design</a> / <a class="hl" href="#">UI</a> / <a class="hl" href="#">UX</a> / 
+						</div>
+					</div> <!-- BLOG-ITEM INNER END -->
+				</div> <!-- BLOG-ITEM END -->
+				
+			</div> <!-- row end -->
+		</div> <!-- container end -->
+		
+		<br><br>
+		
+		<div data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
+			<a href="blog.html" class="button-transparent"> View All Posts </a>
+		</div>
+	</section>
+	<!-- BLOG END -->
+
+
+	<!-- SUBSCRIBE START -->
+	<section id="subscribe">
+		<div class="container animation-wrapper">
+			<h3 data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 500, repeat: true}">Stay Updated</h3>
+			<form action="http://evenfly.us8.list-manage.com/subscribe/post?u=62bca83399cf0083546588b62&amp;id=f85a072005" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1000, repeat: true}">
+					<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="FIRST NAME" required>
+				</div>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1500, repeat: true}">
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
+				</div>
+				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 2000, repeat: true}">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- SUBSCRIBE END -->
+
+
+	<!-- QUESTIONS START -->
+	<section id="question">
+		<div class="questionOverlay">
+			<div class="question-inner-wrapper">
+				<div class="home-part">
+					<h2>Or Have a question?</h2>
+					<h3>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum <br> __________</h3>
+					<div class="contact-form-wrapper" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 1000, repeat: true}">
+						<form id="contact">
+							<input name="name" type="text" placeholder="YOUR NAME" required>
+							<input name="email" type="email" placeholder="EMAIL ADDRESS" required>
+							<input name="subject" class="message" type="text" placeholder="SUBJECT OF THIS MESSAGE" required>
+							<textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
+							<input type="submit" value="SUBMIT">
+						</form>
+					</div>
+				</div>        
+			</div>
+		</div>
+	</section> 
+	<!-- QUESTIONS END -->
+
+
+	<!-- FOOTER START -->
+	<footer id="footer">
+		<div class="container">
+			<ul id="footer-nav" class="pull-left">
+				<li>All works <span>&copy; Janifer Smith</span> 2014. All rights Reserved</li>
+				<li> <a class="hl" href="#">Terms of Use </a></li>
+				<li> <a class="hl" href="#">Privacy Policy </a></li>
+			</ul>
+			<ul class="socialbtn pull-right">
+				<li><a class="icon-facebook" href="#"></a></li>
+				<li><a class="icon-twitter" href="#"></a></li>
+				<li><a class="icon-googleplus" href="#"></a></li>
+				<li><a class="icon-pinterest" href="#"></a></li>
+				<li><a class="icon-linkedin" href="#"></a></li>
+				<li><a class="icon-github" href="#"></a></li>
+				<li><a class="icon-dribbble" href="#"></a></li>
+				<li><a class="icon-instagram" href="#"></a></li>
+				<li><a class="icon-flickr" href="#"></a></li>
+				<li><a class="icon-uniE600" href="#"></a></li>
+			</ul>
+		</div>
+    </footer>
+	<!-- FOOTER END -->
+
 
 	<!-- JQUERY/JAVASCRIPT PLUGINS START -->
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
@@ -78,7 +972,7 @@
 	<script src="assets/js/jquery.lazyload.min.js"></script>
 	<script src="assets/js/jquery.easing.min.js"></script>
 	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/uikit.min.js"></script>
+	<script src="assets/js/uikit.min.js" class="uikit"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/init.js"></script>
 	<!-- JQUERY/JAVASCRIPT PLUGINS END -->
