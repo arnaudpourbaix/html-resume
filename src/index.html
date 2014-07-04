@@ -325,100 +325,35 @@
 
 
 	<!-- EXPERIENCE START -->
-	<section id="experience" class="home-part">
+	<section id="experience" class="home-part" data-ng-controller="ExperienceController">
 		<div class="container">
-			<div class="section-heading-wrapper"><h3 id="experience-position">Experience</h3></div>
+			<div class="section-heading-wrapper"><h3 id="experience-position">Expérience</h3></div>
 			<div class="clearfix"></div>
 			<div class="row">
-				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
+				<!--  delay: 500, 800, 1100, 1400 ... -->
+				<div data-ng-repeat="experience in experiences" class="animation-wrapper" 
+					 data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: {{ 500 + 0 * 300 }}, repeat: true}">
 					<div class="col-md-4">
 						<div class="company">
 							<img src="assets/img/experience/placeholder.png" alt="">
 						</div> <!-- COMPANY END -->
 						<div class="recruit">
-							<h4>Freelance</h4>
-							<h5>Remote</h5>
+							<h4>{{experience.client}}</h4>
+							<h5>{{experience.role}}</h5>
 						</div><!-- RECRUIT END -->
 					</div> <!-- col-md-4 end -->
 					<div class="col-md-8">
-						<h4>Web & Mobile UI/UX Designer - <span>February 2011 – Present (5 Years 2 months)</span></h4>
-						<p>
-							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
-							Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-						</p>
+						<h4>{{experience.role}} - <span>{{experience.start}} – {{experience.end}}</span></h4>
+						<p>{{experience.goal}}</p>
 						<div class="x-skills">
-							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
+							Skills: 
+							<span data-ng-repeat="skill in experience.skills">
+								{{skill}}
+								{{ !$last ? ', ' : '' }}
+							</span>
 						</div> <!-- X-SKILLS END -->
 					</div> <!-- col-md-8 end -->
 					<div class="x-devider"></div> <!-- experience item deivder -->
-				</div> <!-- ANIMATION WRAPPER END-->
-          
-				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 800, repeat: true}">
-					<div class="col-md-4">
-						<div class="company">
-							<img src="assets/img/experience/placeholder.png" alt="">
-						</div> <!-- company end -->
-						<div class="recruit">
-							<h4>Alur Dokan</h4>
-							<h5>Melbourne, Australia</h5>
-						</div><!-- RECRUIT END -->
-					</div> <!-- col-md-4 end -->
-					<div class="col-md-8">
-						<h4>UX Designer - <span>October 2013 – Present (5 months) </span></h4>
-						<p>
-							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 
-							sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-						</p>
-						<div class="x-skills">
-							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
-						</div> <!-- X-SKILLS END -->
-					</div> <!-- col-md-8 end -->
-					<div class="x-devider"></div> <!-- experience item deivder -->
-				</div> <!-- ANIMATION WRAPPER END-->
-          
-				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1100, repeat: true}">
-					<div class="col-md-4">
-						<div class="company">
-							<img src="assets/img/experience/placeholder.png" alt="">
-						</div> <!-- company end -->
-						<div class="recruit">
-							<h4>Muri Factory</h4>
-							<h5>Los Angeles. USA</h5>
-						</div><!-- RECRUIT END -->
-					</div> <!-- col-md-4 end -->
-					<div class="col-md-8">
-						<h4>Head of Ideas - <span>June 2009 – September 2013 (4 years 3 months)</span></h4>
-						<p>
-							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 
-							sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-						</p>
-						<div class="x-skills">
-							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
-						</div> <!-- X-SKILLS END -->
-					</div> <!-- col-md-8 end -->
-					<div class="x-devider"></div> <!-- experience item deivder -->
-				</div> <!-- ANIMATION WRAPPER END-->
-          
-				<div class="animation-wrapper" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1400, repeat: true}">
-					<div class="col-md-4">
-						<div class="company">
-							<img src="assets/img/experience/placeholder.png" alt="">
-						</div> <!-- company end -->
-						<div class="recruit">
-							<h4>Chinir Gudam</h4>
-							<h5>Remote - Jhenidah, BD</h5>
-						</div><!-- RECRUIT END -->
-					</div> <!-- col-md-4 end -->
-					<div class="col-md-8">
-						<h4>Freelance Web Designer - <span>January 2009 – May 2003 (4 months)</span></h4>
-						<p>
-							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-							consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-						</p>
-						<div class="x-skills">
-							Skills: <span>HTML5/CSS3, jQuery, Ajax, PHP, WordPress, Adobe Photoshop, Illustrator, InDesign, Microsoft Office</span>
-						</div> <!-- X-SKILLS END -->
-					</div> <!-- col-md-8 end -->
 				</div> <!-- ANIMATION WRAPPER END-->
 			</div> <!-- ROW END -->
 		</div> <!-- CONTAINER END -->
@@ -664,11 +599,11 @@
 
 
 	<!-- CLIENTS START -->
-	<section id="clients" class="home-part two-part-section">
+	<section id="clients" class="home-part two-part-section" data-ng-controller="ClientController">
 		<div class="container">
 			<h3 class="show-hide">
 				<img class="section-logo" src="assets/img/featured-clients.png" alt="">
-				Featured Clients
+				Clients
 			</h3>
 			<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
 			<div class="slide-front">
@@ -676,7 +611,7 @@
 					<div class="col-md-6 left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
 						<h3 class="show-hide">
 							<img class="section-logo" src="assets/img/featured-clients.png" alt="">
-							Featured Clients
+							Clients
              			</h3>
 						<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
 						<p>
@@ -689,100 +624,8 @@
 
 					<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
 						<button id="less"></button>
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div id="short" class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-						</div> <!-- c-logo end -->
-						
-						<div class="c-logo">
-							<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+						<div data-ng-repeat="client in clients" data-ng-if="client.logo" class="c-logo">
+							<img class="gray-hover" data-ng-src="assets/img/clients/{{client.logo}}" alt="{{client.label}}">
 						</div> <!-- c-logo end -->
               
 						<div class="clearfix"></div>
