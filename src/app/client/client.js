@@ -7,22 +7,22 @@ angular.module('onlineResume.client').controller('ClientController', [ '$scope',
    	              {
    	              	"id": "citenum",
    	                "label": "Cité numérique",
-   	                "logo": "citenum.jpg" 
+   	                "logo": "citenum.JPG" 
    	              },
    	              {
    	              	"id": "caisseEpargne",
    	                "label": "Caisse d'Epargne",
-   	                "logo": "caisseEpargne.jpg" 
+   	                "logo": "caisseEpargne.JPG" 
    	              },
    	              {
    	              	"id": "mondiale",
    	                "label": "AG2R La Mondiale",
-   	                "logo": "AG2RLaMondiale.jpg" 
+   	                "logo": "ag2r.JPG" 
    	              },
    	              {
    	              	"id": "norauto",
    	                "label": "Norauto",
-   	                "logo": "norauto.jpg" 
+   	                "logo": "norauto.JPG" 
    	              },
    	              {
    	              	"id": "bca",
@@ -32,7 +32,7 @@ angular.module('onlineResume.client').controller('ClientController', [ '$scope',
    	              {
    	              	"id": "3suisses",
    	                "label": "3 Suisses",
-   	                "logo": "3suisses.jpg" 
+   	                "logo": "3suisses.JPG" 
    	              },
    	              {
    	              	"id": "3si",
@@ -47,47 +47,47 @@ angular.module('onlineResume.client').controller('ClientController', [ '$scope',
    	              {
    	              	"id": "rsi",
    	                "label": "Régime Social des Indépendants",
-   	                "logo": "rsi.jpg" 
+   	                "logo": "rsi.JPG" 
    	              },
    	              {
    	              	"id": "bethune",
    	                "label": "Mairie de Béthune",
-   	                "logo": "bethune.jpg" 
+   	                "logo": "bethune.JPG" 
    	              },
    	              {
    	              	"id": "planete-oui",
    	                "label": "Planète OUI",
-   	                "logo": "planete-oui.jpg" 
+   	                "logo": "planete-oui.JPG" 
    	              },
    	              {
    	              	"id": "pndata",
    	                "label": "PN data",
-   	                "logo": "pndata.jpg" 
+   	                "logo": "pndata.JPG" 
    	              },
    	              {
    	              	"id": "kiloutou",
    	                "label": "Kiloutou",
-   	                "logo": "kiloutou.jpg" 
+   	                "logo": "kiloutou.JPG" 
    	              },
    	              {
    	              	"id": "auchan",
    	                "label": "Auchan",
-   	                "logo": "auchan.jpg" 
+   	                "logo": "auchan.JPG" 
    	              },
    	              {
    	              	"id": "adeo",
    	                "label": "Groupe Adeo",
-   	                "logo": "adeo.jpg" 
+   	                "logo": "adeo.JPG" 
    	              },
    	              {
    	              	"id": "phildar",
    	                "label": "Phildar",
-   	                "logo": "phildar.jpg" 
+   	                "logo": "phildar.JPG" 
    	              },
    	              {
    	              	"id": "grain-de-malice",
    	                "label": "Grain de Malice",
-   	                "logo": "graindemalice.jpg" 
+   	                "logo": "graindemalice.JPG" 
    	              },
    	              {
    	              	"id": "veronique-delachaux",
@@ -97,7 +97,7 @@ angular.module('onlineResume.client').controller('ClientController', [ '$scope',
    	              {
    	              	"id": "bprocess",
    	                "label": "B-Process",
-   	                "logo": "bprocess.jpg" 
+   	                "logo": "bprocess.JPG" 
    	              }
    	              ];
    	 

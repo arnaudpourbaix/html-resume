@@ -42,7 +42,7 @@ module.exports = {
 	 * automatically included in our app.
 	 */
 	vendor_files : {
-		js : [ 'vendor/angular/angular.js', 'vendor/lodash/dist/lodash.min.js' ],
+		js : [ 'vendor/angular/angular.js', 'vendor/angular-sanitize/angular-sanitize.min.js', 'vendor/lodash/dist/lodash.min.js' ],
 		css : [],
 		assets : []
 	}
