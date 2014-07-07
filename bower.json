@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "lodash": ">=2.4.1",
-    "angular": ">=1.2.10"
+    "angular": ">=1.2.10",
     "angular-sanitize": ">=1.2.19"
   }
 }
