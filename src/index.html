@@ -67,8 +67,8 @@
 							<a class="scroll" href="#home">
 								<div>I'm
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Janifer
-									<span>Smith</span>
+									{{ resume.firstName }}
+									<span>{{ resume.lastName }}</span>
 								</div>
 								<img src="assets/img/logo-f.png" alt="">
 							</a>
@@ -77,8 +77,8 @@
 					<div class="bs-js-navbar-scrollspy pull-right">
 						<ul class="nav navbar-nav nav-effect">
 							<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+							<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
 							<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
-							<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
 							<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
 							<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
 							<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
@@ -176,8 +176,8 @@
 								<a class="scroll" href="#home">
 									<div>I'm
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Janifer
-										<span>Smith</span>
+										{{ resume.firstName }}
+										<span>{{ resume.lastName }}</span>
 									</div>
 									<img src="assets/img/logo-f.png" alt="">
 								</a>
@@ -186,8 +186,8 @@
 						<div class="collapse navbar-collapse bs-js-navbar-scrollspy pull-right">
 							<ul class="nav navbar-nav nav-effect">
 								<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
+								<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
 								<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
-								<li><a class="scroll" href="#portfolio"><span data-hover="Portfolio">Portfolio</span></a></li>
 								<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
 								<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
 								<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
@@ -202,12 +202,12 @@
 
 
 	<!-- ABOUT START -->
-	<section id="about" class="home-part home-part two-part-section" data-ng-controller="AboutController">
+	<section id="about" class="home-part home-part two-part-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
-					<h3>{{ general.firstName }} {{ general.lastName }}</h3>
-					<h4>{{ general.function }}</h4>
+					<h3>{{ resume.firstName }} {{ resume.lastName }}</h3>
+					<h4>{{ resume.function }}</h4>
 					<p data-ng-bind-html="general.description"></p>
 				</div> <!-- col-md-12 end -->
 			</div> <!-- ROW END -->
@@ -217,7 +217,7 @@
 
 
 	<!-- SKILLS START -->
-	<section id="skills" class="home-part" data-ng-controller="SkillController">  
+	<section id="skills" class="home-part">  
 		<div class="container">
 		
 			<div class="section-heading-wrapper">
@@ -225,13 +225,13 @@
 			</div>
 			<div class="clearfix"></div>
 			
-			<div data-ng-repeat="skill in skills" class="skill">
+			<div data-ng-repeat="skill in resume.skills" class="skill">
 				<div class="chart">
 					<canvas data-skill="skill" height="55" width="55"></canvas>
 				</div> <!-- CHART END -->
           		<div class="details">
             		<p>{{skill.label}}</p>
-            		<p>{{skill.start}}-{{skill.end || "Aujourd'hui" }}</p>            
+            		<p> </p>
           		</div> <!-- DETAILS END -->
         	</div> <!-- skill end -->
         
@@ -307,30 +307,30 @@
 
 
 	<!-- EXPERIENCE START -->
-	<section id="experience" class="home-part" data-ng-controller="ExperienceController">
+	<section id="experience" class="home-part">
 		<div class="container">
 			<div class="section-heading-wrapper"><h3 id="experience-position">Expérience</h3></div>
 			<div class="clearfix"></div>
 			<div class="row">
 				<!--  delay: 500, 800, 1100, 1400 ... -->
-				<div data-ng-repeat="experience in experiences" class="animation-wrapper" 
+				<div data-ng-repeat="project in resume.projects" class="animation-wrapper" 
 					 data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: {{ 500 + 0 * 300 }}, repeat: true}">
 					<div class="col-md-4">
 						<div class="company">
 							<img src="assets/img/experience/placeholder.png" alt="">
 						</div> <!-- COMPANY END -->
 						<div class="recruit">
-							<h4>{{experience.client}}</h4>
-							<h5>{{experience.role}}</h5>
+							<h4>{{resume.companies[project.client].label}}</h4>
+							<h5>{{project.role}}</h5>
 						</div><!-- RECRUIT END -->
 					</div> <!-- col-md-4 end -->
 					<div class="col-md-8">
-						<h4>{{experience.role}} - <span>{{experience.start}} – {{experience.end}}</span></h4>
-						<p>{{experience.goal}}</p>
+						<h4>{{project.role}} - <span>{{project.start}} – {{project.end}}</span></h4>
+						<p>{{project.goal}}</p>
 						<div class="x-skills">
 							Skills: 
-							<span data-ng-repeat="skill in experience.skills">
-								{{skill}}
+							<span data-ng-repeat="skill in project.skills">
+								{{resume.skills[skill].label}}
 								{{ !$last ? ', ' : '' }}
 							</span>
 						</div> <!-- X-SKILLS END -->
@@ -415,7 +415,7 @@
 
 
 	<!-- PORTFOLIO START -->
-	<section id="portfolio" class="home-part">
+	<section id="portfolio" class="home-part hidden">
 		<div class="container">
 			<div class="section-heading-wrapper"><h3>My Portfolio</h3></div>
 			<div class="clearfix"></div>
@@ -581,7 +581,7 @@
 
 
 	<!-- CLIENTS START -->
-	<section id="clients" class="home-part two-part-section" data-ng-controller="ClientController">
+	<section id="clients" class="home-part two-part-section">
 		<div class="container">
 			<h3 class="show-hide">
 				<img class="section-logo" src="assets/img/featured-clients.png" alt="">
@@ -606,8 +606,8 @@
 
 					<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
 						<button id="less"></button>
-						<div data-ng-repeat="client in clients" data-ng-if="client.logo" class="c-logo">
-							<img class="gray-hover" data-ng-src="assets/img/clients/{{client.logo}}" alt="{{client.label}}">
+						<div data-ng-repeat="client in resume.clients" data-ng-if="resume.companies[client].logo" class="c-logo">
+							<img class="gray-hover" data-ng-src="assets/img/clients/{{resume.companies[client].logo}}" alt="{{resume.companies[client].label}}">
 						</div> <!-- c-logo end -->
               
 						<div class="clearfix"></div>
@@ -656,7 +656,7 @@
 
 
 	<!-- BLOG START -->
-	<section id="blog" class="home-part">
+	<section id="blog" class="home-part hidden">
 		<div class="container">
 			<div class="section-heading-wrapper"><h3>Blog</h3></div>
 			<div class="clearfix"></div>
@@ -766,7 +766,7 @@
 	<footer id="footer">
 		<div class="container">
 			<ul id="footer-nav" class="pull-left">
-				<li>All works <span>&copy; Janifer Smith</span> 2014. All rights Reserved</li>
+				<li>All works <span>&copy; {{ resume.firstName }} {{ resume.lastName }}</span> 2014. All rights Reserved</li>
 				<li> <a class="hl" href="#">Terms of Use </a></li>
 				<li> <a class="hl" href="#">Privacy Policy </a></li>
 			</ul>

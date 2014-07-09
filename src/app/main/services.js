@@ -39,6 +39,15 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 		});
 	}
 	
+	function addClients(resume) {
+		resume.clients = [];
+		angular.forEach(resume.projects, function(project) {
+			if (project.client && resume.clients.indexOf(project.client) === -1) {
+				resume.clients.push(project.client);
+			}
+		});
+	}
+	
 	service.resume = function() {
 		var promises = [];
 		promises.push(general());
@@ -50,6 +59,7 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			resume.companies = result[1];
 			resume.skills = result[2];
 			resume.projects = result[3];
+			addClients(resume);
 			return resume;
 		});
 	};
