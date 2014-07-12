@@ -851,7 +851,7 @@
       "javascript",
       "angular",
       "css",
-      "html"
+      "html5"
     ]
   },
   {
@@ -880,9 +880,8 @@
       "teradata",
       "tomcat",
       "angular",
-      "html",
-      "css",
-      "scrum"
+      "html5",
+      "css"
     ]
   }
 ]

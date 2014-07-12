@@ -1,4 +1,4 @@
-angular.module('onlineResume.main.services', []).service('ResumeService', [ '$http', '$q', function ResumeService($http, $q) {
+angular.module('onlineResume.main.services', []).service('ResumeService', [ '$http', '$q', '$apxTools', function ResumeService($http, $q, $apxTools) {
 	'use strict';
 
 	var service = {};
