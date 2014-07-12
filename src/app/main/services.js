@@ -35,7 +35,12 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			method : 'GET',
 			url : 'assets/data/projects.json'
 		}).then(function(response) {
-			return response.data;
+			var projects = response.data.reverse();
+			angular.forEach(projects, function(project) {
+				project.start = $apxTools.parseDate(project.start);  
+				project.end = $apxTools.parseDate(project.end);
+			});
+			return projects;
 		});
 	}
 	

@@ -317,15 +317,17 @@
 					 data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: {{ 500 + 0 * 300 }}, repeat: true}">
 					<div class="col-md-4">
 						<div class="company">
-							<img src="assets/img/experience/placeholder.png" alt="">
+							<img data-ng-if="project.client && resume.companies[project.client].logo" data-ng-src="assets/img/clients/{{resume.companies[project.client].logo}}" alt="{{resume.companies[project.client].label}}" width="46" height="46">
+							<img data-ng-if="!project.client && resume.companies[project.company].logo" data-ng-src="assets/img/clients/{{resume.companies[project.company].logo}}" alt="{{resume.companies[project.company].label}}" width="46" height="46">
 						</div> <!-- COMPANY END -->
 						<div class="recruit">
-							<h4>{{resume.companies[project.client].label}}</h4>
+							<h4 data-ng-if="project.client">{{resume.companies[project.client].label}}</h4>
+							<h4 data-ng-if="!project.client">{{resume.companies[project.company].label}}</h4>
 							<h5>{{project.role}}</h5>
 						</div><!-- RECRUIT END -->
 					</div> <!-- col-md-4 end -->
 					<div class="col-md-8">
-						<h4>{{project.role}} - <span>{{project.start}} – {{project.end}}</span></h4>
+						<h4>{{project.role}} - <span>{{project.start | date:'MM-yyyy'}} – {{project.end | date:'MM-yyyy'}}</span></h4>
 						<p>{{project.goal}}</p>
 						<div class="x-skills">
 							Skills: 
