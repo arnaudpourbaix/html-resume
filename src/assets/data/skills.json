@@ -9,7 +9,7 @@
   {
   	"id": "nsdk",
     "label": "NSDK",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 70
   },
@@ -198,7 +198,7 @@
   {
   	"id": "c",
     "label": "C",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 60
   },  
@@ -219,21 +219,21 @@
   {
   	"id": "asp",
     "label": "ASP",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 30
   },  
   {
   	"id": "php",
     "label": "PHP",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 50
   },  
   {
   	"id": "vb",
     "label": "Visual Basic (VB6, VBA)",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 90
   },  
@@ -303,77 +303,77 @@
   {
   	"id": "svn",
     "label": "Subversion",
-    "group": null,
+    "group": "misc",
     "type": "tools",
     "level": 70
   },  
   {
   	"id": "git",
     "label": "Git",
-    "group": null,
+    "group": "misc",
     "type": "tools",
     "level": 30
   },  
   {
   	"id": "tomcat",
     "label": "Tomcat",
-    "group": null,
+    "group": "misc",
     "type": "server",
     "level": 80
   },  
   {
   	"id": "jboss",
     "label": "Jboss",
-    "group": null,
+    "group": "misc",
     "type": "server",
     "level": 20
   },  
   {
   	"id": "websphere",
     "label": "Websphere",
-    "group": null,
+    "group": "misc",
     "type": "server",
     "level": 20
   },  
   {
   	"id": "talend",
     "label": "Talend",
-    "group": null,
+    "group": "misc",
     "type": "etl",
     "level": 40
   },  
   {
   	"id": "pentaho",
     "label": "Pentaho",
-    "group": null,
+    "group": "misc",
     "type": "etl",
     "level": 40
   },
   {
   	"id": "dimensions",
     "label": "Dimensions",
-    "group": null,
+    "group": "misc",
     "type": "tools",
     "level": 10
   },
   {
   	"id": "delphi",
     "label": "Delphi",
-    "group": null,
+    "group": "misc",
     "type": "language",
     "level": 30
   },
   {
   	"id": "excel",
     "label": "Excel",
-    "group": null,
+    "group": "misc",
     "type": "tools",
     "level": 80
   },
   {
   	"id": "access",
     "label": "Access",
-    "group": null,
+    "group": "misc",
     "type": "tools",
     "level": 80
   }

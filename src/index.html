@@ -225,7 +225,7 @@
 			</div>
 			<div class="clearfix"></div>
 			
-			<div data-ng-repeat="skill in resume.skills" class="skill">
+			<div data-ng-repeat="skill in resume.skills" class="skill" data-ng-if="skill.level >= 30">
 				<div class="chart">
 					<canvas data-skill="skill" height="55" width="55"></canvas>
 				</div> <!-- CHART END -->

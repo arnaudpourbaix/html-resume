@@ -2,31 +2,37 @@
   {
     "id": "jee",
     "label": "JEE",
+    "priority": 1,
     "keywords": "jee,j2ee,java"
   },
   {
     "id": "javascript",
     "label": "Javascript",
+    "priority": 2,
     "keywords": "javascript,js"
   },
   {
     "id": ".net",
     "label": ".NET",
+    "priority": 6,
     "keywords": ".net,c#,aspx"
   },
   {
     "id": "html",
     "label": "Html",
+    "priority": 3,
     "keywords": "html,css"
   },
   {
     "id": "database",
     "label": "Base de données",
+    "priority": 4,
     "keywords": "sql,database,oracle"
   },
   {
-    "id": "agility",
-    "label": "Agilité",
-    "keywords": "agilité,scrum,agile"
+    "id": "misc",
+    "label": "Divers",
+    "priority": 5,
+    "keywords": ""
   }
 ]

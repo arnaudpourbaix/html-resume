@@ -22,11 +22,32 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 	}
 
 	function skills() {
-		return $http({
+		var promises = [];
+		promises.push($http({
 			method : 'GET',
 			url : 'assets/data/skills.json'
-		}).then(function(response) {
-			return _.indexBy(response.data, 'id');
+		}));
+		promises.push($http({
+			method : 'GET',
+			url : 'assets/data/skill_groups.json'
+		}));
+		return $q.all(promises).then(function(result) {
+			var groups = _.indexBy(result[1].data, 'id');
+			var skills = _.chain(result[0].data)
+			.transform(function(result, skill, key) {
+				skill.group = groups[skill.group];
+				result[key] = skill;
+			})
+			.indexBy('id')
+			.sortBy(function(skill) { 
+				return skill.level; 
+			})
+			.reverse()
+			.sortBy(function(skill) { 
+				return skill.group.priority; 
+			})
+			.value();
+			return skills;
 		});
 	}
 
