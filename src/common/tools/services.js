@@ -13,11 +13,15 @@
 			if (!strDate) {
 				return null;
 			}
-			if (!/^(\d{4})-(\d{1,2})$/.test(strDate)) {
+			if (/^(\d{4})-(\d{1,2})-(\d{1,2})$/.test(strDate)) {
+				return new Date(RegExp.$1, parseInt(RegExp.$2, 10) - 1, RegExp.$3);
+			} else if (/^(\d{4})-(\d{1,2})$/.test(strDate)) {
+				return new Date(RegExp.$1, parseInt(RegExp.$2, 10) - 1);
+			} else if (/^(\d{4})$/.test(strDate)) {
+				return new Date(RegExp.$1);
+			} else {
 				throw new Error("invalid date format: " + strDate);
 			}
-			var d = new Date(RegExp.$1, parseInt(RegExp.$2, 10) - 1);
-			return d;
 		};
 		
 		return service;

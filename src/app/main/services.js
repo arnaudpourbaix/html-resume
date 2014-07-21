@@ -21,6 +21,21 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 		});
 	}
 
+	function educations() {
+		return $http({
+			method : 'GET',
+			url : 'assets/data/educations.json'
+		}).then(function(response) {
+			var educations = response.data;
+			angular.forEach(educations, function(education) {
+				education.date = $apxTools.parseDate(education.date);  
+			});
+			return _.sortBy(educations, function(education) {
+				return education.date;
+			}).reverse();
+		});
+	}
+
 	function skills() {
 		var promises = [];
 		promises.push($http({
@@ -38,7 +53,6 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 				skill.group = groups[skill.group];
 				result[key] = skill;
 			})
-			.indexBy('id')
 			.sortBy(function(skill) { 
 				return skill.level; 
 			})
@@ -56,12 +70,14 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			method : 'GET',
 			url : 'assets/data/projects.json'
 		}).then(function(response) {
-			var projects = response.data.reverse();
+			var projects = response.data;
 			angular.forEach(projects, function(project) {
 				project.start = $apxTools.parseDate(project.start);  
 				project.end = $apxTools.parseDate(project.end);
 			});
-			return projects;
+			return _.sortBy(projects, function(project) {
+				return project.start;
+			}).reverse();
 		});
 	}
 	
@@ -80,11 +96,14 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 		promises.push(companies());
 		promises.push(skills());
 		promises.push(projects());
+		promises.push(educations());
 		return $q.all(promises).then(function(result) {
 			var resume = result[0];
 			resume.companies = result[1];
-			resume.skills = result[2];
+			resume.orderedSkills = result[2];
+			resume.skills = _.indexBy(resume.orderedSkills, 'id');
 			resume.projects = result[3];
+			resume.educations = result[4];
 			addClients(resume);
 			return resume;
 		});
