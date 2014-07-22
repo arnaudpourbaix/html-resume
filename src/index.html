@@ -278,7 +278,7 @@
 						</div><!-- RECRUIT END -->
 					</div> <!-- col-md-4 end -->
 					<div class="col-md-8">
-						<h4>{{project.goal}} - <span>{{project.start | date:'MM/yyyy'}} – {{(project.end | date:'MM/yyyy') || "Aujourd'hui"}}</span></h4>
+						<h4>{{project.goal}} - <span class="timeline">{{project.start | date:'MM/yyyy'}} – {{(project.end | date:'MM/yyyy') || "Aujourd'hui"}}</span></h4>
 						<ul><li data-ng-repeat="task in project.tasks">{{task}}</li></ul>
 						<p></p>
 						<div class="x-skills">

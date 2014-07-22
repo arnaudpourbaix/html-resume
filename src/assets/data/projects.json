@@ -352,7 +352,6 @@
       "Encadrement technique de deux développeurs"
     ],
     "skills": [
-      "jee",
       "java",
       "jsf",
       "tomcat",
@@ -458,7 +457,7 @@
       "Formation technique de l'équipe en charge de la reprise du projet"
     ],
     "skills": [
-      "jee",
+      "java",
       "mysql",
       "jsf",
       "jboss",
@@ -560,7 +559,7 @@
       "role": "Chef de projet",
       "company": "proxiad"
     },
-    "goal": "Création des applications Référentiels Sites/Référentiels Nomenclatures/Têtes de Gondole",
+    "goal": "Création des applications Référentiels Sites/Nomenclatures et Têtes de Gondole",
     "tasks": [
       "Conception technique",
       "Réalisation des développements",
@@ -568,12 +567,13 @@
       "Suivi de projet"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "struts",
       "hibernate",
       "tomcat",
-      "oracle"
+      "oracle",
+      "jquery"
     ]
   },
   {
@@ -592,7 +592,7 @@
       "role": "Chef de projet",
       "company": "proxiad"
     },
-    "goal": "Réalisations d'évolutions pour les applications Voix des clients/Voix des commerçants",
+    "goal": "Réalisations d'évolutions pour les applications Voix des clients/commerçants",
     "tasks": [
       "Conception technique",
       "Réalisation des développements",
@@ -600,13 +600,14 @@
       "Suivi de projet"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "struts",
       "hibernate",
       "websphere",
       "oracle",
-      "sql"
+      "sql",
+      "jquery"
     ]
   },
   {
@@ -631,11 +632,12 @@
       "Réalisation des développements"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "hibernate",
       "oracle",
-      "tomcat"
+      "tomcat",
+      "jquery"
     ]
   },
   {
@@ -659,11 +661,12 @@
       "Réalisation des développements du compte client"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "ibatis",
       "postgre",
-      "tomcat"
+      "tomcat",
+      "jquery"
     ]
   },
   {
@@ -684,6 +687,7 @@
     },
     "goal": "Migration du site Phildar vers le framework 3 de Pictime",
     "tasks": [
+      "Utilisation partielle de la méthode agile Scrum",
       "Analyse de l'existant",
       "Réalisation des développements",
       "Réalisation des flux de données avec un ETL",
@@ -691,14 +695,15 @@
       "Utilisation partielle de la méthodologie Scrum avec les sprints"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "ibatis",
       "postgre",
       "tomcat",
       "pentaho",
       "sql",
-      "scrum"
+      "javascript",
+      "jquery"
     ]
   },
   {
@@ -719,6 +724,7 @@
     },
     "goal": "Migration du site Grain de Malice vers le framework 3 de Pictime",
     "tasks": [
+      "Utilisation partielle de la méthode agile Scrum",
       "Analyse de l'existant",
       "Réalisation des développements",
       "Réalisation des flux de données avec un ETL",
@@ -726,14 +732,15 @@
       "Utilisation partielle de la méthodologie Scrum avec les sprints"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "ibatis",
       "postgre",
       "tomcat",
       "pentaho",
       "sql",
-      "scrum"
+      "javascript",
+      "jquery"
     ]
   },
   {
@@ -757,13 +764,15 @@
       "Corrections et évolutions de l’application"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "struts",
       "hibernate",
       "tomcat",
       "oracle",
-      "sql"
+      "sql",
+      "javascript",
+      "jquery"
     ]
   },
   {
@@ -789,13 +798,15 @@
       "Réalisation partielle des webservices"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "liquibase",
       "hibernate",
       "tomcat",
       "oracle",
-      "postgre"
+      "postgre",
+      "javascript",
+      "jquery"
     ]
   },
   {
@@ -822,13 +833,15 @@
       "Réalisation des évolutions de l’application"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "struts",
       "hibernate",
       "tomcat",
       "oracle",
-      "sql"
+      "sql",
+      "javascript",
+      "jquery"
     ]
   },
   {
@@ -844,11 +857,12 @@
       "Amélioration du provisionneur Auchan"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
       "hibernate",
       "tomcat",
       "javascript",
+      "jquery",
       "angular",
       "css",
       "html5"
@@ -863,22 +877,25 @@
     "role": "Lead développeur JEE / Angular",
     "onsite": true,
     "contact": {
-      "name": "Claire Messager",
-      "role": "Chef de projet",
+      "name": "Damier Willier",
+      "role": "Scrum Master",
       "company": "auchan"
     },
     "goal": "Refonte de l'application de visualisation du chiffre d'affaire",
     "tasks": [
+      "Utilisation de la méthode agile Scrum",
       "Définition de l'architecture front",
       "Rédaction d'une documentation technique sur l'installation et l'utilisation de l'environnement",
       "Réalisation des développements",
       "Encadrement technique d'un intégrateur sur Angular"
     ],
     "skills": [
-      "jee",
+      "java",
       "spring",
+      "hibernate",
       "teradata",
       "tomcat",
+      "javascript",
       "angular",
       "html5",
       "css"
