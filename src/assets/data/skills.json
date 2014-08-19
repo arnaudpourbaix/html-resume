@@ -15,7 +15,7 @@
   },
   {
   	"id": "slf4j",
-    "label": "SLF4J/Log4j/Logback",
+    "label": "SLF4J",
     "group": "jee",
     "type": "library",
     "level": 80
@@ -144,7 +144,7 @@
     "label": "LESS",
     "group": "html",
     "type": "preprocessor",
-    "level": 75
+    "level": 70
   },
   {
   	"id": "bootstrap",
@@ -193,7 +193,7 @@
     "label": "Angular JS",
     "group": "javascript",
     "type": "framework",
-    "level": 65
+    "level": 60
   },
   {
   	"id": "c",
@@ -221,7 +221,7 @@
     "label": "ASP",
     "group": "misc",
     "type": "language",
-    "level": 30
+    "level": 40
   },  
   {
   	"id": "php",
@@ -242,7 +242,7 @@
     "label": "SQL",
     "group": "database",
     "type": "language",
-    "level": 75
+    "level": 70
   },  
   {
   	"id": "plsql",
@@ -312,7 +312,7 @@
     "label": "Git",
     "group": "misc",
     "type": "tools",
-    "level": 30
+    "level": 40
   },  
   {
   	"id": "tomcat",

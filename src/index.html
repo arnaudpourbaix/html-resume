@@ -19,6 +19,7 @@
 	<link href="assets/css/owl.theme.css" rel="stylesheet">
 	<link href="assets/css/owl.transitions.css" rel="stylesheet">
 	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<link href="assets/css/star-rating.min.css" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:900,700,400,300%7COpen+Sans:400,700,800%7CLato:400,700' rel='stylesheet' type='text/css'>
 
@@ -221,19 +222,22 @@
 		<div class="container">
 		
 			<div class="section-heading-wrapper">
-				<h3>My Skills</h3>
+				<h3>Mes compétences</h3>
 			</div>
 			<div class="clearfix"></div>
 			
 			<div data-ng-repeat="skill in resume.orderedSkills" class="skill" data-ng-if="skill.level >= 30">
+				<div data-skill="skill"></div>
+				<!-- 
 				<div class="chart">
 					<canvas data-skill="skill" height="55" width="55"></canvas>
-				</div> <!-- CHART END -->
+				</div>
           		<div class="details">
             		<p>{{skill.label}}</p>
             		<p> </p>
-          		</div> <!-- DETAILS END -->
-        	</div> <!-- skill end -->
+          		</div>
+          		 -->
+        	</div>
         
 		</div><!-- container END -->
 	</section> 
@@ -753,6 +757,7 @@
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/uikit.min.js" class="uikit"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/star-rating.min.js"></script>
 	<script src="assets/js/init.js"></script>
 	<!-- JQUERY/JAVASCRIPT PLUGINS END -->
 </body>
