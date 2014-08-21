@@ -80,6 +80,15 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			}).reverse();
 		});
 	}
+
+	function services() {
+		return $http({
+			method : 'GET',
+			url : 'assets/data/services.json'
+		}).then(function(response) {
+			return response.data;
+		});
+	}
 	
 	function addClients(resume) {
 		resume.clients = [];
@@ -97,6 +106,7 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 		promises.push(skills());
 		promises.push(projects());
 		promises.push(educations());
+		promises.push(services());
 		return $q.all(promises).then(function(result) {
 			var resume = result[0];
 			resume.companies = result[1];
@@ -104,6 +114,7 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			resume.skills = _.indexBy(resume.orderedSkills, 'id');
 			resume.projects = result[3];
 			resume.educations = result[4];
+			resume.services = result[5];
 			addClients(resume);
 			return resume;
 		});

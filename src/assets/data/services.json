@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Développement JEE/Javascript",
+    "description": "Réalisation de développements web dans les technologies JEE/Javascript",
+    "logo": "app-design.png" 
+  },
+  {
+    "label": "Encadrement technique",
+    "description": "Encadrement technique des développeurs",
+    "logo": "html-wp.png" 
+  },
+  {
+    "label": "Architecture logiciel",
+    "description": "Mise en place d'architectures modernes basée sur les frameworks les plus intéressants",
+    "logo": "html-wp.png" 
+  },
+  {
+    "label": "Conception technique",
+    "description": "",
+    "logo": null 
+  },
+  {
+    "label": "Contrôle qualité et bonnes pratiques",
+    "description": "Je peux apporter mon expertise sur la qualité de code d'une application et sur les bonnes pratiques de développements",
+    "logo": null 
+  }
+  
+]

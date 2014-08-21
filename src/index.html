@@ -79,7 +79,7 @@
 						<ul class="nav navbar-nav nav-effect">
 							<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
 							<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
-							<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+							<li><a class="scroll" href="#service"><span data-hover="Services">Services</span></a></li>
 							<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
 							<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
 							<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
@@ -188,7 +188,7 @@
 							<ul class="nav navbar-nav nav-effect">
 								<li><a class="scroll" href="#about"><span data-hover="About Me">About Me</span></a></li>
 								<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
-								<li><a class="scroll" href="#service"><span data-hover="Service">Service</span></a></li>
+								<li><a class="scroll" href="#service"><span data-hover="Services">Services</span></a></li>
 								<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
 								<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
 								<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
@@ -226,17 +226,8 @@
 			</div>
 			<div class="clearfix"></div>
 			
-			<div data-ng-repeat="skill in resume.orderedSkills" class="skill" data-ng-if="skill.level >= 30">
+			<div data-ng-repeat="skill in resume.orderedSkills" class="skill" data-ng-if="skill.level >= 40">
 				<div data-skill="skill"></div>
-				<!-- 
-				<div class="chart">
-					<canvas data-skill="skill" height="55" width="55"></canvas>
-				</div>
-          		<div class="details">
-            		<p>{{skill.label}}</p>
-            		<p> </p>
-          		</div>
-          		 -->
         	</div>
         
 		</div><!-- container END -->
@@ -304,68 +295,19 @@
 	<!-- SERVICES START -->
 	<section id="service" class="home-part">
 		<div class="container">
-			<div class="section-heading-wrapper"><h3>Available For</h3></div>
+			<div class="section-heading-wrapper"><h3>Services</h3></div>
 			<div class="clearfix"></div>
 			<div class="row">
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/brand-design.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
+				<div data-ng-repeat="service in resume.services" class="col-md-4 service-item" 
+					 data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: {{ 500 + 0 * 300 }}, repeat: true}">
+					<div data-ng-if="service.logo" class="service-logo">
+						<img data-ng-src="assets/img/service/{{service.logo}}" alt="{{service.label}}">
+					</div>
 					<div class="service-details">
-						<h4>Brand Identity Design</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- service details end -->
-				</div> <!-- col-md-3 end -->
-				
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 800, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/website-design.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
-					<div class="service-details">
-						<h4>Website Design</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- service details end -->
-				</div> <!-- col-md-3 end -->
-				
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1100, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/app-design.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
-					<div class="service-details">
-						<h4>Mobile App Design</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- service details end -->
-				</div> <!-- col-md-3 end -->
-
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1400, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/psd-html.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
-					<div class="service-details">
-						<h4>PSD to HTML</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- service details end -->
-				</div> <!-- col-md-3 end -->
-
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1700, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/html-wp.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
-					<div class="service-details">
-						<h4>HTML to WordPress</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- SERVICE DETAILS END -->
-				</div> <!-- col-md-3 end -->
-
-				<div class="col-md-4 service-item" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 2000, repeat: true}">
-					<div class="service-logo">
-						<img src="assets/img/service/ecommerce.png" alt="">
-					</div> <!-- SERVICE LOGO END -->
-					<div class="service-details">
-						<h4>E-Commerce Web Design</h4>
-						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
-					</div> <!-- service details end -->
-				</div> <!-- col-md-3 end -->
+						<h4>{{ service.label }}</h4>
+						<p>{{ service.description }}</p>
+					</div>
+				</div>
 			</div> <!-- row end -->
 		</div> <!-- CONTAINER END -->
 	</section> 
@@ -545,7 +487,7 @@
 				<img class="section-logo" src="assets/img/featured-clients.png" alt="">
 				Clients
 			</h3>
-			<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+			<h4 class="show-hide"></h4>
 			<div class="slide-front">
 				<div class="row">
 					<div class="col-md-6 left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
@@ -553,13 +495,11 @@
 							<img class="section-logo" src="assets/img/featured-clients.png" alt="">
 							Clients
              			</h3>
-						<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+						<h4 class="show-hide"></h4>
 						<p>
-							This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
-							lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-							Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+							La satisfaction du client est ma priorité. J'essaie toujours de dépasser les attentes du client lorsque c'est possible.
 						</p>
-						<button class="more first button-transparent">Show All</button>
+						<button class="more first button-transparent">Voir tous</button>
 					</div> <!-- col-md-6 end -->
 
 					<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
@@ -676,25 +616,6 @@
 	</section>
 	<!-- BLOG END -->
 
-
-	<!-- SUBSCRIBE START -->
-	<section id="subscribe">
-		<div class="container animation-wrapper">
-			<h3 data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 500, repeat: true}">Stay Updated</h3>
-			<form action="http://evenfly.us8.list-manage.com/subscribe/post?u=62bca83399cf0083546588b62&amp;id=f85a072005" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1000, repeat: true}">
-					<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="FIRST NAME" required>
-				</div>
-				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1500, repeat: true}">
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
-				</div>
-				<div data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 2000, repeat: true}">
-					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-				</div>
-			</form>
-		</div>
-	</section>
-	<!-- SUBSCRIBE END -->
 
 
 	<!-- QUESTIONS START -->
