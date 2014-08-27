@@ -5,6 +5,7 @@
     "lodash": ">=2.4.1",
     "angular": ">=1.2.10",
     "angular-sanitize": ">=1.2.19",
-    "bootstrap-star-rating": ">=2.5.0"
+    "bootstrap-star-rating": ">=2.5.0",
+    "font-awesome": "~4.2.0"
   }
 }

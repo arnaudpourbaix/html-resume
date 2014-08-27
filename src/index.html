@@ -300,8 +300,11 @@
 			<div class="row">
 				<div data-ng-repeat="service in resume.services" class="col-md-4 service-item" 
 					 data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: {{ 500 + 0 * 300 }}, repeat: true}">
-					<div data-ng-if="service.logo" class="service-logo">
-						<img data-ng-src="assets/img/service/{{service.logo}}" alt="{{service.label}}">
+					<!--<div data-ng-if="service.icon" class="service-logo">
+						<span class="glyphicons {{service.icon}}"></span>
+					</div> -->
+					<div data-ng-if="service.icon" class="service-logo">
+						<span class="glyphicon {{service.icon}}"></span>
 					</div>
 					<div class="service-details">
 						<h4>{{ service.label }}</h4>
