@@ -5,5 +5,38 @@
   "mail": "pourbaix.arnaud@gmail.com",
   "phone": "0626122768",
   "function": "Expert technique JEE/Javascript, Lead développeur",
-  "description" : ""
+  "description" : "",
+  "networks": [
+  	{
+  		"url": "https://github.com/arnaudpourbaix",
+  		"name": "Github",
+  		"icon": "icon-github"
+  	},
+  	{
+  		"url": "https://twitter.com/ArnaudPourbaix",
+  		"name": "Twitter",
+  		"icon": "icon-twitter"
+  	},
+  	{
+  		"url": "http://www.viadeo.com/fr/profile/arnaud.pourbaix",
+  		"name": "Viadeo",
+  		"icon": "icon-vimeo"
+  	},
+  	{
+  		"url": "http://fr.linkedin.com/pub/arnaud-pourbaix/1b/598/58a",
+  		"name": "Linked in",
+  		"icon": "icon-linkedin"
+  	},
+  	{
+  		"url": "",
+  		"name": "Facebook",
+  		"icon": "icon-facebook"
+  	}
+  	{
+  		"url": "",
+  		"name": "Google+",
+  		"icon": "icon-googleplus"
+  	}
+  	
+  ]
 }
