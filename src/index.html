@@ -4,7 +4,7 @@
 	<title>CV - Arnaud Pourbaix</title>
   
 	<meta charset="utf-8">
-	<meta name="description" content="IMX is a HTML5 and CSS3 template which is a responsive app landing page template and built with most popular Twitter Bootstrap 3.0 framework">
+	<meta name="description" content="Curriculum Vitae d'Arnaud Pourbaix">
 	<meta name="keywords" content="arnaud pourbaix, cv, curriculum vitae, resume">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -524,32 +524,17 @@
 	<!-- TESTIMONIAL START -->
 	<section id="testimonial" class="home-part">
 		<div class="container">
-			<div class="section-heading-wrapper"><h3>Testimonial</h3></div>
+			<div class="section-heading-wrapper"><h3>Recommandations</h3></div>
 			<div class="clearfix"></div>
 			<img src="assets/img/testimonial/testimonial.png" alt="">
-
+<!-- 
 			<h3>some fun facts and my Hapiness <br> __________</h3>
-
+ -->
 			<div id="testimonial-carosel" class="owl-carousel">
-				<div> <!-- ITEM START -->
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit..</p>
-					<h5><span>Subrota Biswas,</span> CEO, Bugdoom Instititute</h5>
-				</div> <!-- ITEM END -->
-
-				<div> <!-- ITEM START -->
-					<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-					<h5><span>Jomir Ali Talukdar,</span> Koshai, Own Shop</h5>
-				</div> <!-- ITEM END -->
-
-				<div> <!-- ITEM START -->
-					<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
-					<h5><span>Ganze Ali,</span> Singer, Love Fist</h5>
-				</div> <!-- ITEM END -->
-
-				<div> <!-- ITEM START -->
-					<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-					<h5><span>Kalu Matobbar,</span> PRESIDENT, Village</h5>
-				</div> <!-- ITEM END -->
+				<div data-ng-repeat="testimonial in resume.testimonials">
+					<p>{{ testimonial.label }}</p>
+					<h5><span>{{ testimonial.name }},</span> {{ testimonial.role }}, {{ testimonial.company }}</h5>
+				</div>
 			</div>
 		</div>
 	</section> 
@@ -650,8 +635,6 @@
 		<div class="container">
 			<ul id="footer-nav" class="pull-left">
 				<li>All works <span>&copy; {{ resume.firstName }} {{ resume.lastName }}</span> 2014. All rights Reserved</li>
-				<li> <a class="hl" href="#">Terms of Use </a></li>
-				<li> <a class="hl" href="#">Privacy Policy </a></li>
 			</ul>
 			<ul class="socialbtn pull-right">
 				<li data-ng-repeat="network in resume.networks"><a class="{{network.icon}}" href="{{network.url}}" title="{{network.name}}"></a></li>

@@ -98,6 +98,15 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			}
 		});
 	}
+
+	function testimonials() {
+		return $http({
+			method : 'GET',
+			url : 'assets/data/testimonials.json'
+		}).then(function(response) {
+			return response.data;
+		});
+	}
 	
 	service.resume = function() {
 		var promises = [];
@@ -107,6 +116,7 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 		promises.push(projects());
 		promises.push(educations());
 		promises.push(services());
+		promises.push(testimonials());
 		return $q.all(promises).then(function(result) {
 			var resume = result[0];
 			resume.companies = result[1];
@@ -115,6 +125,7 @@ angular.module('onlineResume.main.services', []).service('ResumeService', [ '$ht
 			resume.projects = result[3];
 			resume.educations = result[4];
 			resume.services = result[5];
+			resume.testimonials = result[6];
 			addClients(resume);
 			return resume;
 		});
