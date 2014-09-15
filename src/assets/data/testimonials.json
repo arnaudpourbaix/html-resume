@@ -3,12 +3,14 @@
     "label": "Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.",
     "name": "Kalu Matobbar",
     "role": "Chef de projet",
-    "company": "Auchan" 
+    "company": "Auchan",
+    "photo": "01.png" 
   },
   {
     "label": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI",
     "name": "Jomir Ali Talukdar",
     "role": "Chef de projet",
-    "company": "Proxiad" 
+    "company": "Proxiad",
+	"photo": "03.png" 
   }
 ]

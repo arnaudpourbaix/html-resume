@@ -38,10 +38,6 @@
 	<% styles.forEach(function(file) { %>
 	<link rel="stylesheet" type="text/css" href="<%= file %>" />
 	<% }); %>
-	<!-- Javascripts -->
-	<% scripts.forEach(function(file) { %>
-	<script type="text/javascript" src="<%= file %>"></script>
-	<% }); %>
 </head>
 
 <body data-spy="scroll" data-offset="70" data-target=".fixed-nav">
@@ -81,7 +77,7 @@
 							<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
 							<li><a class="scroll" href="#service"><span data-hover="Services">Services</span></a></li>
 							<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
-							<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+							<li><a class="scroll" href="#testimonial"><span data-hover="Recommandations">Recommandations</span></a></li>
 							<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
 						</ul>
 					</div>
@@ -190,7 +186,7 @@
 								<li><a class="scroll" href="#skills"><span data-hover="Compétences">Compétences</span></a></li>
 								<li><a class="scroll" href="#service"><span data-hover="Services">Services</span></a></li>
 								<li><a class="scroll" href="#clients"><span data-hover="Clients">Clients</span></a></li>
-								<li><a class="scroll" href="#blog"><span data-hover="Blog">Blog</span></a></li>
+								<li><a class="scroll" href="#testimonial"><span data-hover="Recommandations">Recommandations</span></a></li>
 								<li><a class="scroll" href="#question"><span data-hover="Contact">Contact</span></a></li>
 							</ul>
 						</div>
@@ -530,7 +526,9 @@
 <!-- 
 			<h3>some fun facts and my Hapiness <br> __________</h3>
  -->
-			<div id="testimonial-carosel" class="owl-carousel">
+ 
+ 
+			<div id="testimonial-carosel" class="owl-carousel" data-testimonial>
 				<div data-ng-repeat="testimonial in resume.testimonials">
 					<p>{{ testimonial.label }}</p>
 					<h5><span>{{ testimonial.name }},</span> {{ testimonial.role }}, {{ testimonial.company }}</h5>
@@ -659,5 +657,10 @@
 	<script src="assets/js/star-rating.min.js"></script>
 	<script src="assets/js/init.js"></script>
 	<!-- JQUERY/JAVASCRIPT PLUGINS END -->
+	
+	<!-- Javascripts -->
+	<% scripts.forEach(function(file) { %>
+	<script type="text/javascript" src="<%= file %>"></script>
+	<% }); %>
 </body>
 </html>

@@ -66,29 +66,6 @@ $(function() {
 	
 	
 	// TESTIMONIAL SLIDER START
-	function pauseOnDragging() {
-		isPause = true;
-	}
-	
-	$("#testimonial-carosel").owlCarousel({
-		autoPlay : 3000,
-		stopOnHover : true,
-		startDragging : pauseOnDragging,
-		slideSpeed  :  1000,
-		paginationSpeed : 500,
-		goToFirstSpeed : 2000,
-		singleItem : true,
-		responsive : true,
-		// touchDrag : false,
-		// mouseDrag : false,
-		addClassActive : true,
-		transitionStyle: 'fadeUp',
-	});
-
-	$('#testimonial .owl-page span').eq(0).html('<img src="assets/img/testimonial/01.png">');
-	$('#testimonial .owl-page span').eq(1).html('<img src="assets/img/testimonial/02.png">');
-	$('#testimonial .owl-page span').eq(2).html('<img src="assets/img/testimonial/03.png">');
-	$('#testimonial .owl-page span').eq(3).html('<img src="assets/img/testimonial/04.png">');
 	// TESTIMONIAL SLIDER END
 
 	
@@ -161,41 +138,6 @@ $(function() {
 		$('#body-wrapper').removeClass('body-wrapper-trigger');
 		$('section').removeClass('blur');
     });
-
-
-    // jswing
-    // def
-    // easeInQuad
-    // easeOutQuad
-    // easeInOutQuad
-    // easeInCubic
-    // easeOutCubic
-    // easeInOutCubic
-    // easeInQuart
-    // easeOutQuart
-    // easeInOutQuart
-    // easeInQuint
-    // easeOutQuint
-    // easeInOutQuint
-    // easeInSine
-    // easeOutSine
-    // easeInOutSine
-    // easeInExpo
-    // easeOutExpo
-    // easeInOutExpo
-    // easeInCirc
-    // easeOutCirc
-    // easeInOutCirc
-    // easeInElastic
-    // easeOutElastic
-    // easeInOutElastic
-    // easeInBack
-    // easeOutBack
-    // easeInOutBack
-    // easeInBounce
-    // easeOutBounce
-    // easeInOutBounce
-
 	// SMOTHSCROLL END
 
 	// MIXITUP TRIGGER START
@@ -356,15 +298,12 @@ if ($('#skills').length) {
 		return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
 	}
 
-	//var html         =   [{value : 100, color : "#aed57c"}, {value : 0, color : "#eff7e5"}];
-
 	$(window).scroll(function() {
 		if (isScrolledIntoView('#skills')) {
 		    if (inView) { 
 		    	return; 
 		    }
 		    inView = true;
-		    //new Chart(document.getElementById("html").getContext("2d")).Doughnut(html);
 		} else {
 		    if ($(window).width() >=1024) {
 		        inView = false;  
