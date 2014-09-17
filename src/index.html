@@ -526,14 +526,7 @@
 <!-- 
 			<h3>some fun facts and my Hapiness <br> __________</h3>
  -->
- 
- 
-			<div id="testimonial-carosel" class="owl-carousel" data-testimonial>
-				<div data-ng-repeat="testimonial in resume.testimonials">
-					<p>{{ testimonial.label }}</p>
-					<h5><span>{{ testimonial.name }},</span> {{ testimonial.role }}, {{ testimonial.company }}</h5>
-				</div>
-			</div>
+ 			<div data-ng-if="resume" data-testimonials="resume.testimonials" data-companies="resume.companies"></div>
 		</div>
 	</section> 
 	<!-- TESTIMONIAL END -->

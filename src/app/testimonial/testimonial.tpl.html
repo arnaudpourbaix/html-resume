@@ -1,18 +1,16 @@
-<!-- TESTIMONIAL START -->
-<section id="testimonial" class="home-part">
-	<div class="container">
-		<div class="section-heading-wrapper"><h3>Recommandations</h3></div>
-		<div class="clearfix"></div>
-		<img src="assets/img/testimonial/testimonial.png" alt="">
-<!-- 
-			<h3>some fun facts and my Hapiness <br> __________</h3>
- -->
-		<div id="testimonial-carosel" class="owl-carousel">
-			<div data-ng-repeat="testimonial in resume.testimonials">
-				<p>{{ testimonial.label }}</p>
-				<h5><span>{{ testimonial.name }},</span> {{ testimonial.role }}, {{ testimonial.company }}</h5>
-			</div>
-		</div>
+<div id="testimonial-carosel" class="owl-carousel">
+	<div data-ng-repeat="testimonial in testimonials">
+		<p>{{ testimonial.label }}</p>
+		<h5>
+			<span>{{ testimonial.name }},</span>
+			 {{ testimonial.role }}, 
+			 {{ companies[testimonial.company].label || testimonial.company }}
+			 <!-- FIXME image rendering is wrong 
+			<img data-ng-if="companies[testimonial.company].logo" data-ng-src="assets/img/clients/{{companies[testimonial.company].logo}}" alt="{{companies[testimonial.company].label}}" width="46" height="46">
+			<span data-ng-if="!companies[testimonial.company].logo">
+			 {{ companies[testimonial.company].label || testimonial.company }}
+			 </span>
+			  -->
+		</h5>
 	</div>
-</section> 
-<!-- TESTIMONIAL END -->
+</div>
