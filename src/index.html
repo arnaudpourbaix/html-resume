@@ -272,7 +272,7 @@
 						<h4>{{project.goal}} - <span class="timeline">{{project.start | date:'MM/yyyy'}} – {{(project.end | date:'MM/yyyy') || "Aujourd'hui"}}</span></h4>
 						<ul><li data-ng-repeat="task in project.tasks">{{task}}</li></ul>
 						<p></p>
-						<div class="x-skills">
+						<div class="x-skills" data-ng-if="project.skills">
 							Compétences: 
 							<span data-ng-repeat="skill in project.skills">
 								{{resume.skills[skill].label}}
@@ -630,7 +630,7 @@
 			<ul class="socialbtn pull-right">
 				<li data-ng-repeat="network in resume.networks">
 					<a class="{{network.icon}}" href="{{network.url}}" title="{{network.name}}">
-						<img data-ng-if="network.image" data-ng-src="assets/img/{{network.image}}" alt="" width="25" height="25">
+						<img data-ng-if="network.image" data-ng-src="assets/img/networks/{{network.image}}" alt="" width="25" height="25">
 					</a>
 				</li>
 			</ul>

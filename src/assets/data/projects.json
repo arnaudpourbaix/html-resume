@@ -221,7 +221,7 @@
       "role": "Directeur de projet",
       "company": "elosi"
     },
-    "goal": "Evolutions sur une application de gestion de devis",
+    "goal": "Réalisation d'une application de gestion des congés et du temps de travail",
     "tasks": [
       "Encadrement technique d'un développeur",
       "Réalisation d'un intranet de gestion des congés",
@@ -468,7 +468,7 @@
   {
   	"id": 19,
     "start": "2010-01",
-    "end": "2010-01",
+    "end": "2010-02",
     "client": "kiloutou",
     "company": "elosi",
     "role": "Développeur DELPHI JAVA",
@@ -492,7 +492,7 @@
   },
   {
   	"id": 20,
-    "start": "2010-02",
+    "start": "2010-03",
     "end": "2010-05",
     "client": "kiloutou",
     "company": "elosi",
@@ -636,8 +636,7 @@
       "spring",
       "hibernate",
       "oracle",
-      "tomcat",
-      "jquery"
+      "tomcat"
     ]
   },
   {
@@ -678,7 +677,7 @@
       "pictime",
       "astek"
     ],
-    "role": "Développeur JEE",
+    "role": "Lead Développeur JEE",
     "onsite": true,
     "contact": {
       "name": "Jean-Luc Tronel",
@@ -687,7 +686,6 @@
     },
     "goal": "Migration du site Phildar vers le framework 3 de Pictime",
     "tasks": [
-      "Utilisation partielle de la méthode agile Scrum",
       "Analyse de l'existant",
       "Réalisation des développements",
       "Réalisation des flux de données avec un ETL",
@@ -724,7 +722,6 @@
     },
     "goal": "Migration du site Grain de Malice vers le framework 3 de Pictime",
     "tasks": [
-      "Utilisation partielle de la méthode agile Scrum",
       "Analyse de l'existant",
       "Réalisation des développements",
       "Réalisation des flux de données avec un ETL",
@@ -745,23 +742,26 @@
   },
   {
   	"id": 28,
-    "start": "2012-09",
-    "end": "2012-11",
+    "start": "2013-03",
+    "end": "2014-03",
     "client": "auchan",
-    "company": [
-      "proxiad",
-      "astek"
-    ],
-    "role": "Développeur JEE",
+    "company": "proxiad",
+    "role": "Lead développeur JEE",
     "onsite": false,
     "contact": {
       "name": "Vincent Curti",
       "role": "Chef de projet",
       "company": "proxiad"
     },
-    "goal": "MOSAIC Engagement",
+    "goal": "Release bimestriel de forfaits sur MOSAIC Engagement",
     "tasks": [
-      "Corrections et évolutions de l’application"
+      "Amélioration de la qualité de code (Java, Javascript)",
+      "Mise en place de modules autonomes en javascript pour faciliter l’utilisation des modales et la saisie des critères de recherche récurrents",
+      "Extension du framework Auchan pour simplifier l'utilisation du composant dhtmlx et ajouter des fonctionnalités récurrentes dans les contrôleurs",
+      "Réalisation d’une documentation relative à ces améliorations",
+      "Chiffrage et conception technique des évolutions",
+      "Migrations multi-browsers, java 7, et tomcat 7",
+      "Réalisation des évolutions de l’application"
     ],
     "skills": [
       "java",
@@ -811,41 +811,6 @@
   },
   {
   	"id": 30,
-    "start": "2013-03",
-    "end": "2014-03",
-    "client": "auchan",
-    "company": "proxiad",
-    "role": "Lead développeur JEE",
-    "onsite": false,
-    "contact": {
-      "name": "Vincent Curti",
-      "role": "Chef de projet",
-      "company": "proxiad"
-    },
-    "goal": "Release bimestriel de forfaits sur MOSAIC Engagement",
-    "tasks": [
-      "Amélioration de la qualité de code (Java, Javascript)",
-      "Mise en place de modules autonomes en javascript pour faciliter l’utilisation des modales et la saisie des critères de recherche récurrents",
-      "Extension du framework Auchan pour simplifier l'utilisation du composant dhtmlx et ajouter des fonctionnalités récurrentes dans les contrôleurs",
-      "Réalisation d’une documentation relative à ces améliorations",
-      "Chiffrage et conception technique des évolutions",
-      "Migrations multi-browsers, java 7, et tomcat 7",
-      "Réalisation des évolutions de l’application"
-    ],
-    "skills": [
-      "java",
-      "spring",
-      "struts",
-      "hibernate",
-      "tomcat",
-      "oracle",
-      "sql",
-      "javascript",
-      "jquery"
-    ]
-  },
-  {
-  	"id": 31,
     "start": "2013-01",
     "end": null,
     "company": "proxiad",
@@ -869,7 +834,7 @@
     ]
   },
   {
-  	"id": 32,
+  	"id": 31,
     "start": "2014-04",
     "end": null,
     "client": "auchan",
