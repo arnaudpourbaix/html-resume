@@ -628,7 +628,11 @@
 				<li>All works <span>&copy; {{ resume.firstName }} {{ resume.lastName }}</span> 2014. All rights Reserved</li>
 			</ul>
 			<ul class="socialbtn pull-right">
-				<li data-ng-repeat="network in resume.networks"><a class="{{network.icon}}" href="{{network.url}}" title="{{network.name}}"></a></li>
+				<li data-ng-repeat="network in resume.networks">
+					<a class="{{network.icon}}" href="{{network.url}}" title="{{network.name}}">
+						<img data-ng-if="network.image" data-ng-src="assets/img/{{network.image}}" alt="" width="25" height="25">
+					</a>
+				</li>
 			</ul>
 		</div>
     </footer>
