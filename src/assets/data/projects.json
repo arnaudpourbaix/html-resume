@@ -123,7 +123,7 @@
     "end": "2006-08",
     "client": null,
     "company": "aidmicro",
-    "role": "Co-gérant",
+    "role": "Co-gérant d'une SARL de dépannage en informatique",
     "onsite": null,
     "goal": "Création et gestion d’une société de dépannage en informatique pour les particuliers et les PME",
     "tasks": [
@@ -154,9 +154,7 @@
       "Réalisation du montage du site en collaboration avec un autre intégrateur"
     ],
     "skills": [
-      "css",
-      ".net",
-      "asp"
+      "css"
     ]
   },
   {
