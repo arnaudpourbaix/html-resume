@@ -1,123 +1,28 @@
-<!-- CLIENTS START -->
-<section id="clients" class="home-part two-part-section">
+<section id="clients" class="home-part two-part-section" data-ng-controller="ClientController">
 	<div class="container">
 		<h3 class="show-hide">
 			<img class="section-logo" src="assets/img/featured-clients.png" alt="">
-			Featured Clients
+			Clients
 		</h3>
-		<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+		<h4 class="show-hide"></h4>
 		<div class="slide-front">
 			<div class="row">
 				<div class="col-md-6 left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
 					<h3 class="show-hide">
 						<img class="section-logo" src="assets/img/featured-clients.png" alt="">
-						Featured Clients
+						Clients
             			</h3>
-					<h4 class="show-hide">Proin gravida nibh vel velit auctor</h4>
+					<h4 class="show-hide"></h4>
 					<p>
-						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
-						lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
-						Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+						La satisfaction du client est ma priorité. J'essaie toujours de dépasser les attentes du client lorsque c'est possible.
 					</p>
-					<button class="more first button-transparent">Show All</button>
+					<button class="more first button-transparent">Voir tous</button>
 				</div> <!-- col-md-6 end -->
 
 				<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
 					<button id="less"></button>
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div id="short" class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
-					</div> <!-- c-logo end -->
-					
-					<div class="c-logo">
-						<img class="gray-hover" src="assets/img/clients/placeholder.jpg" alt="">
+					<div data-ng-repeat="client in resume.clients" data-ng-if="resume.companies[client].logo" class="c-logo">
+						<img class="gray-hover" data-ng-src="assets/img/clients/{{resume.companies[client].logo}}" alt="{{resume.companies[client].label}}">
 					</div> <!-- c-logo end -->
              
 					<div class="clearfix"></div>
@@ -126,5 +31,4 @@
 			</div> <!-- row end -->
 		</div> <!-- SLIDE-FRONT END -->
 	</div> <!-- CONTAINER END -->
-</section> 
-<!-- CLIENTS END -->
+</section>

@@ -63,60 +63,6 @@ $(function() {
 		}
 	});
 	// HOME SECTION END
-	
-	
-	// TESTIMONIAL SLIDER START
-	// TESTIMONIAL SLIDER END
-
-	
-	// LAZYLOAD TRIGGER START
-	$("img.lazy").lazyload({threshold : 200, effect : "fadeIn"});
-	// LAZYLOAD TRIGGER END
-
-	
-	// MAGNEFICO POPUP START
-	/* Popup Animation html attribute
-		data-effect="mfp-zoom-in"
-		data-effect="mfp-newspaper"
-		data-effect="mfp-move-horizontal"
-		data-effect="mfp-move-from-top"
-		data-effect="mfp-3d-unfold"
-		data-effect="mfp-zoom-out"
-	 */
-        
-	$('.magnifico-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		fixedContentPos: false,
-		zoom: {
-			enabled: true, // By default it's false, so don't forget to enable it
-			duration: 400, // duration of the effect, in milliseconds
-			easing: 'ease-in-out', // CSS transition easing function 
-		}
-	});
-
-	$('.pop').magnificPopup({
-		type:'image',
-		removalDelay: 500, //delay removal by X to allow out-animation
-		callbacks: {
-			beforeOpen: function() {
-				// just a hack that adds mfp-anim class to markup 
-				this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-				this.st.mainClass = this.st.el.attr('data-effect');
-			}
-		}
-	}); //FOR IMAGE
-
-
-	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-	});
-	// MAGNEFICO POPUP END
 
     
 	// SMOTHSCROLL START
@@ -139,98 +85,6 @@ $(function() {
 		$('section').removeClass('blur');
     });
 	// SMOTHSCROLL END
-
-	// MIXITUP TRIGGER START
-	$('#Grid').on('.filter', 'click', function(){
-		var self = $(this);
-		var oldData = self.data('filter');
-		alert(oldData)
-		if (oldData != 'all') {
-			self.data('temp', oldData);
-			self.data('filter', 'all');
-		} else {
-			self.data('filter', self.data('temp'));
-			self.removeData('temp');
-		}
-	}).mixitup();
-
-	$('#Grid img').removeAttr('height');
-	$('#Grid img').removeAttr('width');
-    // MIXITUP TRIGGER END
-
-
-    // CONTACT FORM START
-	$('#contact').submit(function(){
-		var fromData = $('#contact').serialize();
-		$(document.body).on('click', '#closebtn', function(){
-			$('#contact-confirm').remove();
-		});
-		$.ajax({
-			type: "POST",
-			url: "contact.php",
-			data: fromData,
-			success : function( data ) {
-				alert('Your Message Sent successfully');
-			},
-			error   : function( xhr, err ) {
-				alert(fromData);     
-			}
-		});
-		
-		return false;
-	});
-    // CONTACT FORM END
-    
-
-	// FEATURED CLIENTS SECTION START
-	if ($(window).width() <= 992) {
-		$('.more.first').hide();
-		$('.more.second').show();
-	} else {
-		$('.more.second').hide();
-		$('.more.first').show();
-	}
-
-	$('.more').on('click', function() {
-		$('#clients .right').addClass('expand');
-		// $('.more').hide();
-		$('#less').show();
-		$('#clients .left').css('margin-left','-300%');
-		$('.container > .show-hide').delay('600').slideDown();
-		
-		var x = 800;
-		$('#short').nextAll('.c-logo').each(function() {
-			$(this).delay(x).fadeIn(600);
-			x = x+20;
-		});
-		
-		if ($(window).width() <= 992) {
-			$('.more.first').hide();
-			$('.more.second').hide();
-		}
-	});
-
-    $('#less').click(function(){
-		$('#clients .right').removeClass('expand');
-		$('.more').show();
-		$('#less').hide();
-		$('#clients .left').css('margin-left','0');
-		$('#short').nextAll('.c-logo').fadeOut(200);
-		$('.container > .show-hide').slideUp('slow');
-		$('.left > h3').css('display','block');
-		$('.left > h4').css('display','block');
-		
-		if ($(window).width() <= 992) {
-			$('.more.second').show();
-			$('.more.first').hide();
-		} else {
-			$('.more.second').hide();
-			$('.more.first').show();
-		}
-    });
-
-    $('#short').nextAll('.c-logo').hide();
-    // FEATURED CLIENTS SECTION END
     
 
     // HAPPYNESS SECTION NUMBER ANIMATE START
@@ -282,36 +136,6 @@ $(function() {
     // HAPPYNESS SECTION NUMBER ANIMATE END
 
 }); // DOCUMENT.READY END
-
-
-// CHART FOR SKILL SECTION START
-if ($('#skills').length) {
-	var inView = false;
-
-	function isScrolledIntoView(elem) {
-		var docViewTop = $(window).scrollTop();
-		var docViewBottom = docViewTop + $(window).height();
-		
-		var elemTop = $(elem).offset().top;
-		var elemBottom = elemTop + $(elem).height();
-		
-		return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-	}
-
-	$(window).scroll(function() {
-		if (isScrolledIntoView('#skills')) {
-		    if (inView) { 
-		    	return; 
-		    }
-		    inView = true;
-		} else {
-		    if ($(window).width() >=1024) {
-		        inView = false;  
-		    }
-		}
-	});
-}
-// CHART FOR SKILL SECTION END
 
 
 // CSS3 AMINATION TRIGGER FOR SLIDER START

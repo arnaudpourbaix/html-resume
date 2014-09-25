@@ -211,7 +211,7 @@
   },  
   {
   	"id": ".net",
-    "label": ".NET (1.1, 2.0, 3.5)",
+    "label": ".NET",
     "group": ".net",
     "type": "framework",
     "level": 50
@@ -232,7 +232,7 @@
   },  
   {
   	"id": "vb",
-    "label": "Visual Basic (VB6, VBA)",
+    "label": "Visual Basic",
     "group": "misc",
     "type": "language",
     "level": 90
