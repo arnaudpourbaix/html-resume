@@ -837,17 +837,17 @@
     "end": null,
     "client": "auchan",
     "company": "proxiad",
-    "role": "Lead développeur JEE / Angular",
+    "role": "Expert technique JEE / Angular",
     "onsite": true,
     "contact": {
       "name": "Damier Willier",
       "role": "Scrum Master",
       "company": "auchan"
     },
-    "goal": "Refonte de l'application de visualisation du chiffre d'affaire",
+    "goal": "Refonte ergonomique et moderne de l'application de visualisation du chiffre d'affaire",
     "tasks": [
       "Utilisation de la méthode agile Scrum",
-      "Définition de l'architecture front",
+      "Définition de l'architecture front (architecture REST avec Spring MVC et Angular JS)",
       "Rédaction d'une documentation technique sur l'installation et l'utilisation de l'environnement",
       "Réalisation des développements",
       "Encadrement technique d'un intégrateur sur Angular"
