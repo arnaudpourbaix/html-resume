@@ -207,7 +207,8 @@
 				<div class="col-md-12" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 500, repeat: true}">
 					<h3>{{ resume.firstName }} {{ resume.lastName }}</h3>
 					<h4>{{ resume.function }}</h4>
-					<p data-ng-bind-html="general.description"></p>
+					<p data-ng-bind-html="resume.description">
+					</p>
 				</div> <!-- col-md-12 end -->
 			</div> <!-- ROW END -->
 		</div> <!-- CONTAINER END -->
@@ -332,7 +333,7 @@
 	
 	
 	<!-- NUMBERS START -->
-	<section id="happyness">
+	<section id="happyness" data-ng-controller="NumberController">
 		<div class="home-part-overlay">
 			<div class="container">
 				<h3>some fun facts and my Hapiness <br> __________</h3>
@@ -393,7 +394,7 @@
 			<h4 class="show-hide"></h4>
 			<div class="slide-front">
 				<div class="row">
-					<div class="col-md-6 left" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
+					<div class="col-md-6 left" style="margin-left: {{viewAll ? '-300%' : '0'}}" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 600, repeat: true}">
 						<h3 class="show-hide">
 							<img class="section-logo" src="assets/img/featured-clients.png" alt="">
 							Clients
@@ -402,17 +403,17 @@
 						<p>
 							La satisfaction du client est ma priorité. J'essaie toujours de dépasser les attentes du client lorsque c'est possible.
 						</p>
-						<button class="more first button-transparent">Voir tous</button>
+						<button class="more first button-transparent" data-ng-show="!viewAll" data-ng-click="showAll()">Voir tous</button>
 					</div> <!-- col-md-6 end -->
 
-					<div class="col-md-6 right" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
-						<button id="less"></button>
+					<div class="col-md-6 right" data-ng-class="{'expand': viewAll}" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay: 1000, repeat: true}">
+						<button id="less" data-ng-show="viewAll" data-ng-click="hideAll()"></button>
 						<div data-ng-repeat="client in resume.clients" data-ng-if="resume.companies[client].logo" class="c-logo">
 							<img class="gray-hover" data-ng-src="assets/img/clients/{{resume.companies[client].logo}}" alt="{{resume.companies[client].label}}">
 						</div> <!-- c-logo end -->
               
 						<div class="clearfix"></div>
-						<button class="more second button-transparent">Show All</button>
+						<!-- <button class="more second button-transparent" data-ng-show="!viewAll" data-ng-click="showAll()">Voir tous</button> -->
 					</div> <!-- col-md-6 end -->
 				</div> <!-- row end -->
 			</div> <!-- SLIDE-FRONT END -->

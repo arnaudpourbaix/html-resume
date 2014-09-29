@@ -10,5 +10,6 @@ angular.module('onlineResume', [
     'onlineResume.experience', 
     'onlineResume.about', 
     'onlineResume.testimonial',
+    'onlineResume.number', 
     'onlineResume.contact'
 ]);
